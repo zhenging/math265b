@@ -1,0 +1,33 @@
+{
+  "name": "note-x",
+  "version": "0.0.1",
+  "description": "This project is for parsing markdown and mathjax hybrid text content and outputting html page with nice presentation.",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --open",
+    "build": "webpack --progress"
+  },
+  "keywords": [
+    "markded",
+    "mathjax"
+  ],
+  "author": "raven",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "clean-webpack-plugin": "^0.1.18",
+    "copy-webpack-plugin": "^4.3.1",
+    "css-loader": "^0.28.9",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "github-markdown-css": "^2.10.0",
+    "html-webpack-include-assets-plugin": "^1.0.2",
+    "html-webpack-plugin": "^2.30.1",
+    "marked": "^0.3.12",
+    "mathjax": "^2.7.2",
+    "raw-loader": "^0.5.1",
+    "style-loader": "^0.20.1",
+    "webpack-merge": "^4.1.1"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^2.11.1"
+  }
+}
