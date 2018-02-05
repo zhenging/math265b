@@ -4,6 +4,7 @@ body {
   max-width: 980px;
   margin: 0 auto;
   padding: 45px;
+  word-wrap: break-word
 }
 
 blockquote {

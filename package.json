@@ -4,7 +4,8 @@
   "description": "This project is for parsing markdown and mathjax hybrid text content and outputting html page with nice presentation.",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --open",
+    "start": "node --inspect --debug-brk index.js",
+    "dev": "webpack-dev-server --open",
     "build": "webpack --progress"
   },
   "keywords": [
@@ -21,8 +22,9 @@
     "github-markdown-css": "^2.10.0",
     "html-webpack-include-assets-plugin": "^1.0.2",
     "html-webpack-plugin": "^2.30.1",
-    "marked": "^0.3.12",
+    "markdown-it": "^8.4.0",
     "mathjax": "^2.7.2",
+    "mustache": "^2.3.0",
     "raw-loader": "^0.5.1",
     "style-loader": "^0.20.1",
     "webpack-merge": "^4.1.1"

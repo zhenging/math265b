@@ -11,6 +11,8 @@ const CleanWebpackPlugin = require('clean-webpack-plugin'),
     build: path.join(__dirname, 'build')
   };
 
+// require('md-loader!md-loader');
+
 var common = {
   module: {
     rules: [{
@@ -21,14 +23,16 @@ var common = {
       ]
     }, {
       test: /\.md$/,
-      use: 'raw-loader'
+      use: [
+        'raw-loader',
+        path.join(__dirname, 'lib/md-loader')
+      ]
     }]
   },
   entry: PATHS.app,
   output: {},
   plugins: [],
   externals: {
-    'marked': 'marked',
     'MathJax': 'MathJax'
   },
   resolve: {
@@ -39,11 +43,11 @@ var common = {
 
 // copy angular and angular-route to build directory
 var copyWebpackPlugin = new CopyWebpackPlugin([{
-  from: 'node_modules/marked/lib/marked.js',
-  to: PATHS.build
+  from: 'node_modules/mathjax',
+  to: 'mathjax'
 }, {
-  from: 'node_modules/mathjax/MathJax.js',
-  to: PATHS.build
+  from: 'node_modules/markdown-it',
+  to: 'markdown-it'
 }], {
   debug: 'warning'
 });
@@ -56,14 +60,8 @@ var cleanWebpackPlugin = new CleanWebpackPlugin([PATHS.build], {
 var extractTextPlugin = new ExtractTextPlugin('style.css');
 
 var htmlWebpackPlugin = new HtmlWebpackPlugin({
-  title: 'Marked Debug',
+  title: 'Markedown Viewer',
   template: 'app/index.html'
-});
-
-var jsAssetsPlugin = new HtmlWebpackIncludeAssetsPlugin({
-  // assets: ['marked.js', 'MathJax.js'],
-  assets: ['marked.js'],
-  append: false
 });
 
 // for development
@@ -75,7 +73,6 @@ var devConfig = merge(common, {
   plugins: [
     copyWebpackPlugin,
     extractTextPlugin,
-    jsAssetsPlugin,
     htmlWebpackPlugin
   ],
   watch: true,
@@ -101,13 +98,12 @@ var prodConfig = merge(common, {
     cleanWebpackPlugin,
     copyWebpackPlugin,
     extractTextPlugin,
-    jsAssetsPlugin,
     htmlWebpackPlugin
   ]
 });;
 
 var configMap = {
-  'start': devConfig,
+  'dev': devConfig,
   'build': prodConfig
 };
 var event = process.env.npm_lifecycle_event;
