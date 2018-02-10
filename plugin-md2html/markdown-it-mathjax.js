@@ -13,7 +13,8 @@ for rendering output.
 // Test if potential opening or closing delimieter
 // Assumes that there is a "$" at state.src[pos]
 function isValidDelim(state, pos) {
-  var prevChar, nextChar,
+  var prevChar,
+    nextChar,
     max = state.posMax,
     can_open = true,
     can_close = true;
@@ -23,11 +24,14 @@ function isValidDelim(state, pos) {
 
   // Check non-whitespace conditions for opening and closing, and
   // check that closing delimeter isn't followed by a number
-  if (prevChar === 0x20 /* " " */ || prevChar === 0x09 /* \t */ ||
-    (nextChar >= 0x30 /* "0" */ && nextChar <= 0x39 /* "9" */ )) {
+  if (
+    prevChar === 0x20 /* " " */ ||
+    prevChar === 0x09 /* \t */ ||
+    (nextChar >= 0x30 /* "0" */ && nextChar <= 0x39) /* "9" */
+  ) {
     can_close = false;
   }
-  if (nextChar === 0x20 /* " " */ || nextChar === 0x09 /* \t */ ) {
+  if (nextChar === 0x20 /* " " */ || nextChar === 0x09 /* \t */) {
     can_open = false;
   }
 
@@ -40,14 +44,14 @@ function isValidDelim(state, pos) {
 function math_inline(state, silent) {
   var start, match, token, res, pos, esc_count;
 
-  if (state.src[state.pos] !== "$") {
+  if (state.src[state.pos] !== '$') {
     return false;
   }
 
   res = isValidDelim(state, state.pos);
   if (!res.can_open) {
     if (!silent) {
-      state.pending += "$";
+      state.pending += '$';
     }
     state.pos += 1;
     return true;
@@ -59,16 +63,16 @@ function math_inline(state, silent) {
   // we have found an opening delimieter already.
   start = state.pos + 1;
   match = start;
-  while ((match = state.src.indexOf("$", match)) !== -1) {
+  while ((match = state.src.indexOf('$', match)) !== -1) {
     // Found potential $, look for escapes, pos will point to
     // first non escape when complete
     pos = match - 1;
-    while (state.src[pos] === "\\") {
+    while (state.src[pos] === '\\') {
       pos -= 1;
     }
 
     // Even number of escapes, potential closing delimiter found
-    if (((match - pos) % 2) == 1) {
+    if ((match - pos) % 2 == 1) {
       break;
     }
     match += 1;
@@ -77,7 +81,7 @@ function math_inline(state, silent) {
   // No closing delimter found.  Consume $ and continue.
   if (match === -1) {
     if (!silent) {
-      state.pending += "$";
+      state.pending += '$';
     }
     state.pos = start;
     return true;
@@ -86,7 +90,7 @@ function math_inline(state, silent) {
   // Check if we have empty content, ie: $$.  Do not parse.
   if (match - start === 0) {
     if (!silent) {
-      state.pending += "$$";
+      state.pending += '$$';
     }
     state.pos = start + 1;
     return true;
@@ -96,7 +100,7 @@ function math_inline(state, silent) {
   res = isValidDelim(state, match);
   if (!res.can_close) {
     if (!silent) {
-      state.pending += "$";
+      state.pending += '$';
     }
     state.pos = start;
     return true;
@@ -104,7 +108,7 @@ function math_inline(state, silent) {
 
   if (!silent) {
     token = state.push('math_inline', 'math', 0);
-    token.markup = "$";
+    token.markup = '$';
     token.content = state.src.slice(start, match);
   }
 
@@ -113,10 +117,14 @@ function math_inline(state, silent) {
 }
 
 function math_block(state, start, end, silent) {
-  var firstLine, lastLine, next, lastPos, found = false,
+  var firstLine,
+    lastLine,
+    next,
+    lastPos,
+    found = false,
     token,
     pos = state.bMarks[start] + state.tShift[start],
-    max = state.eMarks[start]
+    max = state.eMarks[start];
 
   if (pos + 2 > max) {
     return false;
@@ -137,8 +145,7 @@ function math_block(state, start, end, silent) {
     found = true;
   }
 
-  for (next = start; !found;) {
-
+  for (next = start; !found; ) {
     next++;
 
     if (next >= end) {
@@ -153,19 +160,24 @@ function math_block(state, start, end, silent) {
       break;
     }
 
-    if (state.src.slice(pos, max).trim().slice(-2) === '$$') {
+    if (
+      state.src
+        .slice(pos, max)
+        .trim()
+        .slice(-2) === '$$'
+    ) {
       lastPos = state.src.slice(0, max).lastIndexOf('$$');
       lastLine = state.src.slice(pos, lastPos);
       found = true;
     }
-
   }
 
   state.line = next + 1;
 
   token = state.push('math_block', 'math', 0);
   token.block = true;
-  token.content = (firstLine && firstLine.trim() ? firstLine + '\n' : '') +
+  token.content =
+    (firstLine && firstLine.trim() ? firstLine + '\n' : '') +
     state.getLines(start + 1, next, state.tShift[start], true) +
     (lastLine && lastLine.trim() ? lastLine : '');
   token.map = [start, state.line];
@@ -178,18 +190,18 @@ module.exports = function math_plugin(md, options) {
 
   options = options || {};
 
-  var inlineRenderer = function (tokens, idx) {
+  var inlineRenderer = function(tokens, idx) {
     var content = tokens[idx].content;
     // return '$' + content + '$';
     return '<span class="mathjax-exps">$' + content + '$</span>';
   };
 
-  var blockRenderer = function (tokens, idx) {
+  var blockRenderer = function(tokens, idx) {
     var content = tokens[idx].content;
     content = content.replace(/\n/g, '');
     // return '$$' + content + '$$';
     return '<div class="mathjax-exps">$$' + content + '$$</div>';
-  }
+  };
 
   md.inline.ruler.after('escape', 'math_inline', math_inline);
   md.block.ruler.after('blockquote', 'math_block', math_block, {

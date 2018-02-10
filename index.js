@@ -1,6 +1,10 @@
-const mdLoader = require('./lib/md-loader'),
-  fs = require('fs');
+const path = require('path'),
+  md2html = require('./lib/md2html'),
+  inputFolder = '../reading/calculus-for-scientists-and-engineers',
+  // inputFolder = './app',
+  outputFolder = './build';
 
-var mdContent = fs.readFileSync('app/test.md', 'utf8')
-var htmlContent = mdLoader(mdContent);
-fs.writeFileSync('build/index.html', htmlContent);
+md2html(
+  path.resolve(__dirname, inputFolder),
+  path.resolve(__dirname, outputFolder)
+);

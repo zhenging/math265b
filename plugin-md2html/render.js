@@ -6,7 +6,7 @@ const md = require('markdown-it')({
     linkify: false, // Autoconvert URL-like text to links
     typographer: false,
     quotes: '“”‘’',
-    highlight: function ( /*str, lang*/ ) {
+    highlight: function(/*str, lang*/) {
       return '';
     }
   }),
@@ -14,22 +14,22 @@ const md = require('markdown-it')({
   fs = require('fs'),
   path = require('path'),
   mjConfig = require('./mjConfig'),
-  styles = require('github-markdown-css/github-markdown.css'),
-  Mustache = require('mustache');
+  Mustache = require('mustache'),
+  generateStyles = require('./generateStyles');
 
 md.use(mdm);
 
-module.exports = function (mdInput) {
-  console.log(path.resolve(__dirname, 'template.mst'));
-  var templateFilepath = path.resolve(__dirname, 'template.mst');
-  var template = fs.readFileSync(templateFilepath, {
+module.exports = function(mdInput) {
+  let templateFilepath = path.resolve(__dirname, 'template.mst');
+  let template = fs.readFileSync(templateFilepath, {
     encoding: 'utf8'
   });
-  var htmlOuput = md.render(mdInput);
-  var rendered = Mustache.render(template, {
-    mjConfig: JSON.stringify(mjConfig),
-    htmlContent: htmlOuput
+  let htmlOutput = md.render(mdInput);
+  let styles = generateStyles();
+  let rendered = Mustache.render(template, {
+    mathjaxConfig: JSON.stringify(mjConfig),
+    styleContent: styles,
+    htmlContent: htmlOutput
   });
-  console.log(rendered);
   return rendered;
 };

@@ -3,11 +3,17 @@ module.exports = {
   jax: ['input/TeX', 'output/HTML-CSS'],
   messageStyle: 'none',
   tex2jax: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
     processEnvironments: false,
     processEscapes: true
   },
   TeX: {
-    extensions: ['AMSmath.js', 'AMSsymbols.js', 'noErrors.js', 'noUndefined.js'],
+    extensions: [
+      'AMSmath.js',
+      'AMSsymbols.js',
+      'noErrors.js',
+      'noUndefined.js'
+    ],
     Macros: {
       RR: '{\\bf R}',
       bi: '\\leftrightarrow',
@@ -28,4 +34,4 @@ module.exports = {
   },
   displayAlign: 'left',
   displayIndent: '1em'
-}
+};
