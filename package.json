@@ -8,7 +8,7 @@
     "start": "nodemon --inspect --debug index.js",
     "dev": "webpack-dev-server --open",
     "build": "webpack --progress",
-    "debug": "node --inspect --debug $(npm bin)/webpack --verbose"
+    "debug": "nodemon --watch plugin-md2html $(npm bin)/webpack"
   },
   "keywords": ["markdown-it", "mathjax"],
   "author": "raven",
@@ -25,11 +25,26 @@
     "markdown-it": "^8.4.0",
     "mathjax": "^2.7.2",
     "mustache": "^2.3.0",
+    "prop-types": "^15.6.0",
     "raw-loader": "^0.5.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
     "style-loader": "^0.20.1",
+    "webpack": "^3.11.0",
     "webpack-merge": "^4.1.1"
   },
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^4.17.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-babel": "^4.1.2",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.6.1",
     "nodemon": "^1.14.12",
     "webpack-dev-server": "^2.11.1"
   }

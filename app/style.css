@@ -1,8 +1,41 @@
 body {
   box-sizing: border-box;
-  min-width: 200px;
-  max-width: 980px;
-  margin: 0 auto;
-  padding: 45px;
-  word-wrap: break-word
+  background-color: #edeff0;
+  margin: 0;
 }
+
+main {}
+
+blockquote {
+  background-color: #f8f8f8;
+}
+
+p {
+  margin-bottom: 12px;
+}
+
+blockquote {
+  background-color: #f8f8f8;
+  margin-bottom: 12px;
+}
+
+table {
+  width: auto;
+  line-height: 1.2;
+  tbody {
+    tr:nth-child(odd) {
+      background: #f0f0f0;
+    }
+    tr:nth-child(even) {
+      background: #ffffff;
+    }
+  }
+}
+
+@media print {
+  font-size: 14px;
+}
+
+/* @page {
+  margin: 1.2cm 1.2cm 1.2cm 1.6cm;
+} */

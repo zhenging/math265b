@@ -1,20 +1,24 @@
-const CleanWebpackPlugin = require('clean-webpack-plugin'),
-  CopyWebpackPlugin = require('copy-webpack-plugin'),
-  ExtractTextPlugin = require('extract-text-webpack-plugin'),
-  HtmlWebpackPlugin = require('html-webpack-plugin'),
-  HtmlWebpackIncludeAssetsPlugin = require('html-webpack-include-assets-plugin'),
-  merge = require('webpack-merge'),
-  path = require('path'),
-  webpack = require('webpack'),
-  Md2HtmlPlugin = require('./plugin-md2html'),
-  PATHS = {
-    app: path.join(__dirname, 'app/index.js'),
-    build: path.join(__dirname, 'build')
-  };
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackIncludeAssetsPlugin = require('html-webpack-include-assets-plugin');
+const merge = require('webpack-merge');
+const path = require('path');
+const Md2HtmlPlugin = require('./plugin-md2html');
 
-let common = {
+const PATHS = {
+  app: path.join(__dirname, 'app/index.jsx'),
+  build: path.join(__dirname, 'build')
+};
+
+const common = {
   module: {
     rules: [
+      {
+        test: /\.jsx?$/,
+        exclude: /node_modules/,
+        use: 'babel-loader'
+      },
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader']
@@ -24,39 +28,60 @@ let common = {
   entry: PATHS.app,
   output: {},
   plugins: [],
-  externals: {},
+  externals: {
+    react: 'React',
+    'react-dom': 'ReactDOM'
+  },
   resolve: {
-    extensions: ['.js']
+    extensions: ['.js', '.jsx']
   },
   target: 'web' // default
 };
 
 // clean previously built files
-let cleanWebpackPlugin = new CleanWebpackPlugin('build/*', {
+const cleanWebpackPlugin = new CleanWebpackPlugin('build/*', {
   verbose: true,
   exclude: '.git'
 });
 
-let extractTextPlugin = new ExtractTextPlugin('style.css');
+const extractTextPlugin = new ExtractTextPlugin('style.css');
 
-let htmlWebpackPlugin = new HtmlWebpackPlugin({
+const htmlWebpackPlugin = new HtmlWebpackPlugin({
   title: 'Zhenging',
   template: 'app/index.html'
 });
 
-let md2htmlPlugin = new Md2HtmlPlugin('../calculus', 'build');
+const includeAssetsPlugin = new HtmlWebpackIncludeAssetsPlugin({
+  assets: [
+    {
+      type: 'js',
+      attributes: { crossorigin: 'true' },
+      path: '/react/umd/react.development.js'
+    },
+    {
+      type: 'js',
+      attributes: { crossorigin: 'true' },
+      path: '/react-dom/umd/react-dom.development.js'
+    }
+  ],
+  append: false
+});
+
+const md2HtmlPlugin = new Md2HtmlPlugin('../calculus', 'build');
+
+// let md2htmlPlugin = new Md2HtmlPlugin('../calculus', 'build');
 
 // for development
-let devConfig = merge(common, {
+const devConfig = merge(common, {
   output: {
     path: PATHS.build,
     filename: 'bundle.js'
   },
-  plugins: [extractTextPlugin, htmlWebpackPlugin, md2htmlPlugin],
+  plugins: [extractTextPlugin, htmlWebpackPlugin, includeAssetsPlugin, md2HtmlPlugin],
   watch: true,
   devtool: 'source-map',
   devServer: {
-    contentBase: PATHS.build,
+    contentBase: [PATHS.build, 'node_modules'],
     stats: 'errors-only',
     port: 3000,
     overlay: {
@@ -67,24 +92,19 @@ let devConfig = merge(common, {
 });
 
 // for production
-let prodConfig = merge(common, {
+const prodConfig = merge(common, {
   output: {
     path: PATHS.build,
     filename: 'bundle.[hash].js'
   },
-  plugins: [
-    cleanWebpackPlugin,
-    extractTextPlugin,
-    htmlWebpackPlugin,
-    md2htmlPlugin
-  ]
+  plugins: [cleanWebpackPlugin, extractTextPlugin, htmlWebpackPlugin, md2HtmlPlugin]
 });
 
-let configMap = {
+const configMap = {
   dev: devConfig,
   build: prodConfig,
   debug: devConfig
 };
-let event = process.env.npm_lifecycle_event;
-let config = configMap[event];
+const event = process.env.npm_lifecycle_event;
+const config = configMap[event];
 module.exports = config;

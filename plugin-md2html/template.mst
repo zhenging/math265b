@@ -8,15 +8,23 @@
   <script type="text/x-mathjax-config">
     MathJax.Hub.Config({{{ mathjaxConfig }}});
   </script>
-<!-- <script type="text/javascript" async src="/mathjax/MathJax.js"></script> -->
-<script type="text/javascript" async
+  <script type="text/javascript" async
 src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
   <style>{{{ styleContent }}}</style>
 </head>
 
 <body>
-  <article class="markdown-body">{{{ htmlContent }}}</article>
+  <header>
+    <div class="header-item header-nav-menu-container">
+
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <article class="markdown-body">{{{ htmlContent }}}</article>
+    </div>
+  </main>
 </body>
 
 </html>
