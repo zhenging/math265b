@@ -1,15 +1,16 @@
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+// const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackIncludeAssetsPlugin = require('html-webpack-include-assets-plugin');
 const merge = require('webpack-merge');
 const path = require('path');
 const Md2HtmlPlugin = require('./plugin-md2html');
+const DeployPlugin = require('./plugin-deploy');
+// const ReactToHtmlPlugin = require('react-to-html-webpack-plugin');
 
 const PATHS = {
-  app: path.join(__dirname, 'app/index.jsx'),
-  build: path.join(__dirname, 'build')
+  app: path.join(__dirname, 'app/index.jsx')
 };
+const OUTPUT_PATH = path.join(__dirname, 'build');
 
 const common = {
   module: {
@@ -26,12 +27,14 @@ const common = {
     ]
   },
   entry: PATHS.app,
-  output: {},
-  plugins: [],
-  externals: {
-    react: 'React',
-    'react-dom': 'ReactDOM'
+  output: {
+    filename: 'index.js',
+    path: OUTPUT_PATH,
+    library: 'MyComponent',
+    libraryTarget: 'umd'
   },
+  plugins: [],
+  externals: {},
   resolve: {
     extensions: ['.js', '.jsx']
   },
@@ -44,44 +47,33 @@ const cleanWebpackPlugin = new CleanWebpackPlugin('build/*', {
   exclude: '.git'
 });
 
-const extractTextPlugin = new ExtractTextPlugin('style.css');
-
-const htmlWebpackPlugin = new HtmlWebpackPlugin({
-  title: 'Zhenging',
-  template: 'app/index.html'
-});
+// const extractTextPlugin = new ExtractTextPlugin('style.css');
 
 const includeAssetsPlugin = new HtmlWebpackIncludeAssetsPlugin({
   assets: [
-    {
-      type: 'js',
-      attributes: { crossorigin: 'true' },
-      path: '/react/umd/react.development.js'
-    },
-    {
-      type: 'js',
-      attributes: { crossorigin: 'true' },
-      path: '/react-dom/umd/react-dom.development.js'
-    }
+    // {
+    //   type: 'js',
+    //   attributes: { crossorigin: 'true' },
+    //   path: '/react/umd/react.development.js'
+    // },
+    // {
+    //   type: 'js',
+    //   attributes: { crossorigin: 'true' },
+    //   path: '/react-dom/umd/react-dom.development.js'
+    // }
   ],
   append: false
 });
 
-const md2HtmlPlugin = new Md2HtmlPlugin('../calculus', 'build');
-
-// let md2htmlPlugin = new Md2HtmlPlugin('../calculus', 'build');
+// const reactToHtmlPlugin = new ReactToHtmlPlugin('index.html', 'index.js');
 
 // for development
 const devConfig = merge(common, {
-  output: {
-    path: PATHS.build,
-    filename: 'bundle.js'
-  },
-  plugins: [extractTextPlugin, htmlWebpackPlugin, includeAssetsPlugin, md2HtmlPlugin],
+  plugins: [includeAssetsPlugin],
   watch: true,
   devtool: 'source-map',
   devServer: {
-    contentBase: [PATHS.build, 'node_modules'],
+    contentBase: [OUTPUT_PATH, 'node_modules'],
     stats: 'errors-only',
     port: 3000,
     overlay: {
@@ -91,13 +83,17 @@ const devConfig = merge(common, {
   }
 });
 
+const calculusRepo = 'git@github.com:zhenging/calculus.git';
+const econ201aRepo = 'git@github.com:zhenging/econ201a.git';
 // for production
 const prodConfig = merge(common, {
-  output: {
-    path: PATHS.build,
-    filename: 'bundle.[hash].js'
-  },
-  plugins: [cleanWebpackPlugin, extractTextPlugin, htmlWebpackPlugin, md2HtmlPlugin]
+  plugins: [
+    cleanWebpackPlugin,
+    new Md2HtmlPlugin('../calculus', 'build'),
+    new Md2HtmlPlugin('../econ201a', 'build'),
+    new DeployPlugin('./build/calculus', calculusRepo),
+    new DeployPlugin('./build/econ201a', econ201aRepo)
+  ]
 });
 
 const configMap = {

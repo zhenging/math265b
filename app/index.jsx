@@ -1,8 +1,7 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import 'github-markdown-css/github-markdown.css';
+const App = () => (
+  <div>
+    <p>Hello, world!</p>
+  </div>
+);
 
-import App from './components/App';
-import './style.css';
-
-ReactDOM.render(<App />, document.getElementById('app'));
+export default App;
