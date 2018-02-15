@@ -14,7 +14,7 @@ To help disadvantaged, legislators pass a law stating that no one can charge mor
 
 Table 5.1
 A Price Ceiling on Bread
-| Question |  Answer/Explanation | Result | 
+| Question |  Answer/Explanation | Result |
 |:----------|:---------------------|:--------|
 | Will there be more bread or less bread for sale? | Consumers will want to buy more because the price is lower (the law of demand), but producers will manufacture less (the law of supply). The net result will be a shortage of bread. | Empty Shelves|
 | Will the size of a typical loaf of bread change? | Because the price is capped at \$0.5 per load, manufacturers will try to maintain profits by reducing the size of each loaf. | No more giant bread. |
@@ -46,7 +46,7 @@ Price Ceilings
 #### Rent Control
 **Rent Control** is a price ceiling that applies to the market of apartment rentals.
 > In Mumbai, India, many rent-controlled buildings have dilapidated. (low profit -> ill-maintained building -> tragic consequences every monsoon season.)
-> 
+>
 
 #### Price Gouging
 + **Price gouging laws** places a temporary ceiling on the prices that seller can charge during times of emergency.
@@ -60,16 +60,16 @@ Price gouging laws serve as a nonbinding price ceiling during normal times. Howe
 
 > A politician suggests we should encourage dairy farmers to produce more milk so that supplies will be plentiful and everyone will get enough calcium. To accomplish these goals, the government sets a price floor of \$6 per gallon-about twice the price of a typical gallon of fat-free milk-to make production more attractive to milk producers, What repercussions should we expect?
 
-#### Understanding Price Floors 
+#### Understanding Price Floors
 
-Table 5.2 
+Table 5.2
 | Questions | Answer/Explanation | Result |
 |:----------|:-------------------|:-------|
 |Will the quantity of milk for sale change? | Consumer will purchase less because the price is higher (the law of demand), but producers will manufacture more (the law of supply). The net result will be a surplus of milk. | There will be a surplus of milk. |
 | Would producers sell below the price floor? | Yes. A surplus of milk would give sellers a strong incentive to undercut the price floor to avoid having to discard leftover milk. | Illegal discounts will help reduce the milk surplus. |
 | Will dairy farmers be better off? | Not if they have trouble selling what they produce. | There might be a log of spoiled milk. |
 
-#### The Effect Of Price Floors 
+#### The Effect Of Price Floors
 
 ##### Nonbinding Price Floors
 Figure 5.6
@@ -90,9 +90,9 @@ When a price floor is left in place over time, supply and demand both become mor
 #### The Minimum Wage
 + The **minimum wage** is the lowest hourly wage rate that firms may legally pay their workers.
 
-Figure 5.9 
+Figure 5.9
 **Price Floor and a Binding Minimum Wage Market in the Short Run and Long Run**
-A binding minimum wage is a price floor above the current equilibrium wage, W_E. At \$10 per hour, the number of workers willing to supply their labor (S_SR) is greater than the demand of workers (D_SR). The result is a surplus of workers (which we recognize as unemployment ). Because the supply of workers both become more elastic in the long run, unemployment expands (Q_SLR > Q_DLR).
+A binding minimum wage is a price floor above the current equilibrium wage, W_E. At \$10 per hour, the number of workers willing to supply their labor ($S_{SR}$) is greater than the demand of workers ($D_{SR}$). The result is a surplus of workers (which we recognize as unemployment ). Because the supply of workers both become more elastic in the long run, unemployment expands ($Q_{SLR} > Q_{DLR}$).
 
 > Economics In the Real world
 **Wage Laws Squeeze South Africa's Poor**
@@ -106,4 +106,4 @@ An increase in the minimum wage from \$7 to $9 remains nonbinding. Therefore, it
 **A Sweet Deal, If You Can Get It**
 Coca-Cola, high-fructose corn syrup, sugar, Latin America
 
-### Conclusion
+### End

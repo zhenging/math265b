@@ -112,4 +112,4 @@ When the price changes, the quantity supplied changes along the existing supply 
 - A **shortage**,or *excess demand*, occurs whenever the quantity supplied is less than the quantity demanded.
 - A **surplus**, or *excess supply* occurs whenever the quantity supplied is greater than the quantity demanded.
 
-### Conclusion
+### End

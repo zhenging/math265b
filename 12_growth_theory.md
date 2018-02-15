@@ -84,4 +84,4 @@ $$
 **Institutions, Incentives, and Endogenous Growth**
 The goal is economic growth, but it all starts with institutions. Institutions provide the incentives that motivate choices made by people in an economy. The right institutions provide incentives for people to invent new technology and to invest in human and physical capital. These actions lead to economic growth.
 
-### Conclusion
+### End

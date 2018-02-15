@@ -85,4 +85,4 @@ Figure 2.7
 
 > Over the last 20 years, the citizens of China and India have invested significantly more in capital goods than have the citizens of wealthier nations in North America and Europe. Not suprisingly, economic growth rates in China and India are much higher than they are in more developed countries.
 
-### Conclusion
+### End

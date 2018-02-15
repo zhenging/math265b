@@ -5,13 +5,14 @@ page 108-141
 > **Misconception** - Tax on firms do not affect consumers.
 
 ### What Are Consumer Surplus and Producer Surplus?
-**Welfare economics** is the branch of economics that studies how the allocation of resources affects economic well-being. 
+**Welfare economics** is the branch of economics that studies how the allocation of resources affects economic well-being.
 
 #### Consumer Surplus
 The **willingness to pay** is the maximum price a consumer will pay for a good or service.
 **Consumer Surplus** is the difference between the willingness to pay for a good (or service) and the price that is paid to get it.
 
 > Willingness to Pay for a New Economics Textbook
+
 | Buyer  | Willingness to pay |
 |--------|--------------------|
 | Beanie | $200 			  |
@@ -23,6 +24,7 @@ The **willingness to sell** is the minimum price a seller will accept to sell a 
 **Producer Surplus** is the difference between the willingness to sell a good (or service) and the price that the seller receives.
 
 > Willingness to Sell Tutoring services
+
 | Seller | Willingness to sell |
 |--------|---------------------|
 | Beanie | $30/hr              |
@@ -38,7 +40,7 @@ When an allocation of resources maximizes total surplus, the result is said to b
 
 > Economics in Media
 **Efficiency**
-*Old school* 
+*Old school*
 
 > Total Surplus: How Would Lower Consumer Income Affect Urban Outfitters?
 
@@ -108,4 +110,4 @@ Figure 4.12
 
 #### Balancing Deadweight Loss and Tax Revenue
 
-### Conclusion
+### End

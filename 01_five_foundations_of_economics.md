@@ -90,4 +90,4 @@ The process of systematically evaluating a course of action is called economic t
 + **Trade** is the voluntary exchange of goods and services between two or more parties.
 + **Comparative Advantage** refers to the situation whether an individual, business, or country can produce at a lower opportunity cost than a competitor can.
 
-### Conclusion
+### End

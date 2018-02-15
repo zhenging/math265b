@@ -113,4 +113,4 @@ Four Scenarios for the Equation of Exchange
 + **large government debts** - print more money to pay off debts
 + **short-term gains** - temporarily stimulate an economy toward more rapid growth rates.
 
-### Conclusion
+### End
