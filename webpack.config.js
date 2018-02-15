@@ -85,13 +85,16 @@ const devConfig = merge(common, {
 
 const calculusRepo = 'git@github.com:zhenging/calculus.git';
 const econ201aRepo = 'git@github.com:zhenging/econ201a.git';
+const cis241Repo = 'git@github.com:zhenging/cis241.git';
 // for production
 const prodConfig = merge(common, {
   plugins: [
     cleanWebpackPlugin,
     new Md2HtmlPlugin('../calculus', 'build'),
+    new Md2HtmlPlugin('../cis241', 'build'),
     new Md2HtmlPlugin('../econ201a', 'build'),
     new DeployPlugin('./build/calculus', calculusRepo),
+    new DeployPlugin('./build/cis241', cis241Repo),
     new DeployPlugin('./build/econ201a', econ201aRepo)
   ]
 });

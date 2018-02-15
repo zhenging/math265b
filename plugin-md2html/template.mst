@@ -16,13 +16,16 @@ src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-
 
 <body>
   <header>
-    <div class="header-item header-nav-menu-container">
-
-    </div>
+    <div class="header-item header-nav-menu-container"></div>
   </header>
   <main>
     <div class="container">
-      <article class="markdown-body">{{{ htmlContent }}}</article>
+      <div class="note-body">
+        <div class="note-meta"></div>
+        <div class="note-content">
+          <article class="markdown-body">{{{ htmlContent }}}</article>
+        </div>
+      </div>
     </div>
   </main>
 </body>
