@@ -12,3 +12,5 @@ rules:
   comma-dangle:
     - 2
     - never
+  prefer-destructuring:
+    - 0

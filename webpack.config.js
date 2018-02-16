@@ -1,15 +1,10 @@
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-// const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const HtmlWebpackIncludeAssetsPlugin = require('html-webpack-include-assets-plugin');
 const merge = require('webpack-merge');
 const path = require('path');
-const Md2HtmlPlugin = require('./plugin-md2html');
-const DeployPlugin = require('./plugin-deploy');
-// const ReactToHtmlPlugin = require('react-to-html-webpack-plugin');
+const DeployPlugin = require('./plugins').DeployPlugin;
+const Md2HtmlPlugin = require('./plugins').Md2HtmlPlugin;
 
-const PATHS = {
-  app: path.join(__dirname, 'app/index.jsx')
-};
+const ENTRY_PATH = path.join(__dirname, 'app/index.jsx');
 const OUTPUT_PATH = path.join(__dirname, 'build');
 
 const common = {
@@ -26,7 +21,7 @@ const common = {
       }
     ]
   },
-  entry: PATHS.app,
+  entry: ENTRY_PATH,
   output: {
     filename: 'index.js',
     path: OUTPUT_PATH,
@@ -47,29 +42,9 @@ const cleanWebpackPlugin = new CleanWebpackPlugin('build/*', {
   exclude: '.git'
 });
 
-// const extractTextPlugin = new ExtractTextPlugin('style.css');
-
-const includeAssetsPlugin = new HtmlWebpackIncludeAssetsPlugin({
-  assets: [
-    // {
-    //   type: 'js',
-    //   attributes: { crossorigin: 'true' },
-    //   path: '/react/umd/react.development.js'
-    // },
-    // {
-    //   type: 'js',
-    //   attributes: { crossorigin: 'true' },
-    //   path: '/react-dom/umd/react-dom.development.js'
-    // }
-  ],
-  append: false
-});
-
-// const reactToHtmlPlugin = new ReactToHtmlPlugin('index.html', 'index.js');
-
 // for development
 const devConfig = merge(common, {
-  plugins: [includeAssetsPlugin],
+  plugins: [],
   watch: true,
   devtool: 'source-map',
   devServer: {
@@ -83,19 +58,14 @@ const devConfig = merge(common, {
   }
 });
 
-const calculusRepo = 'git@github.com:zhenging/calculus.git';
-const econ201aRepo = 'git@github.com:zhenging/econ201a.git';
-const cis241Repo = 'git@github.com:zhenging/cis241.git';
 // for production
+const BUILD_SOURCE = process.env.BUILD_SOURCE;
+const absBuildSource = path.resolve(__dirname, BUILD_SOURCE);
 const prodConfig = merge(common, {
   plugins: [
     cleanWebpackPlugin,
-    new Md2HtmlPlugin('../calculus', 'build'),
-    new Md2HtmlPlugin('../cis241', 'build'),
-    new Md2HtmlPlugin('../econ201a', 'build'),
-    new DeployPlugin('./build/calculus', calculusRepo),
-    new DeployPlugin('./build/cis241', cis241Repo),
-    new DeployPlugin('./build/econ201a', econ201aRepo)
+    new Md2HtmlPlugin(absBuildSource, 'build'),
+    new DeployPlugin(absBuildSource)
   ]
 });
 
