@@ -110,4 +110,4 @@ Figure 4.12
 
 #### Balancing Deadweight Loss and Tax Revenue
 
-### End
+**End**

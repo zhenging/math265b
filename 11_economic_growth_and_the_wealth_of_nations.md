@@ -43,4 +43,4 @@ An **institution** in a significant practice , relationship, or organization in 
 + Efficient Taxes - sufficient to fund the activities of government while impeding production and consumption decisions as little as possible.
 + Stable Money and Prices
  
- ### End
+ **End**

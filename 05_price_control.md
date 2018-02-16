@@ -106,4 +106,4 @@ An increase in the minimum wage from \$7 to $9 remains nonbinding. Therefore, it
 **A Sweet Deal, If You Can Get It**
 Coca-Cola, high-fructose corn syrup, sugar, Latin America
 
-### End
+**End**

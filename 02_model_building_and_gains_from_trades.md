@@ -27,7 +27,7 @@ The process of examining a change in one variable while holding everything else 
 
 > If the Wright brothers had changed many design elements simultaneously and found that a new version of the wing worked better, they would have had no way of knowing which change was responsible for the improved performance.
 
-##### Endogenous versus Exogenous factors
+##**End**ogenous versus Exogenous factors
 1. **Endogenous factors** are the variables that can be controlled for in a model. - *the design of the wing within the control of the Wright brothers*
 2. **Exogenous factors** are the variables that cannot be controlled for in a model. - *wind, air pressure, and other atmospheric conditions beyond the control of the Wright brothers*
 
@@ -85,4 +85,4 @@ Figure 2.7
 
 > Over the last 20 years, the citizens of China and India have invested significantly more in capital goods than have the citizens of wealthier nations in North America and Europe. Not suprisingly, economic growth rates in China and India are much higher than they are in more developed countries.
 
-### End
+**End**

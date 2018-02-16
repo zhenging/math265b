@@ -26,7 +26,7 @@ The five foundations of economics are:
 4. Marginal Thinking
 5. Trade
 
-#### Incentives
+#### 1. Incentives
 **Incentives** are factors that motivate a person to act or exert effort.
 ##### Positive and negative incentives
 **Positive incentives** encourage action by offering rewards or payments.
@@ -52,7 +52,7 @@ Indirect incentives
 
 > Economics in the Media: Incentives: Ferris Bueller's Day off
 
-#### Trade-offs
+#### 2. Trade-offs
 In a world of scarcity, each and every decision incurs a cost.
 
 > **Examples**
@@ -60,21 +60,21 @@ In a world of scarcity, each and every decision incurs a cost.
 2\. Psy's song "Gangnam Style", 2 billion times on Youtube
 3\. Dwight Eisenhower in 1953 - The cost one modern heavy-duty bomber is this: a modern brick school in more than 30 cities. It is two electric power plants each serving a town of 60,000 people. It is two fine, fully equipped hospitals. It is some 50 miles of concrete highways. We pay a single fighter with a half million bushels of wheat. We pay for a single destroyer with new homes that could have housed more than 8,000 people.
 
-#### Opportunity Cost
+#### 3. Opportunity Cost
 **Opportunity Cost** is the highest-valued alternative that must be sacrificed to get something else.
 > **Examples**
 1. Mick Jagger of Rolling Stone, London School of Economics
 2. The Opportunity Cost of Attending College
 3. How Opportunity Cost Causes a Drop in Hospital Visits When the Red Sox Play - Boston, 2004 Playoff
 
-#### Marginal Thinking
+#### 4. Marginal Thinking
 The process of systematically evaluating a course of action is called economic thinking. **Economic thinking** involves a purposeful evaluation of the available opportunities to make the best decision possible.
 **Marginal thinking** requires decision-makers to evaluate whether the benefit of one more unit of something is greater than its cost.
 
 > **Economics in the real world**
 > Why Buying and Selling Your Textbooks Benefits You at the Margin
 
-#### Trade
+#### 5. Trade
 **Markets** brings buyers and sellers together to exchange goods and services.
 
 ##### The Circular Flow
@@ -90,4 +90,4 @@ The process of systematically evaluating a course of action is called economic t
 + **Trade** is the voluntary exchange of goods and services between two or more parties.
 + **Comparative Advantage** refers to the situation whether an individual, business, or country can produce at a lower opportunity cost than a competitor can.
 
-### End
+**End**
