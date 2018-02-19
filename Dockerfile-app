@@ -1,0 +1,23 @@
+# 1. Format: FROM repository[:version]
+FROM node:carbon
+
+# 2. Format: MAINTAINER Name <email@addr.ess>
+MAINTAINER ravenzheng <ravenzheng@gmail.com>
+
+# 3. Set WORKDIR
+WORKDIR /note-x
+
+# 4. Copy package.json and package-lock.json to WORKDIR and install deps
+COPY package.json $WORKDIR
+COPY package-lock.json $WORKDIR
+RUN npm install --production
+
+# 5. COPY Everything alse to WORKDIR
+COPY . $WORKDIR
+
+RUN mkdir -p /root/.ssh
+RUN echo "    IdentityFile /root/.ssh/id_rsa" >> /etc/ssh/ssh_config
+RUN ssh-keyscan github.com >> /root/.ssh/known_hosts
+
+# 6. Run Command to build
+CMD npm run build

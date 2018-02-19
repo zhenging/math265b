@@ -16,7 +16,9 @@ src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-
 
 <body>
   <header>
-    <div class="header-item header-nav-menu-container"></div>
+    <div class="header-item header-nav-menu-container">
+      <h2 class="note-title">{{ noteTitle }}</h2>
+    </div>
   </header>
   <main>
     <div class="container">

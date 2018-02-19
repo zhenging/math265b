@@ -1,0 +1,13 @@
+version: "2"
+services:
+  note-x-app:
+    image: raven/note-x
+    build:
+      context: .
+      dockerfile: Dockerfile-app
+    volumes:
+      - ../note-x-volume/source:/note-x/source
+      - ../note-x-volume/build:/note-x/build
+      - ~/.ssh/github-zhenging:/root/.ssh/id_rsa
+    ports:
+      - 22:22

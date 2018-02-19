@@ -1,26 +1,37 @@
 const fs = require('fs-extra');
 const path = require('path');
-// const ghPages = require('gh-pages');
+const ghPages = require('gh-pages');
 
 class DeployPlugin {
-  constructor(srcDir) {
-    const metafile = path.join(srcDir, 'meta.json');
+  constructor(inputDir, outputDir) {
+    const metafile = path.join(inputDir, 'meta.json');
     const metaJson = fs.readJsonSync(metafile);
-    const srcDirName = path.basename(srcDir);
-    this.dist = path.join(__dirname, 'build', srcDirName);
+    this.dist = outputDir;
     this.repo = metaJson.repo;
-    console.log(`${this.dist}\n${this.repo}`);
+    console.log(`DeployPlugin: publishing ${this.dist} to ${this.repo}`);
   }
 
-  // eslint-disable-next-line
   apply(compiler) {
     // eslint-disable-next-line
     compiler.plugin(['done'], (compiler, callback) => {
-      // ghPages.publish(this.dist, {
-      //   repo: this.repo,
-      //   message: 'Auto-generated commit'
-      // });
-      // callback();
+      ghPages.publish(
+        this.dist,
+        {
+          user: {
+            email: 'ravenzheng2014@gmail.com',
+            name: 'zhenging'
+          },
+          repo: this.repo,
+          message: 'Auto-generated commit.'
+        },
+        (err) => {
+          if (!err) {
+            console.log(`DeployPlugin: ${this.dist} published.`);
+          }
+          console.log(err.message);
+          callback();
+        }
+      );
     });
   }
 }
