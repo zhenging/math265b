@@ -1,6 +1,6 @@
 const fs = require('fs-extra');
 const path = require('path');
-const render = require('./render');
+const render = require('./renderWithReact');
 
 const connectives = ['to', 'of', 'and'];
 function generateIndexPage(courseName, filenameList, inputDir, outputDir) {

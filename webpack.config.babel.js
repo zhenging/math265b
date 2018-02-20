@@ -1,11 +1,13 @@
-const CleanWebpackPlugin = require('clean-webpack-plugin');
-const merge = require('webpack-merge');
-const fs = require('fs-extra');
-const path = require('path');
-const DeployPlugin = require('./plugins').DeployPlugin;
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+import CleanWebpackPlugin from 'clean-webpack-plugin';
+import merge from 'webpack-merge';
+import fs from 'fs-extra';
+import path from 'path';
+
+// const DeployPlugin = require('./plugins').DeployPlugin;
 const Md2HtmlPlugin = require('./plugins').Md2HtmlPlugin;
 
-const ENTRY_PATH = path.join(__dirname, 'app/index.jsx');
+const ENTRY_PATH = path.join(__dirname, 'index.js');
 const NOTES_SOURCE_PATH = path.join(__dirname, 'source');
 const OUTPUT_PATH = path.join(__dirname, 'build');
 
@@ -18,6 +20,10 @@ const common = {
         use: 'babel-loader'
       },
       {
+        test: /\.md$/,
+        use: 'raw-loader'
+      },
+      {
         test: /\.css$/,
         use: ['style-loader', 'css-loader']
       }
@@ -26,9 +32,7 @@ const common = {
   entry: ENTRY_PATH,
   output: {
     filename: 'index.js',
-    path: OUTPUT_PATH,
-    library: 'MyComponent',
-    libraryTarget: 'umd'
+    path: OUTPUT_PATH
   },
   plugins: [],
   externals: {},
@@ -38,15 +42,18 @@ const common = {
   target: 'web' // default
 };
 
-// clean previously built files
-const cleanWebpackPlugin = new CleanWebpackPlugin('build/*', {
-  verbose: true,
-  exclude: '.git'
+const htmlWebpackPlugin = new HtmlWebpackPlugin({
+  title: 'Calculus',
+  template: 'index.html' // Load a custom
 });
 
 // for development
 const devConfig = merge(common, {
-  plugins: [],
+  output: {
+    path: OUTPUT_PATH,
+    filename: 'index.js'
+  },
+  plugins: [htmlWebpackPlugin],
   watch: true,
   devtool: 'source-map',
   devServer: {
@@ -60,6 +67,8 @@ const devConfig = merge(common, {
   }
 });
 
+// clean previously built files
+const cleanWebpackPlugin = new CleanWebpackPlugin('build/*');
 const plugins = [cleanWebpackPlugin];
 // read sub directories in ./source directory. The sources notes are in thoes
 // sub directories. E.g. ./source/econ201a, ./source/calculus ..
@@ -79,11 +88,12 @@ if (subDirLen === 0) {
     const inputDir = path.join(NOTES_SOURCE_PATH, subDirName);
     const outputDir = path.join(OUTPUT_PATH, subDirName);
     plugins.push(new Md2HtmlPlugin(inputDir, outputDir));
-    plugins.push(new DeployPlugin(inputDir, outputDir));
+    // plugins.push(new DeployPlugin(inputDir, outputDir));
   });
 }
+
 // for production
-const prodConfig = merge(common, { plugins });
+const prodConfig = merge(common, { plugins, target: 'node' });
 
 const configMap = {
   dev: devConfig,

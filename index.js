@@ -1,10 +1,28 @@
-const path = require('path'),
-  md2html = require('./lib/md2html'),
-  inputFolder = '../reading/calculus-for-scientists-and-engineers',
-  // inputFolder = './app',
-  outputFolder = './build';
+import PropTypes from 'prop-types';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import 'github-markdown-css/github-markdown.css';
 
-md2html(
-  path.resolve(__dirname, inputFolder),
-  path.resolve(__dirname, outputFolder)
+import Header from './lib/components/Header';
+import NoteBody from './lib/components/NoteBody';
+
+import note from './source/calculus/notes/0201_the_idea_of_limits.md';
+import './lib/style.css';
+
+const App = props => (
+  <React.Fragment>
+    <Header title={props.title} />
+    <main>
+      <div className="container">
+        <NoteBody note={props.note} />
+      </div>
+    </main>
+  </React.Fragment>
 );
+
+App.propTypes = {
+  title: PropTypes.string.isRequired,
+  note: PropTypes.string.isRequired
+};
+
+ReactDOM.render(<App title="Calculus" note={note} />, document.getElementById('app'));
