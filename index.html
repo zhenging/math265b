@@ -5,12 +5,14 @@
 <meta name="viewport" content="width=device-width">
 
 <head>
-  <title>Calculus</title>
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
   <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({"extensions":["tex2jax.js"],"jax":["input/TeX","output/HTML-CSS"],"messageStyle":"none","tex2jax":{"processEnvironments":false,"processEscapes":true,"inlineMath":[["$","$"],["\\(","\\)"]],"displayMath":[["$$","$$"],["\\[","\\]"]]},"TeX":{"extensions":["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"],"Macros":{"RR":"{\\bf R}","bi":"\\leftrightarrow","Bi":"\\Leftrightarrow","bold":["\\bf #1",1],"dint":"\\displaystyle \\int","dlim":"\\lim\\limits","inv":["\\dfrac{1}{#1}",1],"lb":"\\left\\lbrack","rb":"\\right\\rbrack","To":"\\Rightarrow","ges":"\\geqslant","les":"\\leqslant"}},"HTML-CSS":{"availableFonts":["TeX"]},"displayAlign":"left","displayIndent":"1em"});
+    // eslint-disable-next-line
+    <%= htmlWebpackPlugin.options.mathjax_config %>
   </script>
-  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
-  </script>
+  <script type="text/javascript" async src="/mathjax/MathJax.js"></script>
 </head>
 
 <body>

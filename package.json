@@ -6,9 +6,9 @@
   "main": "index.js",
   "scripts": {
     "start": "babel-node index.js",
-    "dev": "webpack-dev-server --open",
+    "dev": "babel-node $(npm bin)/webpack-dev-server --config config.dev.js --open",
     "build": "webpack --progress",
-    "debug": "babel-node --inspect --debug-brk $(npm bin)/webpack"
+    "debug": "babel-node --inspect $(npm bin)/webpack"
   },
   "keywords": ["markdown-it", "mathjax"],
   "author": "raven",
@@ -53,5 +53,11 @@
     "nodemon": "^1.14.12",
     "webpack-dev-server": "^2.11.1"
   },
-  "eslintIgnore": ["plugin-react2html/index.js"]
+  "eslintIgnore": [
+    "plugin-react2html/index.js",
+    "lib/md2html/markdown-it-mathjax.js",
+    "lib/md2html/markdown-it-container.js",
+    "lib/md2html/markdown-it-pagebreak.js",
+    "index.html"
+  ]
 }

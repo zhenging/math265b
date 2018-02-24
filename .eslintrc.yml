@@ -21,3 +21,5 @@ rules:
       - ".jsx"
   react/no-danger:
     - 0
+  one-var:
+    - 0

@@ -33,6 +33,24 @@ table {
   }
 }
 
+.pagebreak {
+  page-break-before: always;
+}
+
+@media screen and (min-width: 960px) {
+  .container {
+    padding: 30px;
+  }
+}
+
+.container {
+  position: relative;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
 @media print {
-  font-size: 14px;
+  html body {
+    font-size: 12px;
+  }
 }

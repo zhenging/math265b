@@ -9,19 +9,7 @@
   height: 100%;
 }
 
-@media screen and (min-width: 960px) {
-  .container {
-    padding: 30px;
-  }
-}
-
-.container {
-  position: relative;
-  max-width: 980px;
-  margin: 0 auto;
-}
-
-@@media print {
+@media print {
   .header {
     display: none;
   }

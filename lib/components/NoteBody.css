@@ -1,27 +1,43 @@
 main {}
 
-.note-menu-container {
-  height: 70px;
-  border-radius: 4px 4px 0 0;
-  background-color: #f9fafa;
-  border-top: 4px solid #39ADD1;
-  border-bottom: 1px solid #dadfe3;
-}
-
 .note-meta {
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
   background-color: #f9fafa;
   border-top: 4px solid #38accd;
+  border-bottom: 1px solid #dadfe3;
   min-height: 60px;
+}
+
+.note-body {
+  background-color: #ffffff;
 }
 
 .note-content {
   padding: 10px 30px;
 }
 
+.named-container {
+  background-color: #f8f8f8;
+  padding: 0.5em 1em;
+  color: #6a737d;
+  border-left: 0.25em solid #dfe2e5;
+}
+
+.note-solution {}
+
+.note-example {}
+
+.note-defintion {}
+
+.note-procedure {}
+
+.note-theorem {}
+
 .markdown-body {
   min-height: 200px;
+}
+
+.markdown-body p {
+  margin-bottom: 8px;
 }
 
 .markdown-body h3 {
@@ -30,6 +46,11 @@ main {}
   color: #ffffff;
 }
 
-.note-body {
-  background-color: #ffffff;
+@media print {
+  .note-meta {
+    display: none;
+  }
+  .markdown-body {
+    font-size: 1em;
+  }
 }

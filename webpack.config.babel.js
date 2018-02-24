@@ -12,6 +12,7 @@ const NOTES_SOURCE_PATH = path.join(__dirname, 'source');
 const OUTPUT_PATH = path.join(__dirname, 'build');
 
 const common = {
+  context: __dirname,
   module: {
     rules: [
       {
@@ -25,7 +26,7 @@ const common = {
       },
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader']
+        use: ['css-loader']
       }
     ]
   },
@@ -98,7 +99,7 @@ const prodConfig = merge(common, { plugins, target: 'node' });
 const configMap = {
   dev: devConfig,
   build: prodConfig,
-  debug: prodConfig
+  debug: devConfig
 };
 const event = process.env.npm_lifecycle_event;
 const config = configMap[event];
