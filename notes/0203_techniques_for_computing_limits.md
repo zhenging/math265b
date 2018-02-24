@@ -12,7 +12,7 @@ $$
 
 **Example 1 Limits of Linear function** Evaluating the following limits.
 a. $\dlim_{x \to a}f(x)$, where $f(x) = \frac{1}{2}x - 7$ &emsp; b. $\dlim_{x \to 2}g(x)$, where $g(x) = 6$
->**Solution**
+>Solution
 a. $-\dfrac{11}{2}$ &emsp; b. $6$
 
 #### Limit Laws
@@ -41,7 +41,7 @@ In Law 7, the limit of $[f(x)]^{n/m}$ involves the $m$th root of $f(x)$ where $x
 **Example 2 Evaluation Limits**
 Suppose $\dlim_{x \to 2}f(x) = 4$, $\dlim_{x \to 2}g(x) = 5$, and $\dlim_{x \to 2}h(x) = 8$. Use the limit laws in Theorem 2.3 to compute each limit.
 a. $\dlim_{x \to 2}{\frac{f(x)-g(x)}{h(x)}}$ &emsp; b. $\dlim_{x \to 2}[6f(x)g(x) + h(x)]$ &emsp; c. $\dlim_{x \to 2}[g(x)]^{13}$
->**Solution**
+>Solution
 a. $-\frac{1}{8}$ &emsp; b. $128$ &emsp; c. $125$
 
 #### Limits Of Polynomial and Rational Functions
@@ -59,12 +59,12 @@ b. Rational functions: $\dlim_{x \to a} \frac{p(x)}{q(x)} = \frac{\dlim_{x \to a
 
 **Example 3 Limits of a rational function**
 Evaluate $\dlim_{x \to 2}{\frac{3x^2 - 4x}{5x^3 - 36}}$
->**Solution**
+>Solution
 $1$
 
 **Example 4 An algebraic function**
 Evaluate $\dlim_{x \to 2}{\dfrac{\sqrt{2x^3 + 9} + 3x -1}{4x + 1}}$
->**Solution**
+>Solution
 $\dfrac{10}{9}$
 
 #### One-sided Limits
@@ -79,7 +79,7 @@ b. $\dlim_{x \to a^-}[f(x)]^{n/m} = \lb\dlim_{x \to a^-}f(x)\rb^{n/m}$, provided
 **Example 5 Calculating left- and right-sided limits**
 Let $f(x) = \cases{-2x + 4 &\text{if  } x \les 1\\
 \sqrt{x-1}  &\text{if  } x \ges 1}$. Find the values of $\dlim_{x \to 1^-}f(x)$, $\dlim_{x \to 1^+}f(x)$, and $\dlim_{x \to 1}f(x)$, or state that they do not exist.
->**Solution**
+>Solution
 $\dlim_{x \to 1^-}f(x) = 2$
 $\dlim_{x \to 1^+}f(x) = 0$
 $\dlim_{x \to 1}f(x)$ does not exist.
@@ -89,14 +89,14 @@ So far, we have evaluated limits by direct substitution. A more challenging prob
 
 **Example 6 Other Techniques Evaluate the following limits.**
 a. $\dlim_{x \to 2}{\dfrac{x^2 -6x + 8}{x^2-4}}$ &emsp; b. $\dlim_{x \to 1}{\dfrac{\sqrt{x} - 1}{x-1}}$
->**Solution**
+>Solution
 a. $-\dfrac{1}{2}$ &emsp; b. $\dfrac{1}{2}$
 
 #### An Important Limit
 Despite our success in evaluating limits using direct substitution, algebraic manipulation and the limits laws, there are import limits for which these techniques do not work, such limit arises when investigating the slope of a line tangent to the graph of an exponential function.
 
 **Example 7 Slope of the line tangent to $f(x) = 2^x$** Estimate the slope of the line tangent to the graph of $f(x) = 2^x$ at the point $P(0, 1)$.
->**Solution**
+>Solution
 In section 2.1, the slope of a tangent line was obtained by finding the limits of slopes of secant lines; the same strategy is employed here. We begin by selecting a point $Q$ and $P$ on the graph of $f$ with coordinates $(x, 2^x)$. The secant line joining $P(0, 1)$ and $Q(x, 2^x)$ is approximation to the tangent line. To compute the slope of the tangent line (denoted by $m_{tan}$) at $x=0$, we look at the slope of the secant line $m_{tan} = (2^x - 1)/x$ and the limit as $x$ approaches $0$.
 The limit $\dlim_{x \to }{\frac{2^x - 1}{x}}$ exists only if it has the same values as $x \to a^+$ and as $x \to a^-$. Because it is not an elementary limits, it cannot be evaluated using the limit laws of this section. Instead, we investigate the limit using numerical evidence. Choosing positive values of $x$ near $0$ in Table 2.5.
 
@@ -121,9 +121,9 @@ $$
 $$
 Use the Squeeze Theorem to confirm the following limits.
 a. $\dlim_{x \to 0}\sin{x} = 0$ &emsp; b. $\dlim_{x \to 0}\cos{x} = 1$
->**Solution**
+>Solution
 Todo
 
 **Example 9 Applying the Squeeze Theorem.** Use the Squeeze Theorem to verify that $\dlim_{x \to 0}{x^2\sin(1/x)} = 0$.
->**Solution**
+>Solution
 Todo

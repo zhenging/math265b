@@ -35,12 +35,12 @@ $$
 **Example 2 Using the Quotient Rule**
 Find and simplify the following derivatives.
 a. $\dfrac{d}{dx}{\lb\frac{x^2+3x+4}{x^2-1}\rb}$ &emsp; b. $\dfrac{d}{dx}{(e^{-x})}$
->**Solution**
+>Solution
 a. $\dfrac{-3x^2-10x-3}{(x^2-1)^2}$ &emsp; b. $-e^{-x}$
 
 **Example 3** Finding tangent line
 Find the equation of the line tangent to the graph of $f(x) = \dfrac{x^2+1}{x^2-4}$ at the point $(3, 2)$. Plot the curve and the tangent line.
->**Solution**
+>Solution
 To find the slope of the tangent line, we compute $f'$ using the Quotient Rule:
 $$
 f'(x) = \frac{d}{dx}{(\frac{x^2+1}{x^2-4})} = \frac{-10x}{(x^2-4)^2}
@@ -61,7 +61,7 @@ If $n$ is any integer, then $\dfrac{d}{dx}(x^n) = nx^{n-1}$.
 
 **Example 4 Using the Extended Power Rule**
 a. $\dfrac{d}{dx}(\dfrac{9}{x^5})$ &emsp; b. $\dfrac{d}{dt}(\dfrac{3t^{16} -4}{t^6})$
->**Solution**
+>Solution
 a. $-45x^{-6}$ &emsp; b. $30t^9 + 24t^{-7}$
 
 #### The Derivative of $e^{kx}$
@@ -70,7 +70,7 @@ For real number $k$, $\dfrac{d}{dx}(e^{kx}) = ke^{kx}$.
 
 **Example 5** Exponential derivatives
 a. $y = xe^{5x}$ &emsp; b. $y = 1000e^{0.07x}$
->**Solution**
+>Solution
 a. $y' = (1+5x)e^{5x}$ &emsp; b. $y' = 70e^{0.07x}$
 
 #### Rates of Change
@@ -84,5 +84,5 @@ Todo
 **Example 7** Combining derivative Rules
 $y = \dfrac{4xe^x}{x^2 + 1}$
 
->**Solution**
+>Solution
 $y' = \dfrac{4e^x(x^3-x^2+x+1)}{(x^2+1)^2}$

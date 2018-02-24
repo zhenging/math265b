@@ -44,7 +44,7 @@ $$
 **Example 1** Derivative involving $\ln x$
 Find $\displaystyle\frac{dy}{dx}$ for the following functions.
 a. $y=\ln{4x}$ &emsp; b. $y=x\ln{x}$ &emsp; c. $y=\ln{|\sec x|}$ &emsp; d. $y=\dfrac{\ln{x^2}}{x^2}$
->**Solution**
+>Solution
 $$
 \eqalign{
 a. \frac{dy}{dx} &= \frac{d}{dx}(\ln{4x}) = \frac{d}{dx}(\ln{4} + \ln{x}) \\
@@ -76,12 +76,12 @@ If $b > 0$ and $b \ne 1$, then for all $x$, $\dfrac{d}{dx}(b^x) = b^x{\ln b}$.
 **Example 2** Derivatives with $b^x$
 Find the derivative of the following functions.
 a. $f(x) = 3^x$ &emsp; b. $g(t) = 108 \cdot 2^{t/12}$
->**Solution**
+>Solution
 a. $f'(x) = 3^x{\ln 3}$
 b. $f'(x) = 9{\ln 2}\cdot 2^{t/12}$
 
 **Example 3** An exponential model
->**Solution**
+>Solution
 Todo
 
 #### The General Power Rule
@@ -103,7 +103,7 @@ $$
 **Example 4** Comuting derivatives
 Find the derivatives of the following functions.
 a. $y=x^{\pi}$ &emsp; b. $y={\pi}^x$ &emsp; c. $y=(x^2 + 4)^e$
->**Solution**
+>Solution
 a. $y'(x) = {\pi}x^{\pi -1}$
 b. $y'(x) = {\pi}^x {\ln \pi}$
 c. $y'(x) = 2ex(x^2 + 4)^{e-1}$
@@ -111,7 +111,7 @@ c. $y'(x) = 2ex(x^2 + 4)^{e-1}$
 **Example 5** General exponential functions
 Let $f(x) = x^{\sin x}$
 a. Find $f'(x)$ &emsp; b. Evaluate $f'(\frac{\pi}{2})$
->**Solution**
+>Solution
 a.
 $$
 \eqalign{
@@ -124,7 +124,7 @@ b. $f'(\frac{\pi}{2}) = 1$
 
 **Example 6** Finding a horizontal tangent line
 Determine whether the graph of $f(x) = x^x$, for $x>0$, has any horizontal tangent line.
->**Solution**
+>Solution
 A horizontal tangent occurs when $f'(x) = 0$. In order to find the derivative, we first write $f(x) = x^x = e^{x {\ln x}}$:
 $$
 \eqalign{
@@ -167,7 +167,7 @@ $$
 Compute the derivativec of the following functions <br>
 a. $f(x) = \log_{5}(2x+1)$
 b. $T(n) = n{\log_{2}n}$
->**Solution**
+>Solution
 $$
 \eqalign{
 a. f'(x) &= \frac{1}{(2x + 1){\ln 5}} \cdot 2 = \frac{2}{\ln 5} \cdot \frac{1}{(2x+ 1)} \\
@@ -179,7 +179,7 @@ $$
 
 **Example 8** Logarithmic Differentiation <br>
 Let $\displaystyle f(x) = \frac{(x^3 - 1)^4 {\sqrt {3x-1}}}{x^2 + 4}$ and compute $f'(x)$
->**Solution**
+>Solution
 We begin by taking the natural logarithm of both sides and simplifying the result:
 $$
 \eqalign{

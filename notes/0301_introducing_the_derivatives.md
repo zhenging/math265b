@@ -21,7 +21,7 @@ y-f(a) = m_{tan}(x-a)
 $$
 
 **Examples 1 Equation of a tangent line**
->**Solution**
+>Solution
 Todo
 
 Alternative Definition - **Rates of Change and the Tangent Line**
@@ -40,7 +40,7 @@ $$
 
 **Examples 2** Equation of a tangent line
 Find an equation of the line tangent to the graph of $f(x) = x^3 + 4x$ at $x=1$.
->**Solution**
+>Solution
 $y=7x-2$
 
 #### The Derivative Function
@@ -53,7 +53,7 @@ provided the limit exists and $x$ is the domain of $f$. If $f'(x)$ exists, we sa
 
 **Examples 3 The slope of a curve**
 Consider once again the function $f(x) = -16x^2 + 96x$ of Example 1 and find its derivative.
->**Solution**
+>Solution
 $f'(x) = -32x + 96$
 
 #### Derivative Notation

@@ -30,7 +30,7 @@ $$
 **Example 1** Derivatives involving the inverse sine
 Compute the following derivatives
 a. $\dfrac{d}{dx}({\sin^{-1} (x^2-1)})$ &emsp; b. $\dfrac{d}{dx}({\cos ({\sin^{-1} x})})$
->**Solution**
+>Solution
 a. $\dfrac{d}{dx}({\sin^{-1} (x^2-1)}) = \frac{2x}{{\sqrt {2x^2 - x^4}}}$
 b. $\dfrac{d}{dx}({\cos ({\sin^{-1} x})}) = -\frac{x}{\sqrt {1-x^2}}$
 
@@ -98,7 +98,7 @@ are used to show that the derivative of ${\cot^{-1} x}$ and ${\csc^{-1} x}$ are 
 **Example 2** Derivatives of inverse trigonometric functions
 a. Evaluate $f'(2 {\sqrt {3}})$, where $f(x) = x {\tan^{-1} (x/2)}$
 b. Find an equation of the line tangent of the graph of $g(x) = {\sec^{-1} (2x)}$ at the point $(1, \pi/3)$.
->**Solution**
+>Solution
 $$
 \eqalign{
 \text{a.} \quad f'(x) &= 1 \cdot {\tan^{-1} \frac{x}{2}} + x \cdot \frac{1}{1+(x/2)^2} \cdot \frac{1}{2} \\
@@ -119,7 +119,7 @@ y - \frac{\pi}{3} = \frac{1}{\sqrt {3}} (x-1) \quad \text{or} \quad y = \frac{1}
 $$
 
 **Example 3** Shadows in a ballpart.
->**Solution**
+>Solution
 Todo
 
 #### Derivatives of Inverse Functions in General
@@ -130,7 +130,7 @@ a. Write the inverse of $f$ in the form $y = f^{-1}(x)$.
 b. Find the derivative of the inverse $\dfrac{d}{dx}(f^{-1}(x))$.
 c. Consider the specific case $f(x) = 2x - 6$. Graph $f$ and $f^{-1}$, and find the slope of each line.
 
->**Solution**
+>Solution
 a. Solving $y = mx + b$ for $x$, we find that $mx = y - b$, or
 $$
 x = \frac{y}{m} - \frac{b}{m}
@@ -169,7 +169,7 @@ We have shown that $(f^{-1})'(y_0)$ exists ($f^{-1}$ is differentiable at $y_0$)
 
 **Example 5** Derivative of an inverse function
 $f(x) = {\sqrt {x}} + x^2 + 1$ is one-to-one, for $x \ges 0$, and has an inverse on that interval. Find the slope of the curve $y = f^{-1}(x)$ at point $(3, 1)$.
->**Solution**
+>Solution
 The point $(1, 3)$ is on the graph of $f$; therefore $(3, 1)$ is on the graph of $f^{-1}$. In this case, the slope of the curve $y = f^{-1}(x)$ at point $(3, 1)$ is the reciprocal of the slope of the curve $y = f(x)$ at point $(1, 3)$. Note that $\displaystyle f(x) = \frac{1}{2 {\sqrt {x}}} + 2x$, which means that $f'(1) = \frac{1}{2} + 2 = \frac{5}{2}$. Therefore,
 $$
 (f^{-1})(3) = \frac{1}{f'(1)} = \frac{1}{5/2} = \frac{2}{5}

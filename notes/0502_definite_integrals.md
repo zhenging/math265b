@@ -3,7 +3,7 @@
 #### Net Area
 
 **Exmaple 1** Interpreting Riemann sums
->**Solution**
+>Solution
 Todo
 
 >**Definition Net Area**
@@ -41,7 +41,7 @@ $$
 \lim_{{\Delta} \to 0}{\sum_{k=1}^n}(3x_k^{*2} + 2x_k^* + 1){\Delta x_k}
 $$
 is the limit of a Riemann sum for a function $f$ on $[1, 3]$. Identify the function $f$ and express the limit as a definite integral. What does the definite integral represent geometrically?
->**Solution**
+>Solution
 By comparing the sum $\displaystyle {\sum_{k=1}^n}f(x_k^*){\Delta x_k}$ , we see that $f(x) = 3x^2 + 2x + 1$. Because $f$ is polynomial, it is continuous on $[1, 3]$ and is, therefore, integrable on $[1, 3]$. It follows that
 $$
 \lim_{{\Delta} \to 0}{\sum_{k=1}^n}(3x_k^{*2} + 2x_k^* + 1){\Delta x_k} = \int_1^3 {(3x^2 + 2x + 1)}dx.
@@ -53,11 +53,11 @@ Using familiar area formulas to evaluate the following definite integrals
 a. $\dint_2^4 {(2x+3)}dx$
 b. $\dint_1^6 {(2x-3)}dx$
 c. $\dint_3^4 {\sqrt {1-(x-3)^2}}dx$ <br>
->**Solution**
+>Solution
 a. $18$ b.$5$ c.$\frac{\pi}{4}$
 
 **Example 4** Definite integrals from graphs
->**Solution**
+>Solution
 Todo
 
 #### Properties of Definite Integrals
@@ -92,7 +92,7 @@ Let $f$ and $g$ be integrable functions on an interval that contains $a$, $b$, a
 Assume that $\dint_0^5 {f(x)}dx = 3$ and $\dint_0^7 {f(x)}dx = -10$. Evaluate the following integrals, if possible
 a. $\dint_0^7 {2f(x)}dx$ &emsp; b. $\dint_5^7 {f(x)}dx$ &emsp; c. $\dint_5^0 {f(x)}dx$ &emsp; d. $\dint_7^0 {6f(x)}dx$ &emsp; e. $\dint_0^7 {|f(x)|}dx$
 
->**Solution**
+>Solution
 a. -20 b. -13 c. -3 d. 60 e. This integral can not be evaluated.
 
 #### Evaluating Definite Integral Using Limits
@@ -104,7 +104,7 @@ $$
 
 **Example 6** Evaluating definite integrals
 Find the value of $\dint_0^2 {(x^3 + 1)}dx$ by evaluating a right Riemann sum and letting $n \To \infty$.
->**Solution**
+>Solution
 The interval $[a, b] = [0, 2]$ is divided into $n$ subintervals of length $\displaystyle {\Delta x} = \frac{b-a}{n} = \frac{2}{n}$, which produces the grid points
 $$
 x_k^* = a + k{\Delta x} = 0 + k \cdot \frac{2}{n}, \text{for }k = 1, 2, \cdots, n

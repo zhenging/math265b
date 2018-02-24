@@ -10,7 +10,7 @@ Let $F$ be any antiderivative of $f$ on the interval $I$. Then **all** the antid
 
 **Example 1** Finding Antiderivatives Use what you know about derivatives to find all antiderivatives of the following functions.
 a. $f(x)=3x^2$ &emsp; b. $f(x)=\dfrac{1}{1+x^2}$ &emsp; c. $f(x) = \sin x$
->**Solution**
+>Solution
 a. $F(x) = x^3 + C$
 b. $F(x) = \tan^{-1} x + C$
 c. $F(x) = -\cos x + C$
@@ -52,7 +52,7 @@ $$
 
 **Example 3 Indefinite integrals of trigonometric functions** Determine the following indefinite integrals.
 a. $\int \sec^2 3xdx$ &emsp; b. $\int \cos \frac{x}{2}dx$
->**Solution**
+>Solution
 a. $\int \sec^2 3xdx = \frac{1}{3}\tan 3x + C$
 b. $\int \cos \frac{x}{2}dx = 2\sin \frac{x}{2} + C$
 
@@ -73,7 +73,7 @@ $$
 
 **Example 4 Indefinite integrals** Determine the following indefinite integrals
 a. $\int e^{-10x}dx$ &emsp; b. $\int \frac{4}{\sqrt{9-x^2}} dx$ &emsp; c. $\int \frac{dx}{16x^2+1}$
->**Solution**
+>Solution
 a. $\int e^{-10x}dx = -\frac{1}{10}e^{-10x} + C$
 b. $\int \dfrac{4}{\sqrt{9-x^2}} dx = 4\int \dfrac{dx}{\sqrt{3^2-x^2}} = 4\sin^{-1} \dfrac{x}{3} + C$
 c. $\int \dfrac{dx}{16x^2+1} = \dfrac{1}{16} \int \dfrac{dx}{x^2 + (\frac{1}{4})^2} = \dfrac{1}{16} \cdot 4\tan^{-1} 4x + C$

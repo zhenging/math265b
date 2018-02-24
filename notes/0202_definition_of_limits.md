@@ -27,17 +27,17 @@ $$
 and say the limit of $f(x)$ as $x$ approaches $a$ from the left equals > $L$.
 
 **Exmaple 3 Examing limits graphically and numerically**
->**Solution**
+>Solution
 Todo
 
 >**Theorem 2.1 Relationship Between One-sided and Two-sided Limits**
 Assume $f$ is defined for all $x$ near $a$ except possibly at $a$. Then $\dlim_{x \to a}{f(x)} = L$ if and only if $\dlim_{x \to a^+}{f(x)} = L$ and $\dlim_{x \to a^-}{f(x)} = L$
 
 **Exmaple 4 A function with a jump**
->**Solution**
+>Solution
 Todo
 
 **Exmaple 5 Some strange behavior**
 Examine $\dlim_{x \to 0}{\cos {\dfrac{1}{x}}}$
->**Solution**
+>Solution
 Todo

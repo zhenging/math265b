@@ -34,7 +34,7 @@ If $n$ is a positive integer, then $\frac{d}{dx}(x^n) = nx^{n-1}$.
 **Example 1** Derivatives of power and constant functions<br>
 a. $\dfrac{d}{dx}(x^9)$ &emsp; b. $\dfrac{d}{dx}(x)$ &emsp; c. $\dfrac{d}{dx}(2^8)$
 
->**Solution**
+>Solution
 a. $\dfrac{d}{dx}(x^9) = 9x^8$ &emsp; b. $\dfrac{d}{dx}(x) = 1$ &emsp; c. $\dfrac{d}{dx}(2^8) = 0$
 
 #### Constant Multiple Rule
@@ -58,7 +58,7 @@ $$
 
 **Example 2 Derivatives of constant multiples of functions**
 a. $\dfrac{d}{dx}(-\dfrac{7x^{11}}{8})$ &emsp; b. $\dfrac{d}{dt}(\dfrac{3}{8}\cdot \sqrt t)$
->**Solution**
+>Solution
 a. $\dfrac{d}{dx}(-\dfrac{7x^{11}}{8}) = -\dfrac{77}{8}x^{10}$ &emsp; b. $\dfrac{d}{dt}(\dfrac{3}{8}\cdot \sqrt t) = \dfrac{3}{16 \sqrt t}$
 
 #### Sum Rule
@@ -72,7 +72,7 @@ The **Sum Rule**
 
 **Example 3** The derivatives of a polynomial
 Determine $\dfrac{d}{dw}{(2w^3 + 9w^2 - 6w + 4)}$
->**Solution**
+>Solution
 $$
 \eqalign{
 \frac{d}{dw}{(2w^3 + 9w^2 - 6w + 4)}
@@ -115,12 +115,12 @@ $$
 **Example 4 Finding tangent lines**
 a. Wirte an equation of the line tangent to the graph of $f(x) = 2x - \frac{e^x}{2}$ at the point $(0, \frac{1}{2})$.
 b. Find the points on the graph of $f$ at which the tangent line is horizontal.
->**Solution**
+>Solution
 a. $f'(0) = \dfrac{3}{2}$ &emsp; b. $(\ln 4, f(\ln 4))$
 
 **Example 5 Slope of a tangent line**
 Let $f(x) = 2x^3 -15x^2 + 24x$. For what values of $x$ does the line tangent to the graph of $f$ have a slope of $6$?
->**Solution**
+>Solution
 $x = \dfrac{5 \pm \sqrt 13}{2}$
 
 #### High-Order Derivatives
@@ -138,5 +138,5 @@ $$
 **Example 6 Finding high-order derivatives**
 Find the third derivative of the following functions.
 a. $f(x) = 3x^3 - 5x + 12$ &emsp; b. $y = 3t + 2e^t$
->**Solution**
+>Solution
 a. $f'''(x) = 18$ &emsp; b. $\dfrac{d^3y}{dx^3} = 2e^t$

@@ -5,7 +5,7 @@
 $\dlim_{x \to 0}{\dfrac{\sin x}{x}} = 1$ &emsp; $\dlim_{x \to 0}{\dfrac{\cos x -1}{x}} = 0$
 
 **Proof**  $\dlim_{x \to 0}{\frac{\sin x}{x}} = 1$.
->**Solution**
+>Solution
 $$
 \eqalign{
 \triangle OCD &< \overparen{OBC} < \triangle OAB \\
@@ -18,7 +18,7 @@ $$
 Because $\dlim_{x \to 0}\cos x = 1 = \dlim_{x \to 0}\dfrac{1}{\cos x}$,  according to the Squeeze Theorem, $\dlim_{x \to 0}{\dfrac{\sin x}{x}} = 1$.
 
 **Proof**  $\dlim_{x \to 0}{\dfrac{\cos x -1}{x}} = 0$.
->**Solution**
+>Solution
 $$
 \eqalign{
 \lim_{x \to 0}{\frac{\cos x -1}{x}} &= \lim_{x \to 0}({\frac{\cos x -1}{x}} \cdot \frac{\cos x + 1}{\cos x +1}) \\
@@ -31,7 +31,7 @@ $$
 
 **Example 1** Calculating trigonometric limits<br>
 a. $\dlim_{x \to 0}{\dfrac{\sin 4x}{x}}$ &emsp; b. $\dlim_{x \to 0}{\dfrac{\sin 3x}{\sin 5x}}$
->**Solution**
+>Solution
 a. To use the fact that $\dlim_{x \to 0}{\frac{\sin x}{x}} = 1$, the argument of the sine function in the numerator must bethe same as the denominator. Multiplying and dividing $\dfrac{\sin 4x}{x}$ by 4, we evaluate the limit as follows:
 $$
 \eqalign{
@@ -78,7 +78,7 @@ The fact that $\dfrac{d}{dx}(\cos x) = -\sin x$ is proved in a similar way using
 
 **Example 2** Derivatives involving trigonometric functions
 a. $y=e^{2x}\cos x$ &emsp; b. $y=\sin x - x\cos x$ &emsp; c. $y = \dfrac{1 + \sin x}{1 - \sin x}$
->**Solution**
+>Solution
 a. $y' = e^{2x}(2\cos x - \sin x)$
 b. $y' = x\sin x$
 c. $y' = \dfrac{2\cos x}{(1-\sin x)^2}$
@@ -86,7 +86,7 @@ c. $y' = \dfrac{2\cos x}{(1-\sin x)^2}$
 #### Derivatives of Other Trigonometric Functions
 
 **Example 3** Derivatives of the tangent function. Calculate $\dfrac{d}{dx}(\tan x)$.
->**Solution**
+>Solution
 $$
 \eqalign{
 \frac{d}{dx}(\tan x) &= \frac{d}{dx}(\frac{\sin x}{\ cos x}) \\
@@ -111,7 +111,7 @@ $$
 
 **Example 4** Derivatives involving $\sec x$ and $\csc x$
 Find the derivative of $y = \sec x\csc x$.
->**Solution**
+>Solution
 $$
 \eqalign{
 \frac{dy}{dx} &= \frac{d}{dx}(\sec x\csc x) \\
@@ -137,7 +137,7 @@ $$
 
 **Example 5** Second order derivative.
 Find the derivative of $y = \csc x$.
->**Solution**
+>Solution
 $$
 \eqalign{
 \frac{{d^2}y}{dx^2} &= \frac{d}{dx}(\frac{dy}{dx}) \\

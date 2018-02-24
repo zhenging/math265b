@@ -13,7 +13,7 @@ $$
 **Example 1** Version 1 of the Chain Rule
 For each of the following composite functions, find the inner function $u=g(x)$ and the out function $y = f(u)$. Use Version 1 of the Chain Rule.
 a. $y = (5x + 4)^3$ &emsp; b. $y = \sin^{3}x$ &emsp; c. $y = \sin x^3$
->**Solution**
+>Solution
 a. Inner function $u=5x+4$. Outter function $y=u^3$
 $$
 \eqalign{
@@ -45,7 +45,7 @@ $$
 **Example 2** Version 2 of the Chain Rule
 Use Version 2 of the Chain Rule to calculate the derivatives of the following functions.
 a. $(6x^3 + 3x + 1)^{10}$  &emsp; b. $\sqrt {5x^2 + 1}$ &emsp;c. $\displaystyle(\frac{5t^2}{3t^2 + 2})^3$
->**Solution**
+>Solution
 $$
 \begin{eqnarray}
 a. \frac{dy}{dx} &=& \frac{d}{dx}((6x^3 + 3x + 1)^{10}) \\
@@ -64,7 +64,7 @@ $$
 
 **Example 3** Calculating derivatives at a Point <br>
 
->**Solution**
+>Solution
 Todo
 
 #### Chain Rule For Powers
@@ -77,7 +77,7 @@ $$
 
 **Example 4** Chain Rule For Powers <br>
 Find $\displaystyle\frac{d}{dx}(\tan x + 10)^{21}$.
->**Solution**
+>Solution
 With $g(x) = \tan x + 10$, the Chain Rule gives
 $$
 \eqalign{
@@ -90,12 +90,12 @@ $$
 
 **Example 5** Composition of three functions
 Calculate the derivative of $\sin e^{\cos x}$.
->**Solution**
+>Solution
 $-\sin x \cdot e^{\cos x} \cdot \cos (e^{\cos x})$
 
 **Example 6** Combining Rules <br>
 Find $\displaystyle\frac{d}{dx}{(x^2 \sqrt {x^2 + 1})}$
->**Solution**
+>Solution
 $\dfrac{3x^3 + 2x}{\sqrt {x^2 + 1}}$
 
 #### Proof of the Chain Rule

@@ -7,7 +7,7 @@ Suppose the velocity in meters/second of an object moving along a line is given 
 a. Begin by dividing $[0,8]$ into $n=2$ subintervals: $[0, 4]$ and $[4,8]$
 b. Dividing $[0,8]$ into $n=4$ subintervals: $[0, 2],[2, 4], [4, 6]$ and $[6,8]$.
 c. Dividing $[0,8]$ into $n=8$ subintervals of equal length.
->**Solution**
+>Solution
 Todo
 
 #### Approximating Areas by Riemann Sums
@@ -33,15 +33,15 @@ is called a **Riemann Sum** for $f$ on $[a, b]$. This sum is
 3\. a **midpoint Riemann Sum** if $x_k^*$ is the midpoint of > $[x_{k-1}, x_k]$
 
 **Example 2** Area under the sine curve
->**Solution**
+>Solution
 Todo
 
 **Example 3** A midpoint Riemann Sum
->**Solution**
+>Solution
 Todo
 
 **Example 4** Riemann Sum from Tables
->**Solution**
+>Solution
 Todo
 
 #### Sigma (Summation) Notation

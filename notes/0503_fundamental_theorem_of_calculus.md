@@ -15,11 +15,11 @@ $$
 where $x \ges t$. The area function gives the net area of the region bounded by the graph of $f$ and the $t$-axis on the interval $[a, x]$.
 
 **Example 1** Area regions
->**Solution**
+>Solution
 Todo
 
 **Example 2** Area of a trapezoid
->**Solution**
+>Solution
 Todo
 
 #### Fundamental Theorem of Calculus
@@ -62,20 +62,20 @@ or the definite integral of the derivative of $f$ is give in terms of $f$ evalua
 **Example 3** Evaluating definite integrals
 Evaluating the following definite integrals using the Fundamental Theorem of Calculus, Part 2. Interpret each result geometrically.
 a. $\dint_0^{10} {(60x-x^2)}dx$ &emsp; b. $\dint_0^{2\pi} {3{\sin x}}dx$ &emsp; c. $\dint_{1/16}^{1/4} {\frac{{\sqrt {t} -1}}{t}}dx$
->**Solution**
+>Solution
 a. $1000$ b. $0$ c. $\frac{1}{2} - \ln 4$
 
 **Example 4** Net areas and definite integrals
 The graph of $f(x) = 6x(x+1)(x-2)$ is shown in Figure 5.44. The region $R_1$ is bounded by the curve and the x-axis on the inteval $[-1, 0]$, and $R_2$ is bounded by the curve and the x-axis on the interval $[0, 2]$.
 a. Find the *net area* of the region between the curve and the x-axis on $[-1, 2]$
 b. Find the *area* of the region between the curve and the x-axis on $[-1, 2]$.
->**Solution**
+>Solution
 a. $-\dfrac{27}{2}$ &emsp; b.$-\dfrac{37}{2}$
 
 **Example 5** Derivatives of integrals
 Use Part 1 of the Fundamental Theorem to simplify the following expressions.
 a. $\dfrac{d}{dx}{\dint_1^x {\sin^2 t}dt}$ &emsp; b. $\dfrac{d}{dx}{\dint_x^5 {\sqrt {t^2 + 1}}dt}$ &emsp; c. $\dfrac{d}{dx}{\dint_0^{x^2} {\cos t^2}dt}$
->**Solution**
+>Solution
 a.
 $$
 \frac{d}{dx}{\int_1^x {\sin^2 t}dt} = {\sin^2 x}
@@ -99,12 +99,12 @@ $$
 $$
 
 **Example 6** Working with area functions
->**Solution**
+>Solution
 Todo
 
 **Example 7** The sine integral function
 Let $g(t) = \cases{\frac{{\sin t}}{t} &if t>0\\ 1 &\text{if } t = 1}$. Graph the sine integral function $S(x) = \int_0^x {g(t)}dt$
->**Solution**
+>Solution
 Todo
 
 **Proof of the Fundamental Theorem**

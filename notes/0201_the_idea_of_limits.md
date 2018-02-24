@@ -6,14 +6,14 @@
 A rock is lauched vertically upward from the ground with a speed of $96ft/s$. Neglecting air resistance, a well-known formula from physics states that position of the rock after $t$ seconds is give by the function $s(t) = -16t^2 + 96t$. The position $s$ is measured in feet with $s=0$ corresponding to the ground. Find the average velocity of the rock between each pair of times.
 a. $t=1s$ and $t=3s$
 b. $t=1s$ and $t=2s$
->**Solution**
+>Solution
 a. $32ft/s$ &emsp; b. $48ft/s$
 
 #### Instantaneous Velocity
 
 **Example 2 Instantaneous Velocity**
 Estimate the *instantaneous velocity* of the rock in Example 1 at the single point $t = 1s$.
->**Solution**
+>Solution
 $$
 \eqalign{
 v_{av} &= \frac{s(t) - s(1)}{t - 1} \\
