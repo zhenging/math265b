@@ -20,6 +20,8 @@ main {}
   padding: 0.5em 1em;
   color: #6a737d;
   border-left: 0.25em solid #dfe2e5;
+  margin-bottom: 20px;
+  page-break-inside: avoid;
 }
 
 .note-solution {}
@@ -36,14 +38,10 @@ main {}
   min-height: 200px;
 }
 
-.markdown-body p {
-  margin-bottom: 8px;
-}
-
 .markdown-body h3 {
-  background-color: #007998;
-  padding: 5px 10px;
-  color: #ffffff;
+  /* background-color: #007998; */
+  /* padding: 5px 10px; */
+  color: #ec407a;
 }
 
 @media print {
@@ -52,5 +50,16 @@ main {}
   }
   .markdown-body {
     font-size: 1em;
+  }
+  .named-container {
+    margin-bottom: 2px;
+  }
+  .markdown-body p {
+    margin-bottom: 8px;
+  }
+  .markdown-body h3 {
+    background-color: white;
+    color: black;
+    margin-bottom: 2px;
   }
 }

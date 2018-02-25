@@ -6,7 +6,7 @@ import 'github-markdown-css/github-markdown.css';
 import Header from './lib/components/Header';
 import NoteBody from './lib/components/NoteBody';
 
-import note from './source/calculus/notes/0201_the_idea_of_limits.md';
+import note from '../calculus/homework/hw0707.md';
 import './lib/style.css';
 
 const App = props => (

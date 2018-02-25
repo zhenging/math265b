@@ -34,7 +34,7 @@ table {
 }
 
 .pagebreak {
-  page-break-before: always;
+  /* page-break-before: always; */
 }
 
 @media screen and (min-width: 960px) {
