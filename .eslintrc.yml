@@ -23,3 +23,5 @@ rules:
     - 0
   one-var:
     - 0
+  no-debugger:
+    - 0

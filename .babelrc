@@ -1,4 +1,13 @@
 {
   "presets": ["react", "env"],
-  "plugins": []
+  "plugins": [
+    [
+      "css-modules-transform",
+      {
+        "extensions": [".css"],
+        "extractCss": "./build/combined.css",
+        "generateScopedName": "./generateScopedName.js"
+      }
+    ]
+  ]
 }

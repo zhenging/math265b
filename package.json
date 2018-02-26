@@ -1,22 +1,26 @@
 {
   "name": "note-x",
   "version": "0.0.1",
-  "description":
-    "This project is for parsing markdown and mathjax hybrid text content and outputting html page with nice presentation.",
+  "description": "This project is for parsing markdown and mathjax hybrid text content and outputting html page with nice presentation.",
   "main": "index.js",
   "scripts": {
     "start": "babel-node index.js",
     "dev": "babel-node $(npm bin)/webpack-dev-server --config config.dev.js --open",
     "build": "webpack --progress",
-    "debug": "babel-node --inspect $(npm bin)/webpack"
+    "debug": "babel-node --inspect $(npm bin)/webpack --config webpack.config.debug.js",
+    "nodemon": "nodemon index.js"
   },
-  "keywords": ["markdown-it", "mathjax"],
+  "keywords": [
+    "markdown-it",
+    "mathjax"
+  ],
   "author": "raven",
   "license": "UNLICENSED",
   "dependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
+    "babel-plugin-css-modules-transform": "^1.4.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
@@ -25,6 +29,7 @@
     "css-loader": "^0.28.9",
     "eval": "^0.1.2",
     "extract-text-webpack-plugin": "^3.0.2",
+    "findit": "^2.0.0",
     "fs-extra": "^5.0.0",
     "gh-pages": "^1.1.0",
     "github-markdown-css": "^2.10.0",
@@ -37,10 +42,10 @@
     "raw-loader": "^0.5.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-to-html-webpack-plugin": "^2.2.0",
     "style-loader": "^0.20.1",
     "webpack": "^3.11.0",
-    "webpack-merge": "^4.1.1"
+    "webpack-merge": "^4.1.1",
+    "webpack-node-externals": "^1.6.0"
   },
   "devDependencies": {
     "eslint": "^4.17.0",
