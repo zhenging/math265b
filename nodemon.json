@@ -2,5 +2,5 @@
   "verbose": true,
   "ignore": ["node-modules", "build"],
   "execMap": { "js": "babel-node --inspect" },
-  "watch": [".babelrc", "*./js", "lib/**/*.*"]
+  "watch": [".babelrc", "*.js", "lib/**/*.*"]
 }

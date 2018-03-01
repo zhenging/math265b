@@ -1,6 +1,6 @@
-import HtmlWebpackPlugin from 'html-webpack-plugin';
-import path from 'path';
-import mjConfig from './lib/mjConfig';
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
+const mjConfig = require('./lib/mjConfig');
 
 const ENTRY_PATH = path.join(__dirname, 'index.js');
 const OUTPUT_PATH = path.join(__dirname, 'build');
@@ -11,7 +11,6 @@ const htmlWebpackPlugin = new HtmlWebpackPlugin({
   mathjax_config: mjConfig
 });
 
-// for development
 const config = {
   entry: ENTRY_PATH,
   output: {
@@ -42,10 +41,14 @@ const config = {
   },
   target: 'web',
   watch: true,
+  watchOptions: {
+    ignored: /node_modules/
+  },
   devtool: 'source-map',
   devServer: {
     contentBase: [OUTPUT_PATH, 'node_modules'],
     stats: 'errors-only',
+    open: true,
     port: 3000,
     overlay: {
       errors: true,
