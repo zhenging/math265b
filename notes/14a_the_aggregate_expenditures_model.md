@@ -25,39 +25,39 @@ where $C$ is consumption, $AE_0$ is autonomous expenditure, and $Y$ is Real GDP 
 2. Equilibrium Can Occur Away from Full Employment
 3. The Spending **Multiplier**
 $$
-Multiplier = \frac{1}{1- MPC}\\
-initial \:  spending \times Multiplier  = total \: spending
+\begin{aligned}
+Multiplier &= \frac{1}{1- MPC}\\
+initial \:  spending \times Multiplier  &= total \: spending
+\end{aligned}
 $$
 > Example (Income Inequality)
 CEO's MPC is $0.5$, and employee's MPC is $0.95$
 1\. Reward CEO 1 million bonus
 2\. Reward each of 10000 employees 100 dollars.
 
-
 2 reasons why people spend money.
 1. Autonomous expenditure (Independent of income level)
 2. Induced expenditure (dependent on income)
 
-
-#### Autonomous Aggregate Expenditure = Sum of all Autonomous 
+#### Autonomous Aggregate Expenditure = Sum of all Autonomous
 $$
 AE_0 = C_0 + I_0 + G_0 + NX_0
 $$
 
-#### Equilibrium 
+#### Equilibrium
 Aggregate Expenditure (AE) = Income (Y) (RGDP)
 $$
-\eqalign{
+\begin{aligned}
 AE_0 &= C_0 + I_0 + G_0 + NX_0\\
 AE &= C_0 + MPC \cdot Y + I_0 + G_0 + NX_0\\
 AE &= AE_0+ MPC \cdot Y\\
 AE &= AE_0 \cdot \frac{1}{1-MPC}
-}
+\end{aligned}
 $$
 
-#### Inequilibrium 
-production > expenditure $\To$ positive inventory 
-production < expenditure $\To$ negative inventory 
+#### Inequilibrium
+production > expenditure $\To$ positive inventory
+production < expenditure $\To$ negative inventory
 
 Assume $AE = 5000 + 0.5Y$
 

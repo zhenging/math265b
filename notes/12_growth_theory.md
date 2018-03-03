@@ -14,13 +14,13 @@ Observations of the real world shape economic theory. Economic theory then infor
 #### A Nation's Production Function
 + A **production function** for a firm describes the relationship between the inputs the firm uses and the output it creates. In equation form, the production function for a single firm is
 $$
-q = f(physical \: capital, human \: capital) \tag{Equation 12.1}
+q = f(physical \: capital, human \: capital)
 $$
 where $q$ is the firm's output.
 
 + The **aggregate production function** describes the relationship between all the inputs used in the macro-economy and the economy's total output (GDP). We can state the aggregate production function in equation form as
 $$
-GPD = Y = F(physical \: capital, human \: capital,  natural resources) \tag{Equation 12.2}
+GPD = Y = F(physical \: capital, human \: capital,  natural resources)
 $$
 
 + The Focus on Capital Resources
@@ -63,7 +63,7 @@ New Technology increases the slope of the production function as the marginal pr
 
 We can also use an equation to see how the production function is altered. The aggregated production function now includes an allowance for technological advancement:
 $$
-Y = A \times  F(physical \: capital, human \: capital,  natural \: resources) \tag{Equation 12.3}
+Y = A \times  F(physical \: capital, human \: capital,  natural \: resources)
 $$
 
 #### Exogenous Technological Change
@@ -76,7 +76,7 @@ $$
 
 + The Role of Institutions
 $$
-Y = A \times  F(physical \: capital, human \: capital,  natural \: resources, institutions) \tag{Equation 12.4}
+Y = A \times  F(physical \: capital, human \: capital,  natural \: resources, institutions)
 $$
 
 + Institutions Determine Incentives

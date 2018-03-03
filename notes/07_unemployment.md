@@ -13,14 +13,14 @@ pg 212-241
 + **Creative Destruction** - occurs when the introduction of new products and technologies leads to the end of other industries and jobs.
 > Amazon.com, e-readers like the Kindle, Nook, and iPad - Borders (book retailer)
 
-+ **An Evolving Economy** 
++ **An Evolving Economy**
 > Figure 7.2
 Over the past two centuries, jobs in the United States have evolved from being primarily agricultural to industrial (manufacturing)  and then to service.
 
 #### Fractional Unemployment
 **Fractional unemployment** is unemployment caused by delays in matching available jobs and workers.
 + Information Availability
-+ Government Policies 
++ Government Policies
 	- unemployment insurance and incentives, regulations on hiring and firing
 > Employment, Italian Style
 
@@ -34,7 +34,7 @@ The **natural rate of unemployment** is the typical unemployment rate that occur
 
 #### The Unemployment Rate
 $$
-unemployment \: rate = u = \frac{number \: unemployed}{labor \: force} \times 100 \tag{Equation 7.1}
+unemployment \: rate = u = \frac{number \: unemployed}{labor \: force} \times 100
 $$
 
 ##### Historical Unemployment Rates
@@ -44,7 +44,7 @@ To compute the unemployment rate, we divide the work-eligible population between
 **Work-Eligible Population(Civilian, Noninstitutionized, Age 16\+)**
 
 * Not in the labor force
-	
+
 	1. retirees
 	2. students
 	3. disabilities
@@ -62,7 +62,7 @@ To compute the unemployment rate, we divide the work-eligible population between
 ##### Labor Force Participation
 Labor Force Participation Rate is the percentage of the work-eligible population that is in the labor force.
 $$
-labor \:  force \:  participation \: rate = \frac{labor \:  force}{work-eligible population} \times 100 
+labor \:  force \:  participation \: rate = \frac{labor \:  force}{work-eligible population} \times 100
 $$
 
 #### Gender and Race Labor Force Statistic

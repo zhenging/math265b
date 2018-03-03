@@ -15,9 +15,7 @@ The model we used to study business cycles is the AD-AS model.
 ### What is agggregate demand?
 There are four major pieces in agggregate demand: consumption (C), investment (I), government spending (G), and net exports (NX).
 $$
-\eqalign{
-AD = C + I + G + NX \tag{Equation 13.3}
-}
+AD = C + I + G + NX
 $$
 Graph (price level as y-axis, and real GDP as x-axis)
 
@@ -73,9 +71,7 @@ The economy tends to move to the point at which aggregate demand is **equal to**
 
 #### Equilibrium in the Aggregate Demand-Aggregate Supply Model
 $$
-\eqalign{
 LRAS = SRAS = AD
-}
 $$
 Five steps to assess the impact of the change on real GDP, unemployment and the price level.
 1. Begin with the model in long-run equilibrium.

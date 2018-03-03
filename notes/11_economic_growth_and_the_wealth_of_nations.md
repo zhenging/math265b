@@ -12,11 +12,11 @@ pg 334-367
 	2. Some got rich, others stay poor.
 + Measuring Economic Growth
 $$
-economic \: growth = \%\Delta in \: nominal \: GDP - \%\Delta price \: level - \%\Delta population \tag{Equation 11.100}
+economic \: growth = \%\Delta in \: nominal \: GDP - \%\Delta price \: level - \%\Delta population
 $$
 + Growth Rate and Income Levels
 + **The Rule of 70** - If the annual growth rate of a variable is x\%, the size of that variable doubles approximately every $70 \div x$ years.
- 
+
 ### How do resources and technology contribute to economic growth?
 #### Resources
 **Resources**, also know as **factors of production**, are the inputs used to produce goods and services.
@@ -39,8 +39,8 @@ An **institution** in a significant practice , relationship, or organization in 
 + Competitive Open Market
 	1. Competitive Market
 	2. International Trade
-	3. Flow of Funds across Borders 
+	3. Flow of Funds across Borders
 + Efficient Taxes - sufficient to fund the activities of government while impeding production and consumption decisions as little as possible.
 + Stable Money and Prices
- 
+
  **End**

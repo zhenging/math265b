@@ -31,13 +31,13 @@ In calculating this entertainment price index (EPI), we use the same steps that 
 |Index(EPI)| | | $\dfrac{\$40}{\$40} \times 100 = 100$ | |$\dfrac{\$44}{\$40} \times 100 = 110$|
 
 $$
-price \: index = \frac{basket \: price}{basket \:  price \:  in \:  base \:  year} \tag{Equation 8.1}
+price \: index = \frac{basket \: price}{basket \:  price \:  in \:  base \:  year}
 $$
 
 #### Measuring Inflation Rates
 The inflation rate(i) is calculated as the percentage change in the price level (P). Using the CPI as the price level, the inflation rate from period 1 to period 2 is as follows:
 $$
-inflation \: rate(i) = \frac{P_2-P_1}{P_1} \times 100 \tag{Equation 8.2}
+inflation \: rate(i) = \frac{P_2-P_1}{P_1} \times 100
 $$
 
 > Economics in The Real World
@@ -46,7 +46,7 @@ Prices Don't All Move Together - Computers, Plasma TVs
 #### Using the CPI to Equate Dollar Values over Time
 To compare the prices of goods over time, we convert all prices to today's prices, or "prices in today's dollars." Here is the formula:
 $$
-price \: in \: today's \: dollars  = price \: in \: earlier \: time \times \frac{price \: level \: today}{price \: level \: in \: earlier \: time} \tag{Equation 8.3}
+price \: in \: today's \: dollars  = price \: in \: earlier \: time \times \frac{price \: level \: today}{price \: level \: in \: earlier \: time}
 $$
 
 > Economics in the real world
