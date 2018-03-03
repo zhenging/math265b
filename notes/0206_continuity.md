@@ -24,7 +24,7 @@ Todo
 Determine whether the following functions are continuous at $a$. Justify each answer using the continuity checklist.
 a. $f(x) = \dfrac{3x^2 + 2x + 1}{x-1}; a = 1$
 b. $g(x) = \dfrac{3x^2 + 2x + 1}{x+1}; a = 2$
-c. $h(x) = \cases{ x{\sin \dfrac{1}{x}} & \text{if }x \ne 0 \\ 0 & \text{if } x = 0} ; a = 0$
+c. $h(x) = \begin{cases} x{\sin \dfrac{1}{x}} & \text{if }x \ne 0 \\ 0 & \text{if } x = 0\end{cases} ; a = 0$
 >Solution
 a. The function $f$ is not continuous at $1$ because $f(1)$ is undefined.
 b. Because $g$ is a rational function and the denominator is nonzero at $2$, it follows by Theorem 2.3 that $\dlim_{x \to 2}g(x) = g(2) = 17$. Therefore $g$ is continuous at $2$.
@@ -64,8 +64,8 @@ A function $f$ is continuous from the left (or left-continuous) at $a$ if $\lim_
 A function $f$ is continuous on an an interval $I$ if it is continuous at all points of $I$. If $I$ contains its endpoints, continuity on $I$ means continuous from the right or left at the endpoints.
 
 **Example 5 Intervals of continuity**
-Determine the intervals of continuity for $f(x) = \cases{
-x^2+1 &\text{ if } x \les 0 \\ 3x + 5 &\text{ if } x \gt0}$
+Determine the intervals of continuity for $f(x) = \begin{cases}
+x^2+1 &\text{ if } x \les 0 \\ 3x + 5 &\text{ if } x \gt 0\end{cases}$
 >Solution
 $f$ is continuous on $(-\infty, 0]$ and on $(0, \infty)$.
 

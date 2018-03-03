@@ -18,7 +18,7 @@ a = x_0 < x_1 < x_2 \cdots < x_{n-1} < x_n = b.
 $$
 Let $\Delta x_k$ be the length of the subinterval $[x_{k-1}, x_k]$ and let $x^*_k$ be any point in $[x_{k-1}, x_k]$, for $k = 1, 2, \cdots,n$
 $$Figure$$
-If $f$ is defined on [a, b], the sum
+If $f$ is defined on $[a, b]$, the sum
 $$
 {\sum_{k=1}^n}f(x_k^*){\Delta x_k} = f(x_1^*){\Delta x_1} + f(x_2^*){\Delta x_2} + \cdots + f(x_n^*){\Delta x_n}
 $$
@@ -61,13 +61,13 @@ a. $18$ b.$5$ c.$\frac{\pi}{4}$
 Todo
 
 #### Properties of Definite Integrals
->**Definition Reversing Limits and Identical Limits**
+>Definition Reversing Limits and Identical Limits**
 Suppose $f$ is integrable on $[a, b]$.
 $$
-\eqalign{
-\int_b^a f(x)dx &= -\int_a^b f(x)dx \qquad
+\begin{aligned}
+\int_b^a f(x)dx &= -\int_a^b f(x)dx \\
 \int_a^a f(x)dx &= 0
-}
+\end{aligned}
 $$
 
 * Integral of a Sum
@@ -111,21 +111,21 @@ x_k^* = a + k{\Delta x} = 0 + k \cdot \frac{2}{n}, \text{for }k = 1, 2, \cdots, 
 $$
 Letting $f(x) = x^3 + 1$, the right Riemann sum is
 $$
-\eqalign{
+\begin{aligned}
 {\sum_{k=1}^n}f(x_k^*){\Delta x} &= {\sum_{k=1}^n}\lb(\frac{2k}{n})^3 + 1\rb\frac{2}{n} \\
 &= \frac{2}{n}{\sum_{k=1}^n}(\frac{8k^3}{n^3} + 1) \\
 &= \frac{2}{n}(\frac{8}{n^3}{\sum_{k=1}^n}k^3 + {\sum_{k=1}^n}1) \\
 &= \frac{2}{n}\lb\frac{8}{n^3}(\frac{n^2(n+1)^2}{4}) + n \rb \\
 &= \frac{4(n^2 + 2n + 1)}{n^2} + 2
-}
+\end{aligned}
 $$
 Now we evaluate $\int_0^2 {x^3 + 1}dx$ by letting $n \To$ in the Riemann sum:
 $$
-\eqalign{
+\begin{aligned}
 \int_0^2 {(x^3 + 1)}dx &= \lim_{n \to \infty}{\sum_{k=1}^n}f(x_k^*){\Delta x} \\
 &= \lim_{n \to \infty}{\lb {\frac{4(n^2 + 2n + 1)}{n^2} + 2} \rb} \\
 &= 4\lim_{n \to \infty}{(\frac{n^2 + 2n + 1}{n^2})} + \lim_{n \to \infty}{2} \\
 & = 4(1) + 2 = 6
-}
+\end{aligned}
 $$
 Therefore, $\dint_0^2 (x^3 + 1)dx = 6$

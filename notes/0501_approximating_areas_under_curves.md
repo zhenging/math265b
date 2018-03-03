@@ -12,7 +12,7 @@ Todo
 
 #### Approximating Areas by Riemann Sums
 
-> **Definition Regular Partition**
+>Definition Regular Partition
 Suppose $[a, b]$ is a closed interval containing $n$ intervals
 $$
 [x_0, x_1], [x_1, x_2], \cdots ,[x_{n-1}, x_n]
@@ -46,21 +46,21 @@ Todo
 
 #### Sigma (Summation) Notation
 
->**Theorem 5.1 Sums of Positive Integers**
+>Theorem 5.1 Sums of Positive Integers
 Let $n$ be a positive integers
 $$
-\eqalign{
+\begin{aligned}
 &\sum_{k=1}^n c = cn &
 &\sum_{k=1}^n k = \frac{n(n+1)}{2} \\
 &\sum_{k=1}^n k^2 = \frac{n(n+1)(2n+1)}{6} &
 &\sum_{k=1}^n k^3 = \frac{n^2(n+1)^2}{4}
-}
+\end{aligned}
 $$
 
 #### Riemann Sums Using Sigma Notation
 
-**Definition Left, Right, and Midpoint Riemann Sums in Sigma Notation**
+>Definition Left, Right, and Midpoint Riemann Sums in Sigma Notation
 Suppose $f$ is defined on a closed interval $[a, b]$, which is divided into n subintervals of equal length $\Delta x$. If $x^*_k$ is a point in the kth subinterval $[x_{k-1}, x_k]$, for $k=1, 2, \cdots n$, then the Riemann sum of $f$ on $[a, b]$ is $\sum^n_{k=1}f(x^*_k)\Delta x$. Three cases arise in practice.
-+ left Riemann sum if $x^*_k = a + (k-1)\Delta x$
-+ right Riemann sum if $x^*_k = a + k\Delta x$
-+ midpoint Riemann sum if $x^*_k = a + (k-\frac{1}{2})\Delta x$
+1\. left Riemann sum if $x^*_k = a + (k-1)\Delta x$
+2\. right Riemann sum if $x^*_k = a + k\Delta x$
+3\. midpoint Riemann sum if $x^*_k = a + (k-\frac{1}{2})\Delta x$

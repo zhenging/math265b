@@ -1,11 +1,11 @@
 ### 4.9 Antiderivatives
 
->**Definition Antiderivative**
+>Definition Antiderivative
 A function $F$ is an **antiderivative** if $f$ on an interval $I$ provided $F'(x)=f(x)$, fo all $x$ in $I$.
 
 #### Thinking backward
 
->**Theorem 4.16 The Family of Antiderivatives**
+>Theorem 4.16 The Family of Antiderivatives
 Let $F$ be any antiderivative of $f$ on the interval $I$. Then **all** the antiderivatives of $f$ on $I$ have the form $F + C$, where $C$ is an arbitrary constant.
 
 **Example 1** Finding Antiderivatives Use what you know about derivatives to find all antiderivatives of the following functions.
@@ -19,9 +19,11 @@ c. $F(x) = -\cos x + C$
 The notation $\dfrac{d}{dx}(f)$ means *take the derivative of* $f$. The notations means *find the antiderivative* of $f$ is **the indefinite integral** $\int f(x)d(x)$. Every time an indefinite integral sing $\int$ appears, it is followed by a function called the **integrand**, which in turn is followed by the differential $dx$.
 Using this new notation, the three results of Example 1 are written as
 $$
+\begin{aligned}
 \int 3x^2 dx = x^3 + C \\
 \int \frac{1}{1+x^2} dx = \tan^{-1} x + C \\
-\int \sin x dx = -\cos x + C \\
+\int \sin x dx = -\cos x + C
+\end{aligned}
 $$
 
 >**Theorem 4.17 Power Rule for Indefinite Integrals**
@@ -40,35 +42,34 @@ c. $\int (x^2+1)(2x-5)dx$
 
 Table 4.9 Indefinite Integrals of Trigonometric Functions
 $$
-\eqalign{
+\begin{aligned}
 &\frac{d}{dx}\sin ax = a\cos ax &\to \int (\cos ax) dx = \frac{1}{a}\sin ax + C\\
 &\frac{d}{dx}\cos ax = -a\sin ax &\to \int (\sin ax) dx = -\frac{1}{a}\cos ax + C\\
 &\frac{d}{dx}\tan ax = a\sec^2 ax &\to \int (\sec^2 ax) dx = \frac{1}{a}\tan ax + C\\
 &\frac{d}{dx}\cot ax = -a\csc^2 ax &\to \int (\csc^2 ax) dx = -\frac{1}{a}\cot ax + C\\
 &\frac{d}{dx}\sec ax = a\sec ax \tan ax&\to \int (\sec ax \tan ax) dx = \frac{1}{a}\sec ax + C\\
 &\frac{d}{dx}\csc ax = -a\csc ax \cot ax&\to \int (\csc ax \cot ax) dx = -\frac{1}{a}\csc ax + C\\
-}
+\end{aligned}
 $$
 
 **Example 3 Indefinite integrals of trigonometric functions** Determine the following indefinite integrals.
 a. $\int \sec^2 3xdx$ &emsp; b. $\int \cos \frac{x}{2}dx$
 >Solution
-a. $\int \sec^2 3xdx = \frac{1}{3}\tan 3x + C$
-b. $\int \cos \frac{x}{2}dx = 2\sin \frac{x}{2} + C$
-
+a. $\dint \sec^2 3xdx = \frac{1}{3}\tan 3x + C$
+b. $\dint \cos \frac{x}{2}dx = 2\sin \frac{x}{2} + C$
 
 #### Other Indefinite Integrals
 
 Table 4.10 Other Definite Integrals
 $$
-\eqalign{
+\begin{aligned}
 &\frac{d}{dx}(e^{ax}) = ae^{ax} &\to \int e^{ax}dx = \frac{1}{a}e^{ax} + C\\
 &\frac{d}{dx}(b^x) = b^{x}\ln b &\to \int b^xdx = \frac{1}{\ln b}b^x + C, b>0, b \ne 1\\
 &\frac{d}{dx}\ln |x| = \frac{1}{x} &\to \int \frac{dx}{x} = \ln |x| + C\\
 &\frac{d}{dx}[\sin^{-1} \frac{x}{a}] = \frac{1}{\sqrt{a^2-x^2}} &\to \int \frac{dx}{\sqrt{a^2-x^2}} = \sin^{-1} \frac{x}{a} + C\\
 &\frac{d}{dx}[\tan^{-1} \frac{x}{a}] = \frac{a}{a^2+x^2} &\to \int \frac{dx}{a^2+x^2} = \frac{1}{a}\tan^{-1} \frac{x}{a} + C\\
 &\frac{d}{dx}(\sec^{-1}  |\frac{x}{a}|) = \frac{a}{x\sqrt{x^2-a^2}} &\to \int \frac{dx}{x\sqrt{x^2-a^2}} = \frac{1}{a}\sec^{-1} |\frac{x}{a}| + C\\
-}
+\end{aligned}
 $$
 
 **Example 4 Indefinite integrals** Determine the following indefinite integrals

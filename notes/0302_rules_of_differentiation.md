@@ -18,13 +18,13 @@ x^n - a^n = (x-a)(x^{n-1} + x^{n-2}a + \cdots + xa^{n-2} + a^{n-1})
 $$
 Therefore,
 $$
-\eqalign{
+\begin{aligned}
 f'(x) &= \lim_{x \to a}{\frac{x^n - a^n}{x - a}} \text{Definition of f'(a)} \\
-&= \lim_{x \to a}{\frac{(x-a)(x^{n-1} + x^{n-2}a + \cdots + xa^{n-2} + a^{n-1})}{x-a}} \text{Factor x^n-a^n} \\
-&= \lim_{x \to a}{(x^{n-1} + x^{n-2}a + \cdots + xa^{n-2} + a^{n-1})} \text{Cancel comment factors} \\
-&= a^{n-1} + a^{n-2}\cdot a + \cdots + a\cdot a^{n-2} + a^{n-1} \text{Evaluate limits} \\
+&= \lim_{x \to a}{\frac{(x-a)(x^{n-1} + x^{n-2}a + \cdots + xa^{n-2} + a^{n-1})}{x-a}} &\text{Factor $x^n-a^n$} \\
+&= \lim_{x \to a}{(x^{n-1} + x^{n-2}a + \cdots + xa^{n-2} + a^{n-1})} &\text{Cancel comment factors} \\
+&= a^{n-1} + a^{n-2}\cdot a + \cdots + a\cdot a^{n-2} + a^{n-1} &\text{Evaluate limits} \\
 &= na^{n-1}
-}
+\end{aligned}
 $$
 Replacing $a$ by the variable $x$ in $f'(a) = na^{n-1}$, we obtain the following result knowns as the *Power Rule*.
 
@@ -48,12 +48,12 @@ f'(x) = \lim_{h \to 0}{\frac{f(x + h) - f(x)}{h}}
 $$
 to the function $cf$:
 $$
-\eqalign{
+\begin{aligned}
 \frac{d}{dx}[cf(x)] &= \lim_{h \to 0}{\frac{cf(x + h) - cf(x)}{h}} &\text{Definition of the derivative} \\
 &= \lim_{h \to 0}{\frac{c(f(x + h) - f(x))}{h}} &\text{Factor out c} \\
 &= c\cdot \lim_{h \to 0}{\frac{f(x + h) - f(x)}{h}} &\text{Theorem 2.3} \\
 &= cf'(x)
-}
+\end{aligned}
 $$
 
 **Example 2 Derivatives of constant multiples of functions**
@@ -74,11 +74,11 @@ The **Sum Rule**
 Determine $\dfrac{d}{dw}{(2w^3 + 9w^2 - 6w + 4)}$
 >Solution
 $$
-\eqalign{
+\begin{aligned}
 \frac{d}{dw}{(2w^3 + 9w^2 - 6w + 4)}
 &= \frac{d}{dw}{(2w^3)} + \frac{d}{dw}{(9w^2)} - \frac{d}{dw}{(6w)} + \frac{d}{dw}{(4)} \\
 &= 6w^2 + 18w - 6
-}
+\end{aligned}
 $$
 
 #### The Derivative of the Natural Exponential Function
@@ -92,14 +92,14 @@ It is the base of the natural exponential function $f(x) = e^x$.
 
 With the preceding facts in mind, the derivatives of $f(x) = e^x$ is computed as follows:
 $$
-\eqalign{
+\begin{aligned}
 \frac{d}{dx}(e^x) &= \lim_{h \to 0}{\frac{e^{x + h} - e^x}{h}} \\
 &= \lim_{h \to 0}{\frac{e^x \cdot e^h - e^x}{h}} \\
 &= \lim_{h \to 0}{\frac{e^x(e^h - 1)}{h}} \\
 &= e^x\lim_{h \to 0}{\frac{e^h - 1}{h}} \\
 &= e^x \cdot 1 \\
 &= e^x
-}
+\end{aligned}
 $$
 
 We have proved a remarkable fact: The derivative of the exponential function is itself; it is the only function (other then constant multiplies of $e^x$ and $f(x) = 0$) with this property.

@@ -4,10 +4,10 @@
 >**Theorem 3.14 The Chain Rule**
 Suppose $y=f(u)$ is differentiable at $u=g(x)$ and $u=g(x)$ is > differentiable at $x$. The composite function $y=f(g(x))$ is differentiable at $x$, and its derivative can be expressedin two equivalent ways:
 $$
-\eqalignno{
+\begin{aligned}
 \frac{dy}{dx} &= \frac{dy}{du} \cdot \frac{du}{dx} &{\text{Version 1}} \\
 \frac{d}{dx}(f(g(x))) &= f'(g(x)) \cdot g'(x) &{\text{Version 2}}
-}
+\end{aligned}
 $$
 
 **Example 1** Version 1 of the Chain Rule
@@ -16,30 +16,30 @@ a. $y = (5x + 4)^3$ &emsp; b. $y = \sin^{3}x$ &emsp; c. $y = \sin x^3$
 >Solution
 a. Inner function $u=5x+4$. Outter function $y=u^3$
 $$
-\eqalign{
+\begin{aligned}
 \frac{dy}{dx} &= \frac{dy}{du} \cdot \frac{du}{dx} \\
 &= 3u^2 \cdot 5 \\
 &= 3(5x+4)^2 \cdot 5 \\
 &= 15(5x+4)^2
-}
+\end{aligned}
 $$
 b. Inner function $u=\sin x$. Outter function $y=u^3$
 $$
-\eqalign{
+\begin{aligned}
 \frac{dy}{dx} &= \frac{dy}{du} \cdot \frac{du}{dx} \\
 &= 3u^2 \cdot \cos x \\
 &= 3(\sin x)^2 \cdot \cos x \\
 &= 3{\sin^2 x}\cos x
-}
+\end{aligned}
 $$
 c. Inner function $u=x^3$. Outter function $y=\sin x$
 $$
-\eqalign{
+\begin{aligned}
 \frac{dy}{dx} &= \frac{dy}{du} \cdot \frac{du}{dx} \\
 &= \cos u \cdot 3x^2 \\
 &= \cos x^3 \cdot 3x^2\\
 &= 3x^2{\cos x^3}
-}
+\end{aligned}
 $$
 
 **Example 2** Version 2 of the Chain Rule
@@ -47,23 +47,22 @@ Use Version 2 of the Chain Rule to calculate the derivatives of the following fu
 a. $(6x^3 + 3x + 1)^{10}$  &emsp; b. $\sqrt {5x^2 + 1}$ &emsp;c. $\displaystyle(\frac{5t^2}{3t^2 + 2})^3$
 >Solution
 $$
-\begin{eqnarray}
-a. \frac{dy}{dx} &=& \frac{d}{dx}((6x^3 + 3x + 1)^{10}) \\
-&=& 10(6x^3 + 3x + 1)^9 \cdot (18x^2 + 3) \\
-&=& 30(6x^2 + 1)(6x^3 + 3x + 1)^9 \\
+\begin{aligned}
+a. \frac{dy}{dx} &= \frac{d}{dx}((6x^3 + 3x + 1)^{10}) \\
+&= 10(6x^3 + 3x + 1)^9 \cdot (18x^2 + 3) \\
+&= 30(6x^2 + 1)(6x^3 + 3x + 1)^9 \\
 \\
-b. \frac{dy}{dx} &=& \frac{d}{dx}(\sqrt {5x^2 + 1}) \\
-&=& \frac{1}{2{\sqrt {5x^2 + 1}}} \cdot 10x \\
-&=& \frac{5x}{\sqrt {5x^2 + 1}} \\
+b. \frac{dy}{dx} &= \frac{d}{dx}(\sqrt {5x^2 + 1}) \\
+&= \frac{1}{2{\sqrt {5x^2 + 1}}} \cdot 10x \\
+&= \frac{5x}{\sqrt {5x^2 + 1}} \\
 \\
-c. \frac{dy}{dt} &=& \frac{d}{dt}((\frac{5t^2}{3t^2 + 2})^3) \\
-&=& 3(\frac{5t^2}{3t^2 + 2})^2 \cdot \frac{(3t^2 + 2) \cdot 10t - 5t^2(6t)}{(3t^2 + 2)^2} \\
-&=& \frac{1500t^5}{(3t^2 + 2)^4}
-\end{eqnarray}
+c. \frac{dy}{dt} &= \frac{d}{dt}((\frac{5t^2}{3t^2 + 2})^3) \\
+&= 3(\frac{5t^2}{3t^2 + 2})^2 \cdot \frac{(3t^2 + 2) \cdot 10t - 5t^2(6t)}{(3t^2 + 2)^2} \\
+&= \frac{1500t^5}{(3t^2 + 2)^4}
+\end{aligned}
 $$
 
 **Example 3** Calculating derivatives at a Point <br>
-
 >Solution
 Todo
 
@@ -80,10 +79,10 @@ Find $\displaystyle\frac{d}{dx}(\tan x + 10)^{21}$.
 >Solution
 With $g(x) = \tan x + 10$, the Chain Rule gives
 $$
-\eqalign{
+\begin{aligned}
 \frac{d}{dx}(\tan x + 10)^{21} &= 21(\tan x + 10)^{20} \cdot \frac{d}{dx}(\tan x + 10) \\
 & = 21(\tan x + 10)^{20}{\sec^2 x}
-}
+\end{aligned}
 $$
 
 #### The Composition of Three or More Functions
@@ -93,7 +92,7 @@ Calculate the derivative of $\sin e^{\cos x}$.
 >Solution
 $-\sin x \cdot e^{\cos x} \cdot \cos (e^{\cos x})$
 
-**Example 6** Combining Rules <br>
+**Example 6** Combining Rules
 Find $\displaystyle\frac{d}{dx}{(x^2 \sqrt {x^2 + 1})}$
 >Solution
 $\dfrac{3x^3 + 2x}{\sqrt {x^2 + 1}}$
@@ -101,15 +100,15 @@ $\dfrac{3x^3 + 2x}{\sqrt {x^2 + 1}}$
 #### Proof of the Chain Rule
 Suppose $f$ is differentiable at $u=g(a)$, $g$ is differentiable at $a$, and $h(x) = f(g(x))$.
 $$
-\begin{align}
-h'(a) &= \lim_{x \to a}{\frac{h(x) - h(a)}{x - a}} \tag{1}\\
+\begin{aligned}
+h'(a) &= \lim_{x \to a}{\frac{h(x) - h(a)}{x - a}} &\text{(1)}\\
 &= \lim_{x \to a}{\frac{f(g(x)) - f(g(a))}{x - a}} \\
-&= \lim_{x \to a}{\frac{f(g(x)) - f(g(a))}{x - a} \cdot } \frac{g(x) - g(a)}{g(x) - g(a)} \tag{2}\\
+&= \lim_{x \to a}{\frac{f(g(x)) - f(g(a))}{x - a} \cdot } \frac{g(x) - g(a)}{g(x) - g(a)} &\text{(2)}\\
 &= \lim_{x \to a}{\frac{f(g(x)) - f(g(a))}{g(x) - g(a)} \cdot } \frac{g(x) - g(a)}{x - a} \\
-&= \lim_{x \to a}{\frac{f(v) - f(u)}{v - u} \cdot } \frac{g(x) - g(a)}{x - a} \tag{3}\\
-&= \lim_{v \to u}{\frac{f(v) - f(u)}{v - u}} \cdot \lim_{x \to a}{\frac{g(x) - g(a)}{x - a}} \tag{4}\\
-&= f'(u)g'(a) \tag{5}
-\end{align}
+&= \lim_{x \to a}{\frac{f(v) - f(u)}{v - u} \cdot } \frac{g(x) - g(a)}{x - a} &\text{(3)}\\
+&= \lim_{v \to u}{\frac{f(v) - f(u)}{v - u}} \cdot \lim_{x \to a}{\frac{g(x) - g(a)}{x - a}} &\text{(4)}\\
+&= f'(u)g'(a) &\text{(5)}
+\end{aligned}
 $$
 (1). Definition of the derivative
 (2). We multiply the right side of the equation(1) by $\frac{g(x) - g(a)}{g(x) - g(a)}$, which equals 1.

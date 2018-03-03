@@ -1,7 +1,7 @@
 ### 3.3 The Product and Quotient Rules
 
 #### Product Rule
->**Theorem 3.7 Product Rule**
+>Theorem 3.7 Product Rule
 If $f$ and $g$ are differentiable at $x$, then
 $$
 \frac{d}{dx}{(f(x)g(x))} = f'(x)g(x) + f(x)g(x)
@@ -9,7 +9,7 @@ $$
 
 **Proof**: We apply the definition of derivative to the function $fg$:
 $$
-\eqalign{
+\begin{aligned}
 \frac{d}{dx}{(f(x)g(x))}
 &= \lim_{h \to 0}{\frac{f(x+h)g(x+h)-f(x)g(x)}{h}} \\
 &= \lim_{h \to 0}{\frac{f(x+h)g(x+h){\bf{-f(x)g(x+h)+f(x)g(x+h)}}-f(x)g(x)}{h}} \\
@@ -17,7 +17,7 @@ $$
 &= \lim_{h \to 0}{\lb\frac{f(x+h) - f(x)}{h} \cdot g(x+h)\rb} + \lim_{h \to 0}{\lb f(x) \cdot \frac{g(x+h)-g(x)}{h}\rb} \\
 &= \lim_{h \to 0}{\frac{f(x+h) - f(x)}{h}} \cdot \lim_{h \to 0}{g(x+h)} + \lim_{h \to 0}{\frac{g(x+h) - g(x)}{h}} \cdot \lim_{h \to 0}{f(x)} \\
 &= f'(x)g(x)+g'(x)f(x)
-}
+\end{aligned}
 $$
 
 **Example 1** Using the Product Rule
@@ -26,7 +26,7 @@ a. $\dfrac{d}{dv}(v^2(2\sqrt{v}+ 1))$ &emsp; b. $\dfrac{d}{dx}(x^2e^x))$
 
 #### Quotient Rule
 
->**Theorem 3.8 Quotient Rule**
+>Theorem 3.8 Quotient Rule
 If $f$ and $g$ are differentiable at $x$, then the derivatives of $f/g$ exists, provided $g(x) \neq 0$, and
 $$
 \frac{d}{dx}\lb\frac{f(x)}{g(x)}\rb = \frac{g(x)f'(x) - f(x)g'(x)}{g^2(x)}

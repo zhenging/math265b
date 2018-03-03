@@ -29,11 +29,11 @@ Assume $\dlim_{x \to a}f(x)$ and $\dlim_{x \to a}g(x)$ exist. The following prop
 
 A proof of Law 1 is outlined in Section 2.7, Laws 2-5 are proved in Appendix B. Law 6 is proved from Law 4 as follows.
 $$
-\eqalign{
+\begin{aligned}
 \lim_{x \to a}[f(x)]^n &= \lim_{x \to a}[\underbrace{f(x)f(x)\cdots f(x)}_{n \text{ factors of } f(x)}] \\
 &= \underbrace{\lb{\lim_{x \to a}f(x)}\rb\lb{\lim_{x \to a}f(x)}\rb \cdots \lb{\lim_{x \to a}f(x)}\rb}_{n \text{factors of } \dlim_{x \to a}f(x)}  \quad \text{Repeated use of Law 4}\\
 &= \lb\lim_{x \to a}f(x)\rb^n
-}
+\end{aligned}
 $$
 
 In Law 7, the limit of $[f(x)]^{n/m}$ involves the $m$th root of $f(x)$ where $x$ is near $a$. If the fraction $n/m$ is in lowest terms and $m$ is even, this root is undefined unless $f(x)$ is non-negative for all $x$ near $a$, which explains the restrictions shown.
@@ -77,8 +77,8 @@ a. $\dlim_{x \to a^+}[f(x)]^{n/m} = \lb\dlim_{x \to a^+}f(x)\rb^{n/m}$, provided
 b. $\dlim_{x \to a^-}[f(x)]^{n/m} = \lb\dlim_{x \to a^-}f(x)\rb^{n/m}$, provided $f(x) \ges 0$, for $x$ near $a$ with $x < a$, if $m$ is even and $n/m$ is reduced to lowest terms.
 
 **Example 5 Calculating left- and right-sided limits**
-Let $f(x) = \cases{-2x + 4 &\text{if  } x \les 1\\
-\sqrt{x-1}  &\text{if  } x \ges 1}$. Find the values of $\dlim_{x \to 1^-}f(x)$, $\dlim_{x \to 1^+}f(x)$, and $\dlim_{x \to 1}f(x)$, or state that they do not exist.
+Let $f(x) = \begin{cases}-2x + 4 &\text{if  } x \les 1\\
+\sqrt{x-1}  &\text{if  } x \ges 1\end{cases}$. Find the values of $\dlim_{x \to 1^-}f(x)$, $\dlim_{x \to 1^+}f(x)$, and $\dlim_{x \to 1}f(x)$, or state that they do not exist.
 >Solution
 $\dlim_{x \to 1^-}f(x) = 2$
 $\dlim_{x \to 1^+}f(x) = 0$

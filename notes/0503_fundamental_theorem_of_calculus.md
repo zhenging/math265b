@@ -90,12 +90,12 @@ y = g(u) = \int_0^u {{\cos t^2}}dt,
 $$
 By the Chain Rule,
 $$
-\eqalign{
+\begin{aligned}
 \frac{d}{dx}{\int_0^{x^2} {\cos t^2}}dt &= \frac{dy}{dx} = \frac{dy}{du} \frac{du}{dx} \\+
 &= \lb{\frac{d}{du}{\int_0^u \cos t^2}dt}\rb(2x) \\
 &= ({\cos u^2})(2x) \\
 &= 2x{\cos x^4}
-}
+\end{aligned}
 $$
 
 **Example 6** Working with area functions
@@ -103,7 +103,7 @@ $$
 Todo
 
 **Example 7** The sine integral function
-Let $g(t) = \cases{\frac{{\sin t}}{t} &if t>0\\ 1 &\text{if } t = 1}$. Graph the sine integral function $S(x) = \int_0^x {g(t)}dt$
+Let $g(t) = \begin{cases}\frac{{\sin t}}{t} &\text{if} t>0\\ 1 &\text{if } t = 1\end{cases}$. Graph the sine integral function $S(x) = \int_0^x {g(t)}dt$
 >Solution
 Todo
 

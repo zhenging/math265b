@@ -3,19 +3,19 @@
 #### Inverse Sine Its Derivative
 The derivative of $y={\sin^{-1} x}$ follows by differentiating both side of $x={\sin y}$ with respect to $x$, simplifying, and solving for $dy/dx$:
 $$
-\eqalign{
+\begin{aligned}
 x&={\sin y} \\
 \frac{d}{dx}(x) &= \frac{d}{dx}({\sin y}) \\
 1 &= {\cos y} \cdot \frac{dy}{dx} \\
 \frac{dy}{dx} &= \frac{1}{\cos y}
-}
+\end{aligned}
 $$
 The identity $\sin^2 y + {\cos^2 y} = 1$ is used to express this derivative in terms of $x$. Solveing for ${\cos y}$ yields
 $$
-\eqalign{
+\begin{aligned}
 {\cos y} &= \pm {\sqrt {1-{\sin^2 y}}}\\
 &= \pm {\sqrt {1-x^2}}
-}
+\end{aligned}
 $$
 Because $y$ is restricted to the interval $-\pi/2 \les y \les \pi/2$. We have ${\cos y} \ges 0$. Therefore, we choose the positive branch of the square root, and it follows that
 $$
@@ -39,12 +39,12 @@ b. $\dfrac{d}{dx}({\cos ({\sin^{-1} x})}) = -\frac{x}{\sqrt {1-x^2}}$
 ##### Inverse Tangent
 Recall from Section 1.4 that $y = {\tan^{-1} x}$ is the value of $y$ such that $x={\tan y}$, where $-\pi/2 \les y \les \pi/2$. To find $\frac{dy}{dx}$, we differentiate both sides of $x = {\tan y}$ with respoect to $x$ and simplify
 $$
-\eqalign{
+\begin{aligned}
 x &= {\tan y} \\
 \frac{d}{dx}(x) &= \frac{d}{dx}({\tan y}) \\
 1 &= {\sec^2 y} \cdot \frac{dy}{dx} \\
 \frac{dy}{dx} &= \frac{1}{{\sec^2 y}}
-}
+\end{aligned}
 $$
 To express this derivative in terms of $x$, we combine the trigonometric identity ${\sec^2 y} = 1 + {\tan^2 y}$ with $x = {\tan y}$ to obtain ${\sec^2 y} = 1 + x^2$. Subsituting this result into the expression for $dy/dx$, it follows that
 $$
@@ -55,10 +55,10 @@ $$
 Recall from Section 1.4 that $y = {\sec^{-1} x}$ is the value of $y$ such that $x = {\sec y}$, where $0 \les y \les \pi$, with $y \ne \pi/2$. The domain of $y = {\sec^{-1} x}$ us ${x: |x| \ges 1}$.
 The derivative of the inverse secant presents a new twist. Let $y = {\sec^{-1} x}$, or $x = {\sec y}$, and then differentiate both sides of $x = {\sec y}$ with respect ti $x$:
 $$
-\eqalign{
+\begin{aligned}
 1 &= {\sec y}{\tan y}\frac{dy}{dx} \\
 \frac{dy}{dx} &= \frac{1}{{\sec y}{{\tan y}}}
-}
+\end{aligned}
 $$
 The final step is to express $y$ in terms of $x$ by using the identity ${\sec^2 y} = 1 + {\tan^2 y}$. Solving this eqaution for ${\tan y}$, we have
 $$
@@ -69,7 +69,7 @@ Two case muse be examined to resolve the sign on the square root:
 2. However, if $x \les -1$, then $\pi/2 \lt y \les \pi$. Now we choose the negative branch.
 This argument accounts for the ${\tan y}$ factor in the derivative. For the ${\sec y}$ factor, we have ${\sec y} = x$. Therefore, the derivative of the inverse secant is
 $$
-\frac{d}{dx}({\sec^{-1} x}) = \cases{{\frac{1}{x {\sqrt {x^2-1}} }\quad \text{if } x >1}\\{-\frac{1}{x {\sqrt {x^2-1}} }\quad \text{if } x <-1}}
+\frac{d}{dx}({\sec^{-1} x}) = \begin{cases}{\dfrac{1}{x {\sqrt {x^2-1}} }\quad \text{if } x >1}\\{-\dfrac{1}{x {\sqrt {x^2-1}} }\quad \text{if } x <-1}\end{cases}
 $$
 which is an awkward result. The absolute value helps here: Recall that $|x| = x$, if $x>0$ and $|x| = -x$, if $x<0$. It follows that
 $$
@@ -100,18 +100,18 @@ a. Evaluate $f'(2 {\sqrt {3}})$, where $f(x) = x {\tan^{-1} (x/2)}$
 b. Find an equation of the line tangent of the graph of $g(x) = {\sec^{-1} (2x)}$ at the point $(1, \pi/3)$.
 >Solution
 $$
-\eqalign{
+\begin{aligned}
 \text{a.} \quad f'(x) &= 1 \cdot {\tan^{-1} \frac{x}{2}} + x \cdot \frac{1}{1+(x/2)^2} \cdot \frac{1}{2} \\
 &= {\tan^{-1} \frac{x}{2}} + \frac{2x}{4 + x^2} \\
 \\
 f'(2 {\sqrt {3}}) &= {\tan^{-1} ({\sqrt {3}})} + \frac{2(2{\sqrt {3}})}{4 + (2{\sqrt {3}})^2} = \frac{\pi}{3} + \frac{\sqrt {3}}{4}
-}
+\end{aligned}
 $$
 b. The slope of the tangent line at $(1, \pi/3)$ is $g'(x)$. Using the Chain Rule, we have
 $$
-\eqalign{
+\begin{aligned}
 g'(x) = \frac{d}{dx}{\sec^{-1} {2x}} = \frac{2}{|2x|{\sqrt {4x^2 - 1}}} = \frac{1}{|x|{\sqrt {4x^2 - 1}}}
-}
+\end{aligned}
 $$
 It follows that $g'(1) = 1/{\sqrt {3}}$. An equation of the tangent line is
 $$
@@ -158,12 +158,12 @@ Before doing a short calculation, we note two facts:
 * As a differentiable function $f$ is continuous at $x_0$, which implies $f^{-1}$ is continuous at $y_0$ . Therefore, as $y \to y_0,\: x \to x_0$
 Using the definition of the derivative, we have
 $$
-\eqalign{
+\begin{aligned}
 (f^{-1})'(y_0) &= \lim_{y \to y_0}{\frac{f^{-1}(y) - f^{-1}(y_0)}{y-y_0}} \\
 &= \lim_{x \to x_0}{\frac{x - x_0}{f(x)-f(x_0)}} \\
 &= \lim_{x \to x_0}{\frac{1}{\frac{f(x)-f(x_0)}{x-x_0}}} \\
 &= \frac{1}{f'(x_0)}
-}
+\end{aligned}
 $$
 We have shown that $(f^{-1})'(y_0)$ exists ($f^{-1}$ is differentiable at $y_0$) and it equals the reciprocal of $f'(x_0)$
 

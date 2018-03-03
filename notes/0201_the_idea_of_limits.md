@@ -15,12 +15,12 @@ a. $32ft/s$ &emsp; b. $48ft/s$
 Estimate the *instantaneous velocity* of the rock in Example 1 at the single point $t = 1s$.
 >Solution
 $$
-\eqalign{
+\begin{aligned}
 v_{av} &= \frac{s(t) - s(1)}{t - 1} \\
 v_{inst} & = \lim_{t \to 1}{v_{av}} \\
 &= \lim_{t \to 1}{\frac{s(t) - s(1)}{t - 1}} \\
 & = 64ft/s \\
-}
+\end{aligned}
 $$
 
 #### Slope of the Tangent Line

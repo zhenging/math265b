@@ -142,16 +142,16 @@ hw 53, 57
   + $e^{\ln x} = x$ for $x>0$ and $\ln(e^x) = x$ for all $x$.
   + $y=\ln x$ if and only if $x=e^y$
   + $b^x=e^{\ln b^x} = e^{x\ln b}$
-+ **Theorem 3.17** Derivative of $\ln x$: $\dfrac{d}{dx}\ln x = \inv{x}, \dfrac{d}{dx}(\ln |u(x)|) = \dfrac{u'(x)}{u(x)}$
++ **Theorem 3.17** Derivative of $\ln x$: $\dfrac{d}{dx}\ln x = \frac{1}{x}, \dfrac{d}{dx}(\ln |u(x)|) = \dfrac{u'(x)}{u(x)}$
 + **Theorem 3.18** Derivative of $b^x$: $\dfrac{d}{dx}b^x = b^x\ln b$
 + **Theorem 3.19** General Power Rule: $\dfrac{d}{dx}(x^p)= px^{p-1}, \dfrac{d}{dx}(u(x)^p)= p(u(x))^{p-1} \cdot u'(x)$. (_Proof_)
-+ **Theorem 3.20** Derivative of $\log_b x$: $\dfrac{d}{dx}(\log_b x) = \inv{x \ln b}$
++ **Theorem 3.20** Derivative of $\log_b x$: $\dfrac{d}{dx}(\log_b x) = \frac{1}{x \ln b}$
 + Logarithmic differentiation. (_Ex8_)
 
 ##### 3.9 Derivatives of Inverse Trigonometric Functions
-+ **Theorem 3.21** Derivative of Inverse Sine: $\dfrac{d}{dx}\sin^{-1} x = \inv{\sqrt{1-x^2}}$, for $-1<x<1$. (_Proof_)
++ **Theorem 3.21** Derivative of Inverse Sine: $\dfrac{d}{dx}\sin^{-1} x = \frac{1}{\sqrt{1-x^2}}$, for $-1<x<1$. (_Proof_)
 + **Theorem 3.22** Derivative of Inverse Trigonometric Functions. (_Proof_)
-+ **Theorem 3.23** Derivative of the Inverse Function: $(f^{-1})'(y_0) = \inv{f'(x_0)}$, where $y_0=f(x_0)$. (_Proof_)
++ **Theorem 3.23** Derivative of the Inverse Function: $(f^{-1})'(y_0) = \frac{1}{f'(x_0)}$, where $y_0=f(x_0)$. (_Proof_)
 + Derivative of an Inverse Function. (_Ex5_)
 
 ##### 3.10 Related Rates
@@ -242,12 +242,7 @@ $$
 ##### 4.8 Newton's Method
 PROCEDURE Newton’s Method for Approximating Roots of $f(x)=0$
 1. Choose an initial approxmiation $x_0$ close to a root as possible.
-2. For $n=0, 1, 2, \cdots$
-$$
-\eqalign{
-x_{n+1} = x_n-\frac{f(x_n)}{f'(x_n)}
-}
-$$
+2. For $n=0, 1, 2, \cdots$, $x_{n+1} = x_n - \dfrac{f(x_n)}{f'(x_n)}$
 
 ##### 4.9 Antiderivatives
 + Antiderivative
