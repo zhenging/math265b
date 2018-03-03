@@ -60,14 +60,14 @@
 **EX** 1, 2, 3, 6, 13
 **HW** pg 129: 14, 19, 29, 30, 36
 Can $(irrational)^{irrational}= rational?$
-  >Proof: Consider $(\sqrt 2)^{\sqrt 2} = x$,
-  case 1, $x$ is rational, done.
-  case 2, $x$ is irrational
-  $$
-  \eqalign{
-  ((\sqrt 2)^{\sqrt 2})^{\sqrt 2} &= x^{\sqrt 2}\\
-  (\sqrt 2)^2 &= x^{\sqrt 2}\\
-  2 &= x^{\sqrt 2}\\
-  }
-  $$
-  2 is rational. Done.
+>Proof: Consider $(\sqrt 2)^{\sqrt 2} = x$,
+case 1, $x$ is rational, done.
+case 2, $x$ is irrational
+$$
+\begin{aligned}
+((\sqrt 2)^{\sqrt 2})^{\sqrt 2} &= x^{\sqrt 2}\\
+(\sqrt 2)^2 &= x^{\sqrt 2}\\
+2 &= x^{\sqrt 2}
+\end{aligned}
+$$
+2 is rational. Done.
