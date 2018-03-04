@@ -1,14 +1,12 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
-const mjConfig = require('./lib/mjConfig');
 
 const ENTRY_PATH = path.join(__dirname, 'index.js');
 const OUTPUT_PATH = path.join(__dirname, 'build');
 
 const htmlWebpackPlugin = new HtmlWebpackPlugin({
   title: 'Calculus',
-  template: 'index.html',
-  mathjax_config: mjConfig
+  template: 'index.html'
 });
 
 const config = {

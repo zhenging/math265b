@@ -33,8 +33,9 @@ table {
   }
 }
 
-.pagebreak {
-  /* page-break-before: always; */
+.katex-display {
+  text-align: left;
+  margin-left: 1em;
 }
 
 @media screen and (min-width: 960px) {
@@ -52,5 +53,12 @@ table {
 @media print {
   html body {
     font-size: 12px;
+  }
+  .katex-display {
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+  }
+  .katex {
+    font-size: 100%;
   }
 }

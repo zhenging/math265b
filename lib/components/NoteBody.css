@@ -39,10 +39,6 @@ main {}
 }
 
 .markdown-body h3 {
-  /* background-color: #f9fafa;
-  border-top: 4px solid #38accd;
-  border-bottom: 1px solid #dadfe3;
-  min-height: 60px; */
   color: #ec407a;
 }
 
@@ -57,11 +53,15 @@ main {}
     margin-bottom: 2px;
   }
   .markdown-body p {
-    margin-bottom: 8px;
+    margin-bottom: 5px;
   }
   .markdown-body h3 {
     background-color: white;
     color: black;
     margin-bottom: 2px;
+  }
+  .named-container {
+    margin-bottom: 2px;
+    padding: 0.2em 0.5em;
   }
 }

@@ -7,7 +7,7 @@ import 'github-markdown-css/github-markdown.css';
 /* <Header title={props.title} /> */
 import NoteBody from './lib/components/NoteBody';
 
-import note from '../calculus/homework/hw0707.md';
+import note from './hw0707.md';
 import './lib/style.css';
 
 const App = props => (

@@ -18,6 +18,7 @@ COPY . $WORKDIR
 RUN mkdir -p /root/.ssh
 RUN echo "    IdentityFile /root/.ssh/id_rsa" >> /etc/ssh/ssh_config
 RUN ssh-keyscan github.com >> /root/.ssh/known_hosts
+RUN git config --global user.name "zhenging" && git config --global user.email "ravenzheng2014@gmail.com"
 
 # 6. Run Command to build
-CMD npm run build
+CMD npm run build && npm run deploy
