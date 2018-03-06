@@ -30,7 +30,7 @@
 * Propositional function $P(x)$
 * Convert a propositional function to a proposition, and evaluate it.
 * Quantification
-  >1\. Universal quantification - $\forall x P(x) \equiv P(x_1) \land P(x_2) \land \cdots P(x_n)$
+  1\. Universal quantification - $\forall x P(x) \equiv P(x_1) \land P(x_2) \land \cdots P(x_n)$
   2\. Existential quantification - $\exists x P(x) \equiv P(x_1) \lor P(x_2) \lor \cdots P(x_n)$
 * Negation of quantified expressions
   1\. $\lnot \forall x P(x) \equiv \exists x \neg P(x)$

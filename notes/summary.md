@@ -70,7 +70,7 @@ $$
 **HW** 3cdef, 9, 25, 32
 Let $A$ be positive integer. $R$ is "$a$ divides $b$"
 a. Is $R$ reflective?
-> Yes, since $\forall a a divides a$.
+> Yes, since for all $a$,  $a$ divides $a$.
 
 b. Is $R$ symmetric?
 >No, because $2 \mid b$, but $b \nmid 2$
