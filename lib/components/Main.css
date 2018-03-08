@@ -1,5 +1,9 @@
 main {}
 
+.main-title {
+  margin-left: 20px;
+}
+
 .note-meta {
   background-color: #f9fafa;
   border-top: 4px solid #38accd;
@@ -13,6 +17,7 @@ main {}
 
 .note-content {
   padding: 10px 30px;
+  min-height: 200px;
 }
 
 .named-container {

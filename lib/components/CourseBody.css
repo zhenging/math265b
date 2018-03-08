@@ -1,0 +1,15 @@
+.course-section-head {}
+
+.note-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.note-list-item {
+  background-color: #f8f8f8;
+  padding: 5px 10px 5px 20px;
+  margin-left: 20px;
+}

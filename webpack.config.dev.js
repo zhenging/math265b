@@ -1,18 +1,38 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
-const ENTRY_PATH = path.join(__dirname, 'index.js');
+// const ENTRY_PATH = path.join(__dirname, 'index.js');
 const OUTPUT_PATH = path.join(__dirname, 'build');
 
-const htmlWebpackPlugin = new HtmlWebpackPlugin({
+const indexPageHtmlPlugin = new HtmlWebpackPlugin({
   title: 'Calculus',
-  template: 'index.html'
+  template: 'index.html',
+  chunks: ['index'],
+  filename: path.join(OUTPUT_PATH, 'index.html')
+});
+
+const coursePageHtmlPlugin = new HtmlWebpackPlugin({
+  title: 'Calculus',
+  template: 'index.html',
+  chunks: ['course'],
+  filename: path.join(OUTPUT_PATH, 'course.html')
+});
+
+const notePageHtmlPlugin = new HtmlWebpackPlugin({
+  title: 'Calculus',
+  template: 'index.html',
+  chunks: ['note'],
+  filename: path.join(OUTPUT_PATH, 'note.html')
 });
 
 const config = {
-  entry: ENTRY_PATH,
+  entry: {
+    index: './index.js',
+    course: './course.js',
+    note: './note.js'
+  },
   output: {
-    filename: 'index.js',
+    filename: '[name].js',
     path: OUTPUT_PATH
   },
   module: {
@@ -32,7 +52,7 @@ const config = {
       }
     ]
   },
-  plugins: [htmlWebpackPlugin],
+  plugins: [indexPageHtmlPlugin, coursePageHtmlPlugin, notePageHtmlPlugin],
   externals: {},
   resolve: {
     extensions: ['.js', '.jsx']
@@ -47,6 +67,7 @@ const config = {
     contentBase: [OUTPUT_PATH, 'node_modules'],
     stats: 'errors-only',
     open: true,
+    openPage: 'course.html',
     port: 3000,
     overlay: {
       errors: true,

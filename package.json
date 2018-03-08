@@ -1,19 +1,17 @@
 {
   "name": "note-x",
   "version": "0.0.1",
-  "description": "This project is for parsing markdown and mathjax hybrid text content and outputting html page with nice presentation.",
+  "description":
+    "This project is for parsing markdown and mathjax hybrid text content and outputting html page with nice presentation.",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --config webpack.config.dev.js",
     "build": "webpack --config webpack.config.build.js",
-    "debug": "node --inspect $(npm bin)/webpack --config webpack.config.build.js --progress --watch",
-    "deploy": "node ./deploy.js",
-    "test": "nodemon ./lib/generate/renderWithMathjax.js"
+    "debug":
+      "node --inspect $(npm bin)/webpack --config webpack.config.build.js --progress --watch",
+    "deploy": "node ./deploy.js"
   },
-  "keywords": [
-    "markdown-it",
-    "katex"
-  ],
+  "keywords": ["markdown-it", "katex"],
   "author": "raven",
   "license": "UNLICENSED",
   "dependencies": {
@@ -59,8 +57,5 @@
     "nodemon": "^1.14.12",
     "webpack-dev-server": "^2.11.1"
   },
-  "eslintIgnore": [
-    "lib/GenerateStaticPagePlugin.js",
-    "index.html"
-  ]
+  "eslintIgnore": ["lib/GenerateStaticPagePlugin.js", "index.html"]
 }
