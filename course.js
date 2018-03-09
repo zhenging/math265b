@@ -7,7 +7,8 @@ import CourseBody from './lib/components/CourseBody';
 import './lib/style.css';
 
 const course = {
-  name: 'Calculus',
+  shortName: 'Calculus',
+  fullName: 'Calculus For Scientists',
   homework: [
     {
       name: 'hw0100',
@@ -40,4 +41,15 @@ const course = {
   ]
 };
 
-ReactDOM.render(<CourseBody course={course} />, document.getElementById('app'));
+const menu = [
+  {
+    name: 'Courses',
+    link: '/courses'
+  },
+  {
+    name: 'Calculus',
+    link: '/courses/calculus'
+  }
+];
+
+ReactDOM.render(<CourseBody menu={menu} course={course} />, document.getElementById('app'));

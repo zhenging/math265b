@@ -7,7 +7,7 @@ const ENTRY_PATH = './generate.js';
 const OUTPUT_PATH = path.join(__dirname, 'build');
 
 const cleanPlugin = new CleanWebpackPlugin('build/*');
-const extractCSSPlugin = new ExtractTextPlugin('combined.css');
+const extractCSSPlugin = new ExtractTextPlugin('courses/combined.css');
 const generateStaticPagePlugin = new GenerateStaticPagePlugin();
 
 const config = {

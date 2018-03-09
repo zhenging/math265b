@@ -67,7 +67,7 @@ const config = {
     contentBase: [OUTPUT_PATH, 'node_modules'],
     stats: 'errors-only',
     open: true,
-    openPage: 'course.html',
+    openPage: 'courses',
     port: 3000,
     overlay: {
       errors: true,

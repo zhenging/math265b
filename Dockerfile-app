@@ -6,6 +6,9 @@ MAINTAINER ravenzheng <ravenzheng@gmail.com>
 
 # 3. Set WORKDIR
 WORKDIR /note-x
+BUILD_DIR $WORKDIR/build
+SOURCE_DIR $WORKDIR/source
+SOURCE_REPO https://ravenzheng@bitbucket.org/ravenzheng/courses.git
 
 # 4. Copy package.json and package-lock.json to WORKDIR and install deps
 COPY package.json $WORKDIR
@@ -19,6 +22,8 @@ RUN mkdir -p /root/.ssh
 RUN echo "    IdentityFile /root/.ssh/id_rsa" >> /etc/ssh/ssh_config
 RUN ssh-keyscan github.com >> /root/.ssh/known_hosts
 RUN git config --global user.name "zhenging" && git config --global user.email "ravenzheng2014@gmail.com"
+RUN rm -rf $BUILD_DIR && mkdir $BUILD_DIR \
+  && rm -rf $SOURCE_DIR && mkdir $SOURCE_DIR
 
 # 6. Run Command to build
 CMD npm run build && npm run deploy
