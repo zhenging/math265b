@@ -1,6 +1,5 @@
 node_modules
 build
-source
 npm-debug.log
 !.gitkeep
 .eslintcache

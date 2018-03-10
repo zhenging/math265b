@@ -1,8 +1,8 @@
 {
-  "name": "note-x",
+  "name": "courses",
   "version": "0.0.1",
   "description":
-    "This project is for parsing markdown and mathjax hybrid text content and outputting html page with nice presentation.",
+    "This project is for parsing markdown and latex hybrid text content and outputting html page with nice presentation.",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --config webpack.config.dev.js",
@@ -24,7 +24,7 @@
     "bluebird": "^3.5.1",
     "cheerio": "^1.0.0-rc.2",
     "clean-webpack-plugin": "^0.1.18",
-    "copy-webpack-plugin": "^4.3.1",
+    "copy-webpack-plugin": "^4.5.1",
     "css-loader": "^0.28.9",
     "eval": "^0.1.2",
     "extract-text-webpack-plugin": "^3.0.2",
@@ -48,14 +48,13 @@
     "webpack-sources": "^1.1.0"
   },
   "devDependencies": {
-    "eslint": "^4.17.0",
+    "eslint": "^4.18.2",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-babel": "^4.1.2",
-    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-import": "^2.9.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
-    "eslint-plugin-react": "^7.6.1",
-    "nodemon": "^1.14.12",
-    "webpack-dev-server": "^2.11.1"
+    "eslint-plugin-react": "^7.7.0",
+    "webpack-dev-server": "^2.11.2"
   },
   "eslintIgnore": ["lib/GenerateStaticPagePlugin.js", "index.html"]
 }

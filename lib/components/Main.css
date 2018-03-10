@@ -47,8 +47,14 @@ main {}
   border: #e5e5ef 1px solid;
   border-right: none;
   position: relative;
-  height: 28px;
+  height: 40px;
   background-color: #f1f1f1;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.note-breadcrumb-item:hover {
+  background-color: #f9fafa;
 }
 
 .note-breadcrumb-item a {
@@ -74,6 +80,10 @@ main {}
   border-right: #e5e5ef 1px solid;
   border-top: #e5e5ef 1px solid;
   transform: rotate(45deg);
+}
+
+.note-breadcrumb-item:hover::after {
+  background-color: #f9fafa;
 }
 
 .note-breadcrumb-item:first-child {

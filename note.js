@@ -5,7 +5,7 @@ import 'github-markdown-css/github-markdown.css';
 import NoteBody from './lib/components/NoteBody';
 
 import './lib/style.css';
-import note from './hw0707.md';
+import note from './source/calculus/homework/hw0100.md';
 
 const menu = [
   {
