@@ -5,7 +5,7 @@ import 'github-markdown-css/github-markdown.css';
 import NoteBody from './lib/components/NoteBody';
 
 import './lib/style.css';
-import note from './source/calculus/homework/hw0100.md';
+import note from './source/calculus/notes/0304_derivatives_of_trigonometric_functions.md';
 
 const menu = [
   {
@@ -13,8 +13,8 @@ const menu = [
     link: '/courses/calculus'
   },
   {
-    name: 'HW0707',
-    link: '/courses/calculus/hw0707'
+    name: 'HW0200',
+    link: ''
   }
 ];
 

@@ -1,11 +1,10 @@
 ### 3.4 Derivatives of Trigonometric Functions
 
 #### Two special Limits
->**Theorem 3.11 Trigonometric Limits**
+>Theorem 3.11 Trigonometric Limits
 $\dlim_{x \to 0}{\dfrac{\sin x}{x}} = 1$ &emsp; $\dlim_{x \to 0}{\dfrac{\cos x -1}{x}} = 0$
 
 **Proof**  $\dlim_{x \to 0}{\frac{\sin x}{x}} = 1$.
->Solution
 $$
 \begin{aligned}
 \triangle OCD &< \overgroup{OBC} < \triangle OAB \\
@@ -18,7 +17,6 @@ $$
 Because $\dlim_{x \to 0}\cos x = 1 = \dlim_{x \to 0}\dfrac{1}{\cos x}$,  according to the Squeeze Theorem, $\dlim_{x \to 0}{\dfrac{\sin x}{x}} = 1$.
 
 **Proof**  $\dlim_{x \to 0}{\dfrac{\cos x -1}{x}} = 0$.
->Solution
 $$
 \begin{aligned}
 \lim_{x \to 0}{\frac{\cos x -1}{x}} &= \lim_{x \to 0}({\frac{\cos x -1}{x}} \cdot \frac{\cos x + 1}{\cos x +1}) \\
@@ -29,8 +27,10 @@ $$
 \end{aligned}
 $$
 
-**Example 1** Calculating trigonometric limits<br>
+>Example 1
+**Calculating trigonometric limits**.
 a. $\dlim_{x \to 0}{\dfrac{\sin 4x}{x}}$ &emsp; b. $\dlim_{x \to 0}{\dfrac{\sin 3x}{\sin 5x}}$
+
 >Solution
 a. To use the fact that $\dlim_{x \to 0}{\frac{\sin x}{x}} = 1$, the argument of the sine function in the numerator must bethe same as the denominator. Multiplying and dividing $\dfrac{\sin 4x}{x}$ by 4, we evaluate the limit as follows:
 $$
@@ -50,17 +50,17 @@ As in part (a), we now divide and multiply $\frac{\sin 3x}{x}$ by $3$, and divid
 $$
 \begin{aligned}
 \lim_{x \to 0}{\frac{\sin 3x}{\sin 5x}}
-&= \lim_{x \to 0}{\frac{\dfrac{3\sin 3x}{3x}}{\dfrac{5\sin 5x}{5x}}} \\
-&= \frac{3}{5}{\frac{\dlim_{t \to 0}{(\sin t)/t}}{\dlim_{u \to 0}{(\sin u)/u}}} &\text{t=3x in numerator and u=5x in denominator.} \\
+&= \lim_{x \to 0}{\frac{\frac{3\sin 3x}{3x}}{\frac{5\sin 5x}{5x}}} \\
+&= \frac{3}{5} \cdot {\frac{\dlim_{t \to 0}{\frac{\sin t}{t}}}{\dlim_{u \to 0}{{\frac{\sin u}{u}}}}} &\text{t=3x in numerator and u=5x in denominator.} \\
 & = \frac{3}{5}\cdot\frac{1}{1} =\frac{3}{5}
 \end{aligned}
 $$
 
 #### Derivatives of Sine and Cosine Functions
->**Theorem 3.12 Derivatives of Sine and Cosine**
+>Theorem 3.12 Derivatives of Sine and Cosine
 $\dfrac{d}{dx}(\sin x) = \cos x$ &emsp; $\dfrac{d}{dx}(\cos x) = -\sin x$
 
-**Proof:**
+**Proof**
 We start with the definition of the derivative.
 $$
 \begin{aligned}
@@ -68,7 +68,7 @@ f'(x) &= \lim_{h \to 0}{\frac{\sin(x+h) - \sin x}{h}} &\text{Definition of the d
 &= \lim_{h \to 0}{\frac{\sin x\cos h + \cos x\sin h - \sin x}{h}} &\text{Sine addition identity.} \\
 &= \lim_{h \to 0}{\frac{\sin x(\cos h - 1) + \cos x\sin h}{h}} \\
 &= \lim_{h \to 0}{\frac{\sin x(\cos h - 1)}{h}} + \lim_{h \to 0}{\frac{\cos x\sin h}{h}} &\text{Theorm 2.3.}\\
-&= \sin x{\boldsymbol{\lim_{h \to 0}{\frac{\cos h - 1}{h}}}} + \cos x{\boldsymbol{\lim_{h \to 0}{\frac{\sin h}{h}}}} &\text{Both sinx and cosx are independent of h.}\\
+&= \sin x \lb\bf{\lim_{h \to 0}{\frac{\cos h - 1}{h}}}\rb + \cos x\lb\bf{\lim_{h \to 0}{\frac{\sin h}{h}}}\rb &\text{Both sinx and cosx are independent of h.}\\
 &= (\sin x)(0) + (\cos x)(1) &\text{Theorm 3.11.}\\
 &= \cos x
 \end{aligned}
@@ -76,8 +76,10 @@ $$
 We have proved the import result that $\dfrac{d}{dx}(\sin x) = \cos x$.
 The fact that $\dfrac{d}{dx}(\cos x) = -\sin x$ is proved in a similar way using a cosine addition identity.
 
-**Example 2** Derivatives involving trigonometric functions
+>Example 2
+**Derivatives involving trigonometric functions**
 a. $y=e^{2x}\cos x$ &emsp; b. $y=\sin x - x\cos x$ &emsp; c. $y = \dfrac{1 + \sin x}{1 - \sin x}$
+
 >Solution
 a. $y' = e^{2x}(2\cos x - \sin x)$
 b. $y' = x\sin x$
@@ -85,7 +87,9 @@ c. $y' = \dfrac{2\cos x}{(1-\sin x)^2}$
 
 #### Derivatives of Other Trigonometric Functions
 
-**Example 3** Derivatives of the tangent function. Calculate $\dfrac{d}{dx}(\tan x)$.
+>Example 3
+**Derivatives of the tangent function.** Calculate $\dfrac{d}{dx}(\tan x)$.
+
 >Solution
 $$
 \begin{aligned}
@@ -97,20 +101,21 @@ $$
 \end{aligned}
 $$
 
->**Theorem 3.13 Derivatives of the Trigonometric Functions**
+>Theorem 3.13 Derivatives of the Trigonometric Functions
 $$
 \begin{aligned}
-&\frac{d}{dx}(\sin x)&= \cos x \qquad
+\frac{d}{dx}(\sin x)&= \cos x \qquad
 &\frac{d}{dx}(\cos x)&= -\sin x \\
-&\frac{d}{dx}(\tan x)&= \sec^2 x \qquad
+\frac{d}{dx}(\tan x)&= \sec^2 x \qquad
 &\frac{d}{dx}(\cot x)&= -\csc^2 x \\
-&\frac{d}{dx}(\sec x)&= \sec x\tan x \qquad
-&\frac{d}{dx}(\csc x)&= -\csc x\cot x \\
+\frac{d}{dx}(\sec x)&= \sec x\tan x \qquad
+&\frac{d}{dx}(\csc x)&= -\csc x\cot x
 \end{aligned}
 $$
 
-**Example 4** Derivatives involving $\sec x$ and $\csc x$
-Find the derivative of $y = \sec x\csc x$.
+>Example 4
+**Derivatives involving $\sec x$ and $\csc x$.** Find the derivative of $y = \sec x\csc x$.
+
 >Solution
 $$
 \begin{aligned}
@@ -128,15 +133,16 @@ $$
 A few higher-order derivatives of $y=\sin x$ reveal a pattern.
 $$
 \begin{aligned}
-&\frac{dy}{dx}&= \cos x \qquad
+\frac{dy}{dx}&= \cos x \qquad
 &\frac{{d^2}y}{dx^2}&= -\sin x \\
-&\frac{{d^3}y}{dx^3}&= -\cos x \qquad
+\frac{{d^3}y}{dx^3}&= -\cos x \qquad
 &\frac{{d^4}y}{dx^4}&= \sin x
 \end{aligned}
 $$
 
-**Example 5** Second order derivative.
-Find the derivative of $y = \csc x$.
+>Example 5
+**Second order derivative.** Find the derivative of $y = \csc x$.
+
 >Solution
 $$
 \begin{aligned}

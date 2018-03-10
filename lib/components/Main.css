@@ -1,4 +1,6 @@
-main {}
+main {
+  counter-reset: example-counter;
+}
 
 .main-title {
   margin-left: 20px;
@@ -109,24 +111,30 @@ main {}
   min-height: 200px;
 }
 
-.named-container {
-  background-color: #f8f8f8;
+.named-container-solution {
+  background-color: #fdfdfd;
   padding: 0.5em 1em;
   color: #6a737d;
-  border-left: 0.25em solid #dfe2e5;
+  border-left: 3px solid #dfe2e5;
   margin-bottom: 20px;
   page-break-inside: avoid;
 }
 
-.note-solution {}
+.named-container-example {
+  padding: 0.5em 0em;
+  color: #6a737d;
+  page-break-inside: avoid;
+}
 
-.note-example {}
+.named-container-defintion {}
 
-.note-defintion {}
+.named-container-procedure {}
 
-.note-procedure {}
-
-.note-theorem {}
+.named-container-theorem {
+  border: 1px solid #38accd;
+  padding: 0.5em 0.5em;
+  margin-bottom: 1em;
+}
 
 .markdown-body {
   min-height: 200px;
@@ -134,6 +142,16 @@ main {}
 
 .markdown-body h3 {
   color: #ec407a;
+}
+
+.note-footer {
+  background-color: #f8f8f8;
+  font-size: 0.85em;
+  padding: 3em;
+}
+
+.note-footer p {
+  line-height: 1.5;
 }
 
 @media print {
@@ -160,5 +178,8 @@ main {}
   .named-container {
     margin-bottom: 2px;
     padding: 0.2em 0.5em;
+  }
+  .note-footer {
+    display: none;
   }
 }
