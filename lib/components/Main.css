@@ -1,0 +1,154 @@
+main {}
+
+.main-title {
+  margin-left: 20px;
+}
+
+/* HomeBody */
+
+.course-list {}
+
+.course-list-item {
+  font-size: 1.25em;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 15px 25px;
+}
+
+.course-list-item a {}
+
+.note-meta {
+  background-color: #f9fafa;
+  border-top: 4px solid #38accd;
+  border-bottom: 1px solid #dadfe3;
+  min-height: 60px;
+}
+
+.note-breadcrumb-section {
+  min-height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: -10px;
+  margin-right: -25px;
+  margin-left: -25px;
+}
+
+.note-breadcrumbs {
+  margin-left: 20px;
+}
+
+.note-breadcrumb-item {
+  display: inline-block;
+  padding-top: 10px;
+  padding-right: 28px;
+  padding-bottom: 0px;
+  padding-left: 35px;
+  border: #e5e5ef 1px solid;
+  border-right: none;
+  position: relative;
+  height: 28px;
+  background-color: #f1f1f1;
+}
+
+.note-breadcrumb-item a {
+  color: #383838;
+  font-size: 1em;
+  text-transform: capitalize;
+}
+
+.note-breadcrumb-item a:hover {
+  text-decoration: none;
+}
+
+.note-breadcrumb-item::after {
+  width: 27px;
+  height: 27px;
+  content: '';
+  background-color: #f1f1f1;
+  position: absolute;
+  display: block;
+  right: -14px;
+  top: 5px;
+  margin-top: 0;
+  border-right: #e5e5ef 1px solid;
+  border-top: #e5e5ef 1px solid;
+  transform: rotate(45deg);
+}
+
+.note-breadcrumb-item:first-child {
+  padding-left: 20px;
+  z-index: 2;
+}
+
+.note-breadcrumb-item:last-child {
+  background-color: #f8f8f8;
+  z-index: 1;
+}
+
+.note-breadcrumb-item:last-child::after {
+  background-color: #f8f8f8;
+}
+
+.note-body {
+  background-color: #ffffff;
+}
+
+.note-content {
+  padding: 10px 30px;
+  min-height: 200px;
+}
+
+.named-container {
+  background-color: #f8f8f8;
+  padding: 0.5em 1em;
+  color: #6a737d;
+  border-left: 0.25em solid #dfe2e5;
+  margin-bottom: 20px;
+  page-break-inside: avoid;
+}
+
+.note-solution {}
+
+.note-example {}
+
+.note-defintion {}
+
+.note-procedure {}
+
+.note-theorem {}
+
+.markdown-body {
+  min-height: 200px;
+}
+
+.markdown-body h3 {
+  color: #ec407a;
+}
+
+@media print {
+  .note-meta {
+    display: none;
+  }
+  .note-breadcrumb-section {
+    display: none;
+  }
+  .markdown-body {
+    font-size: 1em;
+  }
+  .named-container {
+    margin-bottom: 2px;
+  }
+  .markdown-body p {
+    margin-bottom: 5px;
+  }
+  .markdown-body h3 {
+    background-color: white;
+    color: black;
+    margin-bottom: 2px;
+  }
+  .named-container {
+    margin-bottom: 2px;
+    padding: 0.2em 0.5em;
+  }
+}

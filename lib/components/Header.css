@@ -1,0 +1,26 @@
+.header {
+  background-color: white;
+  height: 52px;
+}
+
+.header-nav-container {
+  padding: 0 10px;
+  width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header-nav-item {
+  font-size: 1.25em;
+  margin-right: 20px;
+}
+
+@media print {
+  .header {
+    display: none;
+  }
+}
