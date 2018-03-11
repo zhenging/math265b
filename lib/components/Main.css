@@ -144,6 +144,10 @@ main {
   color: #ec407a;
 }
 
+.markdown_body img {
+  float: right;
+}
+
 .note-footer {
   background-color: #f8f8f8;
   font-size: 0.85em;

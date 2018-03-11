@@ -12,8 +12,7 @@ const copyWebpackPlugin = new CopyWebpackPlugin(
   [
     {
       context: 'source',
-      from: '**/*',
-      ignore: ['*.md'],
+      from: '**/assets/*',
       to: 'courses',
       toType: 'dir'
     }
