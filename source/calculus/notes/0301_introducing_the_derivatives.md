@@ -44,7 +44,8 @@ Find an equation of the line tangent to the graph of $f(x) = x^3 + 4x$ at $x=1$.
 $y=7x-2$
 
 #### The Derivative Function
-Definition **The Derivative**
+
+>Definition **The Derivative**
 The **derivative** of $f$ is the function
 $$
 f'(x) = \lim_{h \to 0}\frac{f(x + h) - f(x)}{h}
@@ -77,10 +78,9 @@ Todo
 
 #### Continuity
 
->**Theorem 3.1 Differentiable Implies Continuous**
+>Theorem 3.1 Differentiable Implies Continuous
 If $f$ is differentiable at a point $a$, then $f$ is continuous at $a$.
-
->**Theorem 3.1(Alternative Version) Not Continuous Implies Not Differentiable**
+_(Alternative Version)_ Not Continuous Implies Not Differentiable
 If $f$ is not continuous at a point $a$, then $f$ is not differentiable at $a$.
 
 **Examples 8** Continuous and Differentiable

@@ -4,7 +4,7 @@ Informally, we say that a functionn $f$ is continuous at $a$ if the graph of $f$
 
 #### Continuity at a Point
 
->**Definition Continuity at a Point**
+>Definition Continuity at a Point
 A function $f$ is continuous at $a$ if $\lim_{x \to a}{f(x)} = f(a)$. If $f$ is not continuous at $a$, then $a$ is a point of discontinuity.
 
 >**Continuity Checklist**

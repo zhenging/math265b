@@ -7,7 +7,7 @@ For an *infinite limit*, the *dependent variable* becomes arbitrarily large in m
 With *limits at infinity*, the dependent variable approaches a finite number as the independent variable becomes arbitrarity large in magnitude.
 
 #### Infinite Limits
->**Definition Infinite Limits**
+>Definition Infinite Limits
 Suppose f is defined for all x near a. If f(x) grows arbitrarily large for all x sufficiently close (but not equal) to a, we write
 $$
 \lim_{x \to a}{f(x)} = \infty

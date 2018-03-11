@@ -4,14 +4,15 @@
 >Theorem 3.11 Trigonometric Limits
 $\dlim_{x \to 0}{\dfrac{\sin x}{x}} = 1$ &emsp; $\dlim_{x \to 0}{\dfrac{\cos x -1}{x}} = 0$
 
-**Proof**  $\dlim_{x \to 0}{\frac{\sin x}{x}} = 1$.
+![Graph 1](../assets/theorem0311.png)
+**Proof**  $\dlim_{x \to 0}{\dfrac{\sin x}{x}} = 1$.
 $$
 \begin{aligned}
-\triangle OCD &< \overgroup{OBC} < \triangle OAB \\
-\frac{1}{2} OD \cdot CD &< \frac{1}{2} OB^2 \cdot \th < \frac{1}{2}OB \cdot AB \\
-\cos \th \cdot \sin \th &< 1^2 \cdot \th< 1 \cdot \tan \th \\
-\cos \th &< \frac{\th}{\sin \th} < \frac{1}{\cos \th} \\
-\frac{1}{\cos \th} &>  \frac{\sin \th}{\th} > \cos \th
+\triangle OAD&< \overgroup{OAC} < \triangle OBC \\
+\frac{1}{2} OD \cdot AD&< \frac{1}{2} OC^2 \cdot x < \frac{1}{2}OC \cdot BC \\
+\cos x \cdot \sin x &< 1^2 \cdot x< 1 \cdot \tan x \\
+\cos x &< \frac{x}{\sin x} < \frac{1}{\cos x} \\
+\frac{1}{\cos x} &>  \frac{\sin x}{x} > \cos x
 \end{aligned}
 $$
 Because $\dlim_{x \to 0}\cos x = 1 = \dlim_{x \to 0}\dfrac{1}{\cos x}$,  according to the Squeeze Theorem, $\dlim_{x \to 0}{\dfrac{\sin x}{x}} = 1$.
@@ -42,11 +43,11 @@ $$
 &= 4(1) = 4 &\text{Theorem 3.11}
 \end{aligned}
 $$
-b. The first step is to divide the numerator and denominator of $\dfrac{\sin 3x}{\sin 5x}$ by x:
+b. The first step is to divide the numerator and denominator of $\dfrac{\sin 3x}{\sin 5x}$ by $x$:
 $$
 \frac{\sin 3x}{\sin 5x} = \frac{(\sin 3x)/x}{(\sin 5x)/x}
 $$
-As in part (a), we now divide and multiply $\frac{\sin 3x}{x}$ by $3$, and divide and multiply $\frac{\sin 3x}{x}$ by $5$. in the numerator, we let $t=3x$ and in the denominator, we let $u=5x$. In each case, $t->0$ and $u->0$ as $x->0$. Therefore,
+As in part (a), we now divide and multiply $\frac{\sin 3x}{x}$ by $3$, and divide and multiply $\frac{\sin 3x}{x}$ by $5$. in the numerator, we let $t=3x$ and in the denominator, we let $u=5x$. In each case, $t \to 0$ and $u \to 0$ as $x \to 0$. Therefore,
 $$
 \begin{aligned}
 \lim_{x \to 0}{\frac{\sin 3x}{\sin 5x}}

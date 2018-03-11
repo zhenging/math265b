@@ -20,7 +20,8 @@ $$
 \end{aligned}
 $$
 
-**Example 1** Using the Product Rule
+>Example 1
+**Using the Product Rule**
 Find and simplify the following derivatives.
 a. $\dfrac{d}{dv}(v^2(2\sqrt{v}+ 1))$ &emsp; b. $\dfrac{d}{dx}(x^2e^x))$
 

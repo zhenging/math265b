@@ -1,6 +1,6 @@
 ### 2.2 Definition of Limits
 
-> **Definition Limit of a Function(Preliminary)**
+>Definition Limit of a Function(Preliminary)
 Suppose the function $f$ is defined for all $x$ near $a$ except > possibly at $a$. If $f(x)$ is arbitrarily close to $L$ (as close to L > as we like) for all $x$ sufficiently close (but not equal) to $a$, we write
 $$
 \lim_{x \to a}{f(x)} = L

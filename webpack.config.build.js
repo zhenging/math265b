@@ -1,4 +1,5 @@
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const GenerateStaticPagePlugin = require('./lib/GenerateStaticPagePlugin');
 const path = require('path');
@@ -7,6 +8,18 @@ const ENTRY_PATH = './generate.js';
 const OUTPUT_PATH = path.join(__dirname, 'build');
 
 const cleanPlugin = new CleanWebpackPlugin('build/*');
+const copyWebpackPlugin = new CopyWebpackPlugin(
+  [
+    {
+      context: 'source',
+      from: '**/*',
+      ignore: ['*.md'],
+      to: 'courses',
+      toType: 'dir'
+    }
+  ],
+  { debug: 'info' }
+);
 const extractCSSPlugin = new ExtractTextPlugin('courses/combined.css');
 const generateStaticPagePlugin = new GenerateStaticPagePlugin();
 
@@ -21,7 +34,6 @@ const config = {
       },
       {
         test: /\.css$/,
-        // use: ['css-loader']
         use: extractCSSPlugin.extract(['css-loader'])
       }
     ]
@@ -32,7 +44,7 @@ const config = {
     path: OUTPUT_PATH,
     libraryTarget: 'umd'
   },
-  plugins: [cleanPlugin, extractCSSPlugin, generateStaticPagePlugin],
+  plugins: [cleanPlugin, extractCSSPlugin, copyWebpackPlugin, generateStaticPagePlugin],
   externals: [],
   resolve: {
     extensions: ['.js', '.jsx']
