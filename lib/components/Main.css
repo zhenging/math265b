@@ -144,7 +144,7 @@ main {
   color: #ec407a;
 }
 
-.markdown_body img {
+.markdown-body img {
   float: right;
 }
 
@@ -158,11 +158,28 @@ main {
   line-height: 1.5;
 }
 
+.note-tags-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.note-tag {
+  display: inline-block;
+  color: #0366d6;
+  background-color: #f1f8ff;
+  padding: 0.25em 0.5em;
+  margin: 0 0.5em 0.5em 0;
+}
+
 @media print {
   .note-meta {
     display: none;
   }
   .note-breadcrumb-section {
+    display: none;
+  }
+  .note-tags-section {
     display: none;
   }
   .markdown-body {

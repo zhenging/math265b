@@ -1,6 +1,5 @@
 ## 02 Model Building and Gains from Trades
-
-page 26-56
+pg26-56
 
 > **Misconception** - Trade always results in winners and losers
 When most people think of trade, they think of it as a zero-sum game, that is, a game in which one side wins what the other side loses.

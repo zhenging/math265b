@@ -1,5 +1,5 @@
 ## 14 The Great Recession, the Great Depression, and Great Macroeconomic Debates
-pg 438-460
+pg438-460
 
 **Misconception** - The Great Recession was comparable to the Great Depression
 
@@ -23,7 +23,7 @@ pg 438-460
  + Real estate values fell, the value of people's home drops (wealth)
  + Stocks lost value: retirement savings drops (wealth)
  + Expected future income (Consumer sentiment index)
- 
+
  One reason this recession has been called "Great" is that the decline in real GDP and the increase in the unemployment rate were large by historical standards. Another reason is that symptoms of the recession dragged on for several year after the recession was officially over.
 
 #### The Great Depression

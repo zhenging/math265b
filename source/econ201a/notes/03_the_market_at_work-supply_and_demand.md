@@ -1,6 +1,5 @@
 ## 03 The market at work-Supply and Demand
-
-page 68-107
+pg68-107
 
 > **Misconception** - Sellers determine the price of the good.
 

@@ -1,4 +1,7 @@
-**Challenge Proplem** (02/12)
+---
+tags: [integration, varying acceleration]
+---
+
 The acceleration of a particle is given by $a(t) = 2.00m/s^2 + (3.00m/s^3) t$. Find the initial $v_{0}$ such that the particle have the x-coordinate, at $t=4s$ and $t=0s$.
 >Solution
 $$

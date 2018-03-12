@@ -5,7 +5,7 @@ import 'github-markdown-css/github-markdown.css';
 import NoteBody from './lib/components/NoteBody';
 
 import './lib/style.css';
-import note from './source/calculus/notes/0304_derivatives_of_trigonometric_functions.md';
+import note from './source/phys208a/notes/quiz_0122.md';
 
 const menu = [
   {

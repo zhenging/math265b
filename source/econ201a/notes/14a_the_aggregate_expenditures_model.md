@@ -1,4 +1,6 @@
 ## 14A  The Aggregate Expenditures Model
+pg461
+
 The **aggregate expenditures model (AE)** is a **short-run** model of economic fluctuations. it holds that **prices are completely sticky (inflexible)** and that aggregate demand (aggregate expenditures) determines the economy's level of output and income.
 
 ### The Consumption of Aggregate Expenditures

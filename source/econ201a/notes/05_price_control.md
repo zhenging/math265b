@@ -1,6 +1,5 @@
 ## 05 Prices Controls
-
-page 142-170
+pg142-170
 
 > **Misconception** - Rent controls help make housing more affordable for everyone.
 

@@ -1,5 +1,5 @@
 ## 06 Introduction to Macroeconomics and GDP
-page 174-206
+pg174-206
 
 > **Misconception** - There is no reliable way to gauge the health of an economy.
 

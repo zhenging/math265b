@@ -1,6 +1,5 @@
 ## 04 Market Outcomes and Tax Incidence
-
-page 108-141
+pg108-141
 
 > **Misconception** - Tax on firms do not affect consumers.
 
