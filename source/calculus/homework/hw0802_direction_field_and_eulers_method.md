@@ -1,0 +1,2 @@
+### Section 8.2 Direction Field and Eulers Method
+p585: **Part 1**: In general, when it asks for direction field/slope field, you can use technology and you do not need to copy entire slope fields on paper. However, do include any specific solution curves requested. 2, 5, 7 (give a justification for each choice on #7), 11, 13, 15 (on #13 and 15 do three mini “slopes” by hand -- then use technology to finish. On paper show the three mini tangents and the requested solution curve), 17, 21, 23, 41, 42, 46, 48. **Part 2**: 3, 4, By hand: 25, 27, 28 Technology: 31,33

@@ -9,7 +9,8 @@
     "build": "webpack --config webpack.config.build.js",
     "debug":
       "node --inspect $(npm bin)/webpack --config webpack.config.build.js --progress --watch",
-    "deploy": "node ./deploy.js"
+    "deploy": "node ./deploy.js",
+    "rename": "node ./lib/utils/rename.js"
   },
   "keywords": ["markdown-it", "katex"],
   "author": "raven",
