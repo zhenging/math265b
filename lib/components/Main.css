@@ -116,7 +116,7 @@ main {
   padding: 0.5em 1em;
   color: #6a737d;
   border-left: 3px solid #dfe2e5;
-  margin-bottom: 20px;
+  margin-bottom: 1em;
   page-break-inside: avoid;
 }
 
@@ -198,6 +198,10 @@ main {
   }
   .named-container {
     margin-bottom: 2px;
+    padding: 0.2em 0.5em;
+  }
+  .named-container-solution {
+    margin-bottom: 5px;
     padding: 0.2em 0.5em;
   }
   .note-footer {
