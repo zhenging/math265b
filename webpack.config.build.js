@@ -13,13 +13,13 @@ const copyWebpackPlugin = new CopyWebpackPlugin(
     {
       context: 'source',
       from: '**/assets/*',
-      to: 'courses',
+      to: 'calculus',
       toType: 'dir'
     }
   ],
   { debug: 'info' }
 );
-const extractCSSPlugin = new ExtractTextPlugin('courses/combined.css');
+const extractCSSPlugin = new ExtractTextPlugin('/calculus/combined.css');
 const generateStaticPagePlugin = new GenerateStaticPagePlugin();
 
 const config = {

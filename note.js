@@ -5,12 +5,12 @@ import 'github-markdown-css/github-markdown.css';
 import NoteBody from './lib/components/NoteBody';
 
 import './lib/style.css';
-import note from './source/phys208a/notes/quiz_0122.md';
+import note from './source/notes/0201_the_idea_of_limits.md';
 
 const menu = [
   {
     name: 'Calculus',
-    link: '/courses/calculus'
+    link: '/calculus'
   },
   {
     name: 'HW0200',
