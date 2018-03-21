@@ -1,22 +1,6 @@
 ### Section 8.4 Special First Order Differential Equations
 p603: On the following, show complete steps to actually SET UP and SOLVE the related differential equation. 27, 29, **39**
 
-**Newton's Law of Cooling**
-The rate at which the tempature changes at any time is proportional to the _temperature difference_ between the object and the ambient tempature. Let the current tempature of the object be $T$, the initial tempature of the object be $T(0) = T_0$ and the ambient tempature be $A$, where $A$ and $T_0$ are constants. We have
-$$
-\begin{aligned}
-\frac{dT}{dt} &= -k(T - A)\\
-\frac{dT}{dt} \cdot \frac{1}{T(t) - A}&= -k\\
-\int \frac{dT}{T - A} &= \int (-k)dt\\
-\ln |T-A| &= -kt + C\\
-T &= \pm e^{-kt + C} + A\\
-T &= (\pm e^C) \cdot e^{-kt} + A\\
-T &= C e^{-kt} + A &\text{Rename} \pm e^C \to C\\
-T(0) &= C e^0 + A \To C = T_0 - A\\
-T(t) &= (T_0 - A)e^{-kt} + A
-\end{aligned}
-$$
-
 27–30\. **Newton's Law of Cooling** Solve the differential equation for Newton's Law of Cooling to find the temperature in the following cases. Then answer any additional questions.
 27\. A cup of coffee has a temperature of $90^{\degree}C$ when it is poured and allowed to cool in a room with a temperature of $25^{\degree}C$. One minute after the coffee is poured, its temperature is $85^{\degree}C$. How long must you wait until the coffee is cool enough to drink, say $30^{\degree}C$?
 >Solution
