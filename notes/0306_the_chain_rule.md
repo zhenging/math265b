@@ -1,7 +1,7 @@
 ### 3.6 The Chain Rule
 
 #### Chain Rule Formulas
->**Theorem 3.14 The Chain Rule**
+>Theorem 3.14 The Chain Rule
 Suppose $y=f(u)$ is differentiable at $u=g(x)$ and $u=g(x)$ is > differentiable at $x$. The composite function $y=f(g(x))$ is differentiable at $x$, and its derivative can be expressedin two equivalent ways:
 $$
 \begin{aligned}
@@ -68,8 +68,8 @@ Todo
 
 #### Chain Rule For Powers
 
-> Theorem 3.15 **Chain Rule For Powers**
-> If $g$ is differentiable for all $x$ in its domain and i is an integer, then
+>Theorem 3.15 **Chain Rule For Powers**
+If $g$ is differentiable for all $x$ in its domain and i is an integer, then
 $$
 \frac{d}{dx}[(g(x))^n] = n(g(x))^{n-1}g'(x)
 $$
