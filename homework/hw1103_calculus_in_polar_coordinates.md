@@ -166,11 +166,28 @@ $$
 29\. The region outside the circle $r =\frac{1}{2}$ and inside the circle $r = \cos \th$
 ![Graph (29)](../assets/1103_29.png)
 >Solution
+1\. Intersection: $\cos \th = \frac{1}{2} \To \th = \frac{\pi}{3},-\frac{\pi}{3}$
+2\. Integration
+$$
+\begin{aligned}
+A &= \frac{1}{2}\int_{-\frac{\pi}{3}}^{\frac{\pi}{3}} (\cos^2 \th - \frac{1}{4}) d\th\\
+&= \frac{1}{8}\int_{-\frac{\pi}{3}}^{\frac{\pi}{3}} (2\cos 2\th +1) d\th\\
+&= \frac{1}{8}(\sin 2\th + \th)\mid_{-\frac{\pi}{3}}^{\frac{\pi}{3}} = \frac{\sqrt 3}{8} + \frac{\pi}{12}
+\end{aligned}
+$$
 
-31\. The region inside the circle $r =\sqrt {\cos \theta}$ and inside the circle $r = \frac{1}{\sqrt 2}$ in the first quadrant.
+31\. The region inside the circle $r =\sqrt {\cos \th}$ and inside the circle $r = \frac{1}{\sqrt 2}$ in the first quadrant.
 ![Graph (31)](../assets/1103_31.png)
 >Solution
-
+1\. Intersection: $\sqrt {\cos \th} = \frac{1}{\sqrt 2} \To \th = \frac{\pi}{3}, -\frac{\pi}{3}$
+2\. Integration
+$$
+\begin{aligned}
+A &= \frac{1}{2} \int_0^{\frac{\pi}{3}} (\frac{1}{\sqrt 2})^2 d\th +\frac{1}{2} \int_{\frac{\pi}{3}}^{\frac{\pi}{2}} (\sqrt {\cos \th})^2 d\th\\
+&= \frac{1}{4} \th\mid_0^{\frac{\pi}{3}} + \frac{1}{2}\sin \th \mid_{\frac{\pi}{3}}^{\frac{\pi}{2}}\\
+&= \frac{\pi}{6} + \frac{1}{2} - \frac{\sqrt 3}{4}
+\end{aligned}
+$$
 
 35\. The region inside the rose $r=4\sin 2\th$ and inside the circle $r=2$.
 ![Graph (35)](../assets/1103_35.png)

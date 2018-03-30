@@ -1,5 +1,8 @@
+---
+date: 02/26/2018
+---
+
 ### Math265B Group 3
-02/26/2018
 
 1\. Consider the region of the plane between the curve $f(x) =\dfrac{1}{x}$ and the ax-axis over the interval $[1, \infty]$. If this region is revolved about the x-axis, the resulting solid is called ***Gabriel's Horn***. [Graph (1)](https://www.desmos.com/calculator/jtxtwirg5w)
 a. Set up an integral that represents the volume of this solid of revolution

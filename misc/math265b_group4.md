@@ -1,5 +1,8 @@
+---
+date: 03/14/2018
+---
+
 ### Math265B Group 4
-03/14/2018
 
 1\. A model that describes the free fall of an object subject to resistance uses the euqation $v'(t) = g-bv$ where $v(t)$ is the velocity of the object for $t\ges 0, g=9.8m/s^2$, and $b>0$ is a constance that involves the mas of the object the air resistance. Let $b=0.1s^{-1}$.
 a. What is the equilibrium solution?
