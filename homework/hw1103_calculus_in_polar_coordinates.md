@@ -1,5 +1,5 @@
 ### Section 11.3 Calculus In Polar Coordinates
-p758: 2, 3, 4, 5, 7, **9**, 11, 15, **19**, 21, 23, 24, 27, 29, 31, 35, 37, 38, 41, 42, 47, 54?. Plan to do this assignment in more than one sitting as the problems are very long. Make each problem from #5 on worth double value since they are more involved.
+p758: 2, 3, 4, 5, 7, **9**, 11, 15, **19**, 21, 23, 24, 27, 29, 31, 35, 37, 38, 41, **42**, 47, **54**?. Plan to do this assignment in more than one sitting as the problems are very long. Make each problem from #5 on worth double value since they are more involved.
 
 2\. How do you find the slope of the line tangent to the polar graph of $r = f(\th)$ at a point?
 >Solution
@@ -127,7 +127,6 @@ A &= 2\int_0^{\pi/2} \frac{1}{2} (\sqrt{\cos \th})^2 d\th\\
 \end{aligned}
 $$
 
-### sdadf
 23\. The region inside the circle $r = 8 \sin \th$.
 ![Graph (23)](../assets/1103_23.png)
 >Solution
@@ -185,34 +184,92 @@ $$
 \begin{aligned}
 A &= \frac{1}{2} \int_0^{\frac{\pi}{3}} (\frac{1}{\sqrt 2})^2 d\th +\frac{1}{2} \int_{\frac{\pi}{3}}^{\frac{\pi}{2}} (\sqrt {\cos \th})^2 d\th\\
 &= \frac{1}{4} \th\mid_0^{\frac{\pi}{3}} + \frac{1}{2}\sin \th \mid_{\frac{\pi}{3}}^{\frac{\pi}{2}}\\
-&= \frac{\pi}{6} + \frac{1}{2} - \frac{\sqrt 3}{4}
+&= \frac{\pi}{12} + \frac{1}{2} - \frac{\sqrt 3}{4}
 \end{aligned}
 $$
 
 35\. The region inside the rose $r=4\sin 2\th$ and inside the circle $r=2$.
 ![Graph (35)](../assets/1103_35.png)
 >Solution
+1\. Intersection:
+$$
+\begin{aligned}
+4\sin 2\th &= 2\\
+\To \th &= \frac{\pi}{12} + 2k\pi, \frac{5\pi}{12} + 2k\pi
+\end{aligned}
+$$
+2\. Integration
+$$
+\begin{aligned}
+A &= \pi \cdot 2^2 - 8\int_0^{\frac{\pi}{12}} \frac{1}{2} (2^2 - 16\sin^2 2\th)d\th\\
+&= 4\pi - 16\int_0^{\frac{\pi}{12}}(1 - 4\sin^2 2\th)d\th\\
+&= 4\pi - 16\int_0^{\frac{\pi}{12}}(1 - 4 \cdot \frac{1-\cos 4\th}{2})d\th\\
+&= 4\pi - 16\int_0^{\frac{\pi}{12}}(2\cos 4\th - 1)d\th\\
+&= 4\pi - 16(\frac{1}{2}\sin 4\th - \th) \mid_0^{\frac{\pi}{12}}\\
+&= \frac{16\pi}{3} - 4\sqrt 3
+\end{aligned}
+$$
 
 37–40\. **Intersection points** Use algebraic methods to find as many intersection points of the following curves as possible. Use graphical methods to identify the remaining intersection points.
 37\. $r=3\sin \th$ and $r=3\cos \th$
 ![Graph (37)](../assets/1103_37.png)
 >Solution
+$$
+\begin{aligned}
+3\sin \th &= 3\cos \th\\
+\tan \th &=  1\\
+\To \th &= \frac{\pi}{4}
+\end{aligned}
+$$
+And both the curves pass through the pole. Thus the intersection points are $(0, 0), (\frac{3\sqrt 2}{2}, \frac{\pi}{4})$.
 
 38\. $r=2+2\sin \th$ and $r=2-2\sin \th$
 ![Graph (38)](../assets/1103_38.png)
 >Solution
+$$
+\begin{aligned}
+2+2\sin \th &=2-2\sin \th\\
+\sin \th &= 0\\
+\To \th &=0, \pi
+\end{aligned}
+$$
+And both the curves pass through the pole. Thus the intersection points are $(0, 0), (2, 0), (2, \pi)$.
 
 41–44\. **Finding areas** In Exercises 37–40, you found the intersection points of pairs of curves. Find the area of the entire region that lies within both of the following pairs of curves.
 41\. $r=3\sin \th$ and $r=3\cos \th$
+>Solution
+$$
+\begin{aligned}
+A &= 2\int_0^{\frac{\pi}{4}} \frac{1}{2}(3\sin \th)^2 d\th\\
+&= \frac{9}{2}\int_0^{\frac{\pi}{4}} (1-\cos 2\th) d\th\\
+&= \frac{9}{2} (\th-\sin 2\th) \mid_0^{\frac{\pi}{4}}\\
+&= \frac{9\pi}{8} - \frac{9}{4}
+\end{aligned}
+$$
 
 42\. $r=2+2\sin \th$ and $r=2-2\sin \th$
+>Solution
+$$
+\begin{aligned}
+A &= 4\int_0^{\frac{\pi}{2}} \frac{1}{2}(2-2\sin \th)^2 d\th\\
+&= 4\int_0^{\frac{\pi}{2}} (3-\cos 2\th - 4\sin \th) d\th\\
+&= 4(3\th-\frac{1}{2}\sin 2\th + 4\cos \th)\mid_0^{\frac{\pi}{2}}\\
+&= 6\pi -16
+\end{aligned}
+$$
 
 47\. The region common to the circles $r = 2 \sin \th$ and $r = 1$
 ![Graph (47)](../assets/1103_47.png)
 >Solution
-The two curves intersect at point $(1, \frac{\pi}{6}), (1, \frac{5\pi}{6})$.
+The two curves intersect at point $(1, \frac{\pi}{6}), (1, \frac{5\pi}{6})$. Let $A$ be the area common to the two circles, $A_1$ be the area of the circle $r=2\sin \th$, and $A_2$ be the area outside $r=1$ and inside $r = 2 \sin \th$
 $$
 \begin{aligned}
+A_1 &= \pi \cdot 1^2 = \pi\\
+A_2 &= \frac{1}{2}\int_{\frac{\pi}{6}}^{\frac{5\pi}{6}} (4\sin^2 \th - 1)d\th\\
+&= \frac{1}{2}\int_{\frac{\pi}{6}}^{\frac{5\pi}{6}} (1-2\cos 2\th)d\th\\
+&= \frac{1}{2}(\th-\sin 2\th) \mid_{\frac{\pi}{6}}^{\frac{5\pi}{6}}\\
+&= \frac{\pi}{3} + \frac{\sqrt 3}{2}\\
+A &= A_1 - A_2 =\frac{2\pi}{3} -  \frac{\sqrt 3}{2}
 \end{aligned}
 $$
 
