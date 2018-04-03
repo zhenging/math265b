@@ -1,4 +1,12 @@
-### 5.1 Approximating Areas under Curves
+### 05 Integration
+
++ Approximating Areas Under Areas
++ Definite Integrals
++ Fundamental Theorem of Calculus
++ Working with Integrals
++ Substitution Rule
+
+#### 5.1 Approximating Areas under Curves
 
 #### Area under a Velocity Curve
 

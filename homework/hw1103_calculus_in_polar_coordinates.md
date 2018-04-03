@@ -5,8 +5,7 @@ p758: 2, 3, 4, 5, 7, **9**, 11, 15, **19**, 21, 23, 24, 27, 29, 31, 35, 37, 38, 
 >Solution
 $\dfrac{dy}{dx} = \dfrac{f'(\th)\sin \th + f(\th)\cos \th}{f'(\th)\cos \th - f(\th)\sin \th}$
 
-3\. Explain why the slope of the line tangent to the polar graph of
-$r = f(\th)$ is not $dr/d\th$.
+3\. Explain why the slope of the line tangent to the polar graph of $r = f(\th)$ is not $dr/d\th$.
 >Solution
 Because the slope is defined as the rate of change of vertical coordinate $y$ with respect to horizontal coordinate $x$, which is $dy/dx$, not $dr/d\th$.
 
@@ -22,8 +21,7 @@ $$
 \frac{dy}{dx} &= \frac{f'(\th)\sin \th + f(\th)\cos \th}{f'(\th)\cos \th - f(\th)\sin \th}\\
 &= \frac{-\cos \th \sin \th + (1-\sin \th)\cos \th}{-\cos^2 \th -(1-\sin \th)\sin \th}\\
 \frac{dy}{dx} \mid_{\th=\frac{\pi}{6}} &= \frac{0}{-1} = 0 &\text{(1)}\\
-r&=1-\sin \th = 0\\
-\To \th &= \frac{\pi}{2} &\text{(2)}
+r=1-\sin \th &= 0 \To \th = \frac{\pi}{2} &\text{(2)}
 \end{aligned}
 $$
 The given curve intersects the origin when $\th =\frac{\pi}{2}$. At this point $\frac{dy}{dx}$ does not exist, as the tangent line is vertical.
@@ -35,8 +33,7 @@ $$
 \frac{dy}{dx} &= \frac{f'(\th)\sin \th + f(\th)\cos \th}{f'(\th)\cos \th - f(\th)\sin \th}\\
 &= \frac{8\cos \th \sin \th + 8\sin \th \cos \th}{8\cos^2 \th - 8\sin \th \sin \th}\\
 \frac{dy}{dx} \mid_{\th=\frac{5\pi}{6}} &= \frac{8 \cdot (-\frac{\sqrt 3}{2})}{8 \cdot (\frac{3}{4} - \frac{1}{4})} = -\sqrt 3 &\text{(1)}\\
-r&=8\sin \th = 0\\
-\To \th &= 0, \pi &\text{(2)}
+r=8\sin \th &= 0 \To \th = 0, \pi &\text{(2)}
 \end{aligned}
 $$
 The given curve intersects the origin when $\th =0, \pi$. At these points $\frac{dy}{dx} = 0$, the tangent line is horizontal, namely $\th = 0$.

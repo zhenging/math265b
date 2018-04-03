@@ -19,7 +19,7 @@ T(n) = \lb \frac{1}{2}f(x_0) + \sum_{k=1}^{n-1}f(x_k) + \frac{1}{2}f(x_n)\rb \De
 $$
 where $\Delta x = \dfrac{b-a}{n}$, and $x_k=a+k\Delta x$, for $k=0, 1,\cdots, n$.
 
-#### Simpson’s Rule
+#### Simpson's Rule
 
 >Definition Simpson's Rule
 Suppose $f$ is defined and integrable on $[a, b]$. The **Simpson’s Rule** approximation to $\dint f(x)dx$ using n equally spaced subintervals on $[a, b]$ is

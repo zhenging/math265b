@@ -1,3 +1,5 @@
+### Parametric and Polar Curves
+
 ### 11.3 Calculus In Polar Coordinates
 p752
 
