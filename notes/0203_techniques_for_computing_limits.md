@@ -17,15 +17,15 @@ a. $-\dfrac{11}{2}$ &emsp; b. $6$
 
 #### Limit Laws
 The following limit laws greatly simplify the evaluation of many limits.
-Theorem 2.3 Limit Laws
+> Theorem 2.3 Limit Laws
 Assume $\dlim_{x \to a}f(x)$ and $\dlim_{x \to a}g(x)$ exist. The following properties hold, where $c$ is a real number, and $m > 0$ and $n > 0$ are integers.
-1. **Sum** &emsp; $\dlim_{x \to a}[f(x) + g(x)] = \dlim_{x \to a}f(x) + \dlim_{x \to a}g(x)$
-2. **Difference** &emsp; $\dlim_{x \to a}[f(x) - g(x)] = \dlim_{x \to a}f(x) - \dlim_{x \to a}g(x)$
-3. **Constant multiple** &emsp; $\dlim_{x \to a}[cf(x)] = c\dlim_{x \to a}f(x)$
-4. **Product** &emsp; $\dlim_{x \to a}[f(x)g(x)] = \lb \dlim_{x \to a}f(x)\rb\lb \dlim_{x \to a}g(x) \rb$
-5. **Quotient** &emsp; $\dlim_{x \to a} \lb\frac{f(x)}{g(x)}\rb = \frac{\dlim_{x \to a}f(x)}{\dlim_{x \to a}g(x)}$, provided $\dlim_{x \to a}g(x) \ne 0$
-6. **Power** &emsp; $\dlim_{x \to a}[f(x)]^n = \lb\lim_{x \to a}f(x)\rb^n$
-7. **Fractional Power** &emsp; $\dlim_{x \to a}[f(x)]^{n/m} = \lb\dlim_{x \to a}f(x)\rb^{n/m}$, provided $f(x) \ges 0$, for $x$ near $a$, if $m$ is even and $n/m$ is reduced to lowest terms.
+1\. **Sum** &emsp; $\dlim_{x \to a}[f(x) + g(x)] = \dlim_{x \to a}f(x) + \dlim_{x \to a}g(x)$
+2\. **Difference** &emsp; $\dlim_{x \to a}[f(x) - g(x)] = \dlim_{x \to a}f(x) - \dlim_{x \to a}g(x)$
+3\. **Constant multiple** &emsp; $\dlim_{x \to a}[cf(x)] = c\dlim_{x \to a}f(x)$
+4\. **Product** &emsp; $\dlim_{x \to a}[f(x)g(x)] = \lb \dlim_{x \to a}f(x)\rb\lb \dlim_{x \to a}g(x) \rb$
+5\. **Quotient** &emsp; $\dlim_{x \to a} \lb\frac{f(x)}{g(x)}\rb = \frac{\dlim_{x \to a}f(x)}{\dlim_{x \to a}g(x)}$, provided $\dlim_{x \to a}g(x) \ne 0$
+6\. **Power** &emsp; $\dlim_{x \to a}[f(x)]^n = \lb\lim_{x \to a}f(x)\rb^n$
+7\. **Fractional Power** &emsp; $\dlim_{x \to a}[f(x)]^{n/m} = \lb\dlim_{x \to a}f(x)\rb^{n/m}$, provided $f(x) \ges 0$, for $x$ near $a$, if $m$ is even and $n/m$ is reduced to lowest terms.
 
 A proof of Law 1 is outlined in Section 2.7, Laws 2-5 are proved in Appendix B. Law 6 is proved from Law 4 as follows.
 $$
@@ -52,10 +52,10 @@ $$
 $$
 which shows that limits of rational function are also evaluated by direct substitution.
 
-Theorem 2.4 Limits of Polynomial and Rational Functions
+> Theorem 2.4 Limits of Polynomial and Rational Functions
 Assume $p$ and $q$ are polynomials and $a$ is a constant.
 a. Polynomial functions:  $\dlim_{x \to a}p(x) = p(a)$.
-b. Rational functions: $\dlim_{x \to a} \frac{p(x)}{q(x)} = \frac{\dlim_{x \to a}p(x)}{\dlim_{x \to a}q(x)} = \frac{p(a)}{q(a)} \text{, provided } q(a) \ne 0$
+b. Rational functions: $\dlim_{x \to a} \dfrac{p(x)}{q(x)} = \frac{\dlim_{x \to a}p(x)}{\dlim_{x \to a}q(x)} = \dfrac{p(a)}{q(a)} \text{, provided } q(a) \ne 0$
 
 **Example 3 Limits of a rational function**
 Evaluate $\dlim_{x \to 2}{\frac{3x^2 - 4x}{5x^3 - 36}}$

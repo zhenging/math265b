@@ -7,9 +7,8 @@
 + The Derivative Function: $f'(x) = \dlim_{h\to 0}\dfrac{f(x+h)-f(x)}{h}$. $f$ is differentiable at $x$ if $f'(x)$ exists.
 + Derivative Notation: $\dfrac{dy}{dx}, \dfrac{d}{dx}f(x), y'(x)$
 + Graphs of Derivatives
-+ **Theorem 3.1** Differentiable Implies Continuous. (_Proof_)
-+ **Theorem 3.1 (Alternative Version)** Not Continuous Implies Not Differentiable
-+ When is a Function is Not Differentiable at a Point?
++ **Theorem 3.1** Differentiable Implies Continuous. (_Proof_); (Alternative Version) Not Continuous Implies Not Differentiable
++ When is a Function is **Not Differentiable** at a Point?
   1. $f$ is not continuous at $a$.
   2. $f$ has a corner at $a$.
   3. $f$ has a vertical tangent at $a$.
@@ -46,12 +45,20 @@
 + Average and Marginal Cost (_Ex5_)
 
 #### 3.6 The Chain Rule
-+ **Theorem 3.14** The Chain Rule (_Proof_)
++ The Chain Rule (_Proof_)
   + Version 1: $\dfrac{dy}{dx} = \dfrac{dy}{du} \cdot \dfrac{du}{dx}$
   + Version 2: $\dfrac{d}{dx}[f(g(x))] = f'(g(x))g'(x)$
-+ Procedure Using the Chain Rule. (_Ex1, 2_)
-+ **Theorem 3.15** Chain Rule for Powers
-+ The composition of Three or More Functions (_Ex5_)
++ Chain Rule for Powers
++ Examples
+
+**Examples** Find derivatives of the following functions.
+a. $(\tan x + 10)^{21}$
+b. $\sin (e^{\cos x})$
+c. $(x^2 \sqrt {x^2 + 1})$
+>Solution
+a. $21(\tan x + 10)^{20}{\sec^2 x}$
+b. $-\sin x \cdot e^{\cos x} \cdot \cos (e^{\cos x})$
+c. $\dfrac{3x^3 + 2x}{\sqrt {x^2 + 1}}$
 
 #### 3.7 Implicit Differentiation
 + Implicit Differentiation. (_Ex1, 2_)
