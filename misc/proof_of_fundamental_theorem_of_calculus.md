@@ -1,3 +1,7 @@
+---
+tags: [integration, the fundamental theorem]
+---
+
 ### The Fundamental Theorem of Calculus
 
 > Theorem 5.3 (Part 1) Fundamental Theorem of Calculus

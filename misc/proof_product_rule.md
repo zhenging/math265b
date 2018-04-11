@@ -1,3 +1,7 @@
+---
+tags: [derivative, product rule]
+---
+
 ### Product Rule
 
 >Theorem 3.7 Product Rule

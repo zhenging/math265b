@@ -1,3 +1,7 @@
+---
+tags: [derivative, chain rule]
+---
+
 ### The Chain Rule
 
 >Theorem 3.14 The Chain Rule
