@@ -1,0 +1,2 @@
+### Section 10.1 Approximating Functions with Polynomials
+p692: 1, 2, 3, 4, 7, 9, 15, 17 (do n =2,3 for #15 and 17), 23, 27, 31, 33, 35 (Do n = 2,3 for #31,33,35), 40, 45, 75e, 85. (There May be changes/omissions to this section of HW On all of the following, use Theorem 10.2 to find a bound on the error: Some of the book answers use a larger M than necessary.... 55, 56, 57, 59, 60, 61, 62, 63, 65, 66, 67, 69, 79, 81)
