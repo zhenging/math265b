@@ -1,8 +1,10 @@
 ---
-tags: [Newton's Law of Cooling]
+tags: [Newton's Law of Cooling, differential equations]
+page: 606
+section: 8.5 Modelling with Differential Equations
 ---
 
-**Newton's Law of Cooling**
+### Newton's Law of Cooling
 The rate at which the tempature changes at any time is proportional to the _temperature difference_ between the object and the ambient tempature.
 Let the current tempature of the object be $T$, the initial tempature of the object be $T(0) = T_0$ and the ambient tempature be $A$, where $A$ and $T_0$ are constants. We have
 $$
@@ -19,6 +21,7 @@ T(t) &= (T_0 - A)e^{-kt} + A
 \end{aligned}
 $$
 
+#### Exercises
 (Quiz3) A roast turkey is taken from an oven when its temperature has reached $185 \degree F$ and is placed on a table in a room where the temperature is $75 \degree F$. The temperature of the turkey is $150 \degree F$ after half an hour. Determine when the turky will have cooled to $100 \degree F$. Set up and Solve a differential equation showing complete steps.
 >Solution
 According to the euqation $T(t) = (T_0 - A)e^{-kt} + A$, we have

@@ -1,10 +1,12 @@
 ---
 tags: [integration, the fundamental theorem]
+page: 355
+section: 5.3 Fundamental Theorem of Calculus
 ---
 
 ### The Fundamental Theorem of Calculus
 
-> Theorem 5.3 (Part 1) Fundamental Theorem of Calculus
+>Theorem 5.3 (Part 1) Fundamental Theorem of Calculus
 If $f$ is continuous on $[a,b]$ then the area function
 $$
 A(x) = \int_a^x {f(t)}dt, \text{ for } a \les x \les b
@@ -15,7 +17,7 @@ A'(x) = \frac{d}{dx}{\int_a^x {f(t)}d(t)} = f(x),
 $$
 which means that the area function of $f$ is an antiderivative of $f$ on $[a, b]$.
 
-> Theorem 5.3 (Part 2) Fundamental Theorem of Calculus
+>Theorem 5.3 (Part 2) Fundamental Theorem of Calculus
 If $f$ is continuous on $[a,b]$ and $F$ is any antiderivatives of $f$ on $[a, b]$, then
 $$
 \int_a^b {f(x)}dx = F(b) - F(a)

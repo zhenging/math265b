@@ -37,9 +37,12 @@
   + $\dlim_{x\to 0}\dfrac{\cos x - 1}{x} = 0$
 + **Theorem 3.12** Derivative of Sine and Cosine (_Proof_)
 + **Theorem 3.13** Derivative of the Trigonometric Functions
++ Higher-Order Trigonometric Functions ($y=\sin x, \frac{dy}{dx}, \frac{d^2y}{dx^2}, \frac{d^3y}{dx^3}$)
 
 #### 3.5 Derivatives as Rates of Change
-+ One-Dimensional Motion: Position, Velocity, Speed and Acceleration
++ One-Dimensional Motion
++ Position and Velocity
++ Speed and Acceleration
 + Free Fall (_Ex3_)
 + Growth Models (_Ex4_)
 + Average and Marginal Cost (_Ex5_)
@@ -49,16 +52,6 @@
   + Version 1: $\dfrac{dy}{dx} = \dfrac{dy}{du} \cdot \dfrac{du}{dx}$
   + Version 2: $\dfrac{d}{dx}[f(g(x))] = f'(g(x))g'(x)$
 + Chain Rule for Powers
-+ Examples
-
-**Examples** Find derivatives of the following functions.
-a. $(\tan x + 10)^{21}$
-b. $\sin (e^{\cos x})$
-c. $(x^2 \sqrt {x^2 + 1})$
->Solution
-a. $21(\tan x + 10)^{20}{\sec^2 x}$
-b. $-\sin x \cdot e^{\cos x} \cdot \cos (e^{\cos x})$
-c. $\dfrac{3x^3 + 2x}{\sqrt {x^2 + 1}}$
 
 #### 3.7 Implicit Differentiation
 + Implicit Differentiation. (_Ex1, 2_)
