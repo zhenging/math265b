@@ -18,7 +18,7 @@ c. Dividing $[0,8]$ into $n=8$ subintervals of equal length.
 >Solution
 Todo
 
-#### Approximating Areas by Riemann Sums
+##### Approximating Areas by Riemann Sums
 
 >Definition Regular Partition
 Suppose $[a, b]$ is a closed interval containing $n$ intervals
@@ -36,9 +36,9 @@ $$
 f(x_1^*){\Delta x} + f(x_2^*){\Delta x} + \cdots + > f(x_n^*){\Delta x}
 $$
 is called a **Riemann Sum** for $f$ on $[a, b]$. This sum is
-1\. a **left Riemann Sum** if $x_k^*$ is the left endpoint of > $[x_{k-1}, x_k]$
-2\. a **right Riemann Sum** if $x_k^*$ is the right endpoint of > $[x_{k-1}, x_k]$
-3\. a **midpoint Riemann Sum** if $x_k^*$ is the midpoint of > $[x_{k-1}, x_k]$
+1\. a **left Riemann Sum** if $x_k^*$ is the left endpoint of $[x_{k-1}, x_k]$
+2\. a **right Riemann Sum** if $x_k^*$ is the right endpoint of $[x_{k-1}, x_k]$
+3\. a **midpoint Riemann Sum** if $x_k^*$ is the midpoint of $[x_{k-1}, x_k]$
 
 **Example 2** Area under the sine curve
 >Solution
@@ -52,7 +52,7 @@ Todo
 >Solution
 Todo
 
-#### Sigma (Summation) Notation
+##### Sigma (Summation) Notation
 
 >Theorem 5.1 Sums of Positive Integers
 Let $n$ be a positive integers
@@ -65,10 +65,17 @@ $$
 \end{aligned}
 $$
 
-#### Riemann Sums Using Sigma Notation
+##### Riemann Sums Using Sigma Notation
 
 >Definition Left, Right, and Midpoint Riemann Sums in Sigma Notation
 Suppose $f$ is defined on a closed interval $[a, b]$, which is divided into n subintervals of equal length $\Delta x$. If $x^*_k$ is a point in the kth subinterval $[x_{k-1}, x_k]$, for $k=1, 2, \cdots n$, then the Riemann sum of $f$ on $[a, b]$ is $\sum^n_{k=1}f(x^*_k)\Delta x$. Three cases arise in practice.
 1\. left Riemann sum if $x^*_k = a + (k-1)\Delta x$
 2\. right Riemann sum if $x^*_k = a + k\Delta x$
 3\. midpoint Riemann sum if $x^*_k = a + (k-\frac{1}{2})\Delta x$
+
+#### 5.3 Fundamental Theorem of Calculus
++ Area Function
++ The Inverse Relationship between Differentition and Integration
+
+#### 5.4 Working with Integrals
+#### 5.5 Substitution Rule

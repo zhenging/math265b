@@ -1,7 +1,7 @@
 ### 3.8 Derivatives of Logarithmic and Exponential Functions
 
 #### The Derivative of $y=\ln x$
-> Inverse Properties for $e^x$ and \ln x
+> Inverse Properties for $e^x$ and $\ln x$
 1\. $e^{\ln x} = x$, for $x > 0$, and $\ln (e^x) = x$, for all $x$.
 2\. $y = \ln x$ if only if $x = e^y$.
 3\. For real numbers $x$ and $b > 0$, $b^x = e^{\ln b^x} = e^{x\ln b}$.
@@ -84,64 +84,7 @@ b. $f'(x) = 9{\ln 2}\cdot 2^{t/12}$
 >Solution
 Todo
 
-#### The General Power Rule
 
->Theorem 3.19 **General Power Rule**
-For real numbers $p$ and $x > 0$, $\dfrac{d}{dx}(x^p) = px^{n-1}$.
-Furthermore, if $u$ is a positive differentiable function on its domain, then $\dfrac{d}{dx}(u(x)^p) = p(u(x)^{p-1}) \cdot u'(x)$
-
-**Proof**: For $x>0$ and real number $p$, we have $x^p = e^{p\ln x}$ by inverse property (3). Therefore, the derivative of $x^p$ is computed as follows:
-$$
-\begin{aligned}
-\frac{d}{dx}(x^p) &= \frac{d}{dx}(e^{p\ln x}) \\
-&= e^{p \ln x} \cdot \frac{p}{x} \\
-&= x^p \cdot \frac{p}{x} \\
-&= px^{p-1}
-\end{aligned}
-$$
-
-**Example 4** Comuting derivatives
-Find the derivatives of the following functions.
-a. $y=x^{\pi}$ &emsp; b. $y={\pi}^x$ &emsp; c. $y=(x^2 + 4)^e$
->Solution
-a. $y'(x) = {\pi}x^{\pi -1}$
-b. $y'(x) = {\pi}^x {\ln \pi}$
-c. $y'(x) = 2ex(x^2 + 4)^{e-1}$
-
-**Example 5** General exponential functions
-Let $f(x) = x^{\sin x}$
-a. Find $f'(x)$ &emsp; b. Evaluate $f'(\frac{\pi}{2})$
->Solution
-a.
-$$
-\begin{aligned}
-f(x) &= x^{\sin x} = e^{{\ln x}{\sin x}} \\
-f'(x) &= e^{{\ln x}{\sin x}} \cdot (\frac{1}{x}{\sin x} + {\ln x}\cos x) \\
-&= x^{\sin x}(\frac{\sin x}{x} +{\ln x}\cos x)
-\end{aligned}
-$$
-b. $f'(\frac{\pi}{2}) = 1$
-
-**Example 6** Finding a horizontal tangent line
-Determine whether the graph of $f(x) = x^x$, for $x>0$, has any horizontal tangent line.
->Solution
-A horizontal tangent occurs when $f'(x) = 0$. In order to find the derivative, we first write $f(x) = x^x = e^{x {\ln x}}$:
-$$
-\begin{aligned}
-\frac{d}{dx}(x^x) &= \frac{d}{dx}(e^{x {\ln x}}) \\
-&= e^{x {\ln x}}(1 \cdot {\ln x} + x \cdot \frac{1}{x}) \\
-&= x^x({\ln x} + 1)
-\end{aligned}
-$$
-The equation $f'(x) = 0$ implies that $x^x = 0$ or ${\ln x} + 1 = 0$. The first equation has no solution because $x^x = e^{x {\ln x}} > 0$, for all $x>0$. We solve the second equation, as follows:
-$$
-\begin{aligned}
-{\ln x} &= -1 \\
-e^{\ln x} &= e^{-1} \\
-x &= \frac{1}{e}
-\end{aligned}
-$$
-Therefore, the graph of $f(x) = x^x$ has a single horizontal tanglent at $(e^{-1}, f(e^{-1})) \thickapprox (0.368, 0.692)$.
 
 #### Derivatives of the General Logarithmic Functions
 The general exponential function $f(x) = b^x$ is one-to-one when $b>0$ with $b \ne 0$. The inverse function$f^{-1}(x) = {\log_b}x$ is the logarithmic function with base $b$. The technique used to differentiate the natural logarithm applies to the general logarithmic function. We begin with the inverse relationship

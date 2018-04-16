@@ -1,52 +1,6 @@
 ### 5.3 Fundamental Theorem of Calculus
 
-#### Area Function
-The concept of an area function is crucial to the discussion abou the connection between dervatives and integrals. We start with a continuous function $y=f(t)$ defined for $t \ges a$, where $a$ is a fixed number. The *area function* for $f$ with left endpint $a$ is denoted $A(x)$; it gives the net area of the region bounded by the graph of $f$ and the $t$-axis between $t=a$ and $t=x$. The area of this region is also give by the definite integral
-$$
-A(x) = \int_a^x {f(t)}dt
-$$
-Notice that $x$ is the upper limit of the integral and the independent variable of the area function: As $x$ changes, so does the net area under the curve. Because the symbol $x$ is already in use as the independent variables for $A$, we must choose another symbol for the variable of integration. Any symbol-except $x$ can be used because it is a *dummy variable*; we have choose $t$ as the integration variable.
-
-Definition **Area Function**
-Let $f$ be a continuous function, for $t \ges a$. The area function for f with left endpoint a is
-$$
-A(x) = \int_a^x {f(t)}dt
-$$
-where $x \ges t$. The area function gives the net area of the region bounded by the graph of $f$ and the $t$-axis on the interval $[a, x]$.
-
-**Example 1** Area regions
->Solution
-Todo
-
-**Example 2** Area of a trapezoid
->Solution
-Todo
-
-#### Fundamental Theorem of Calculus
-
->Theorem 5.3 (Part 1) Fundamental Theorem of Calculus
-If $f$ is continuous on $[a,b]$ then the area function
-$$
-A(x) = \int_a^x {f(t)}dt, \text{ for } a \les x \les b
-$$
-is continous on $[a, b]$ and differentiable on $(a,b)$. The area function satisfies $A'(x) = f(x)$; or equivalently,
-$$
-A'(x) = \frac{d}{dx}{\int_a^x {f(t)}d(t)} = f(x),
-$$
-which means that the area function of $f$ is an antiderivative of $f$ on $[a, b]$.
-
->Theorem 5.3 (Part 2) Fundamental Theorem of Calculus
-If $f$ is continuous on $[a,b]$ and $F$ is any antiderivatives of $f$ on $[a, b]$, then
-$$
-\int_a^b {f(x)}dx = F(b) - F(a)
-$$
-
-It is customary and convenient to denote the difference $F(b) - F(a)$ by $F(x)|_a^b$. Using this shorthand, the Fundamental Theorem is summarized as follows
-$$
-\int_a^b {f(x)}dx = F(b) - F(a) = F(x)|_a^b
-$$
-
-##### The Inverse Relationship between Differentition and Integration
+#### The Inverse Relationship between Differentition and Integration
 It is worth pausing to observe that two parts of the Fundamental Theorem express the inverse relationship between differentiation and integration. Part 1 of the Fundamental Theorem says
 $$
 \frac{d}{dx}{\int_a^x {f(t)}dt} = f(x),
@@ -99,6 +53,6 @@ $$
 $$
 
 **Example 7** The sine integral function
-Let $g(t) = \begin{cases}\frac{{\sin t}}{t} &\text{if} t>0\\ 1 &\text{if } t = 1\end{cases}$. Graph the sine integral function $S(x) = \int_0^x {g(t)}dt$
+Let $g(t) = \begin{cases}\frac{{\sin t}}{t} &\text{if } t>0\\ 1 &\text{if } t = 1\end{cases}$. Graph the sine integral function $S(x) = \int_0^x {g(t)}dt$
 >Solution
 Todo

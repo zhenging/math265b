@@ -1,5 +1,5 @@
 ---
-tags: [derivative, trigonometric limits, proof]
+tags: [derivative, trigonometric limits, trigonometric function, proof]
 page: 161
 sectiin: 3.4 Derivatives of Trigonometric Functions
 ---

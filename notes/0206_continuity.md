@@ -113,8 +113,7 @@ a. $\dlim_{x \to 0}{\dfrac{\cos^2 x - 1}{\cos x -1}}$ &emsp; b. $\dlim_{x \to 1}
 a. $\dlim_{x \to 0}{\frac{\cos^2 x - 1}{\cos x -1}} = 2$
 b. By Theorem 2.14, $\ln x$ is continuous on its domain $(0, \infty)$. However, $\ln x > 0$ only when $x >1$, so Theorem 2.12 implies $\sqrt[4]{\ln x}$ is continuous on $(1, \infty)$. At $x=1$, $\sqrt[4]{\ln x}$ is right-continuous. The domain of $\tan^{-1} x$ is all real numbers, so it is continuous on $(-\infty), \infty$. Therefore $\dlim_{x \to 1}{ (\sqrt[4]{\ln x} + \tan^{-1} x)}$ is continuous on $[1, \infty)$. Because the domain of $f$ does not include point with $x<1$,  $\dlim_{x \to 1^-}{ (\sqrt[4]{\ln x} + \tan^{-1} x)}$ does not exist, which implies that $\dlim_{x \to 1}{ (\sqrt[4]{\ln x} + \tan^{-1} x)}$ does not exist.
 
-#### The Intermediate Value Theorem
->**Theorem 2.15 The Intermediate Value Theorem**
+>Theorem 2.15 The Intermediate Value Theorem
 Suppose f is continuous on the interval $[a, b]$ and $L$ is a number between $f(a)$ and $f(b)$. Then there is at least one number $c$ in $(a, b)$ satisfying $f(c) = L$.
 
 **Example 8 Finding an interest rate**
