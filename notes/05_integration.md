@@ -8,15 +8,7 @@
 
 #### 5.1 Approximating Areas under Curves
 
-#### Area under a Velocity Curve
-
-**Exmaple 1 Approximating the displacement**
-Suppose the velocity in meters/second of an object moving along a line is given by the function $v = t^2$, where $0 \les t \les 8$. Approximate the displacement of the object by dividing the time interval $[0,8]$ into $n$ subintervals of equal length. On each subinterval, approxmiate the velocity by a constant equal to the value of $v$ evaluated at the midpoint of the subinterval.
-a. Begin by dividing $[0,8]$ into $n=2$ subintervals: $[0, 4]$ and $[4,8]$
-b. Dividing $[0,8]$ into $n=4$ subintervals: $[0, 2],[2, 4], [4, 6]$ and $[6,8]$.
-c. Dividing $[0,8]$ into $n=8$ subintervals of equal length.
->Solution
-Todo
+##### Area under a Velocity Curve
 
 ##### Approximating Areas by Riemann Sums
 
@@ -30,7 +22,7 @@ $$
 x_k = a + k{\Delta x}, \text{ for } k=0,1,2,\cdots,n
 $$
 
->**Definition Riemann Sum**
+>Definition Riemann Sum
 Suppose $f$ is defined on a closed interval $[a, b]$, which is divided into n subintervals of equal length ${\Delta x}$. If $x_k^*$ is any point in the kth subinterval $[x_{k-1}, x_k]$, > for $k=0,1,2,\cdots,n$, then
 $$
 f(x_1^*){\Delta x} + f(x_2^*){\Delta x} + \cdots + > f(x_n^*){\Delta x}
@@ -78,4 +70,11 @@ Suppose $f$ is defined on a closed interval $[a, b]$, which is divided into n su
 + The Inverse Relationship between Differentition and Integration
 
 #### 5.4 Working with Integrals
++ Integrating Even and Odd Functions
++ Average Value of a Function. $\overline{f}= \frac{1}{b-a} \int_a^b f(x) dx$
++ Mean Value Theorem for Integral
+
 #### 5.5 Substitution Rule
++ Indefinite Integrals. $\dint f(g(x))g'(x) dx = \int f(u) du = F(u) + C$
++ Definite Integrals. $\dint_a^b f(g(x))g'(x) dx = \int_{g(a)}^{g(b)} f(u) du$
++ Geometry of Substitution

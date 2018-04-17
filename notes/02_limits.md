@@ -19,8 +19,13 @@
 + Limits of Polynomial and Rational Functions
 + One-sided Limits (Fractional Power)
 + Techniques other then direct substitution (**Algebriac manipulation**)
-+ An Important Limits - the slope of tangent line to the graphs of$f(x)=2^x$ at the point $P(0, 1)$. _($\ln 2$)_
-+ The **Squeeze Theorem**: $\dlim_{x \to 0}\sin x = 0, \dlim_{x \to 0}\cos x = 1$ (_Ex8, 9_)
++ The slope of tangent line to the graphs of$f(x)=2^x$ at the point $P(0, 1)$. _($\ln 2$)_
++ The **Squeeze Theorem**
+
+##### Examples
+a.$\dlim_{x \to 2}{\dfrac{\sqrt{2x^3 + 9} + 3x -1}{4x + 1}}$ &emsp; b. $\dlim_{x \to 2}{\dfrac{x^2 -6x + 8}{x^2-4}}$ &emsp;  c. $\dlim_{x \to 1}{\dfrac{\sqrt{x} - 1}{x-1}}$
+>Solution
+a. $\frac{10}{9}$ &emsp; b. $-\frac{1}{2}$ &emsp; c. $\frac{1}{2}$
 
 #### 2.4 Infinite Limits
 + Infinite Limits: $\dlim_{x \to a}f(x) = \pm \infty$. The limit does not exist.
