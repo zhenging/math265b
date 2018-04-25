@@ -9,7 +9,7 @@ section: 3.2 Rules of Differentiation
 If $n$ is a positive integer, then
 $$
 \frac{d}{dx}(x^n) = nx^{n-1}
-$$.
+$$
 
 #### Proof
 We use the definition of the derivative in the form

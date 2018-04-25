@@ -193,7 +193,7 @@ $$
 \begin{aligned}
 \sum_{k=0}^{\infty} \lb 3(\frac{2}{5})^k - 2(\frac{5}{7})^k\rb &= 3 \cdot \frac{1}{1-\frac{2}{5}} - 2 \cdot \frac{1}{1-\frac{5}{7}} = -2
 \end{aligned}
-$$3W2
+$$
 
 49\. $\sum_{k=1}^{\infty} \lb (\frac{1}{6})^k + (\frac{1}{3})^{k-1}\rb$
 >Solution

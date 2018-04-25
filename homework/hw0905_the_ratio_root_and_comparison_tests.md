@@ -119,13 +119,40 @@ Because $\rho = 0$, the series converges by the Root Test.
 >Solution
 1\. $\dfrac{1}{k^2+4} < \dfrac{1}{k^2}$
 2\. $\sum_{k=1}^{\infty} \dfrac{1}{k^2}$ converges. (p-series and p>1)
-Thus $\sum_{k=1}^{\infty} \dfrac{1}{k^2+4}$ converges by the Direct Comparison Test.
+Therefore, the given converges by the Direct Comparison Test.
 
-28\. 
+28\. $\sum_{k=1}^{\infty} \frac{k^2+k-1}{k^4+4k^2 - 3}$
+>Solution
+1\. Let $a_k = \frac{k^2+k-1}{k^4+4k^2 - 3}, b_k = \frac{1}{k^2}$
+$$
+\begin{aligned}
+L = \lim_{k \to \infty} \frac{a_k}{b_k} &= \lim_{k \to \infty} \frac{k^4+k^3-k^2}{k^4+4k^2 - 3} = 0
+\end{aligned}
+$$
+2\. $\sum_{k=1}^{\infty} b_k$ converges.
+Therefore, the given series converges.
 
-29\.
-31\.
-33\.
+29\. $\sum_{k=1}^{\infty} \frac{k^2-1}{k^3+4}$
+>Solution
+1\. Let $a_k = \frac{k^2-1}{k^3+4}, b_k = \frac{1}{k}$
+$$
+\begin{aligned}
+L = \lim_{k \to \infty} \frac{a_k}{b_k} &= \lim_{k \to \infty} \frac{k^3-k}{k^3+4} = 1
+\end{aligned}
+$$
+2\. $\sum_{k=1}^{\infty} b_k$ diverges.
+Therefore, the given series diverges too by the Limit Comparison Test.
+
+31\. $\sum_{k=1}^{\infty} \frac{1}{k^{3/2}+1}$
+>Solution
+1\. $\dfrac{1}{k^{3/2} + 1} < \dfrac{1}{k^{3/2}}$
+2\. $\sum_{k=1}^{\infty} \dfrac{1}{k^{3/2}}$ converges. (p-series, p>1)
+Therefore, the given series converges by the Direct Comparison Test
+
+33\. $\sum_{k=1}^{\infty} \frac{\sin(1/k)}{k^2}$
+>Solution
+
+
 34\.
 35\.
 38\.
