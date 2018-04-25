@@ -1,7 +1,7 @@
 ---
 tags: [derivative, product rule, quotient rule, proof]
 page: 152
-sectiin: 3.3 The Product and Quotient Rule
+section: 3.3 The Product and Quotient Rule
 ---
 
 ### The Product and Quotient Rule

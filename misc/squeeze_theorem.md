@@ -1,7 +1,7 @@
 ---
 tags: [limit, squeeze theorem]
 page: 76
-sectiin: 2.3 Techniques for Computing Limits
+section: 2.3 Techniques for Computing Limits
 ---
 
 ### The Squeeze Theorem

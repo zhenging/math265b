@@ -1,7 +1,7 @@
 ---
 tags: [geometric series, infinite series, proof]
 page: 641
-sectiin: 9.3 Infinite Series
+section: 9.3 Infinite Series
 ---
 
 ### Geometric Series

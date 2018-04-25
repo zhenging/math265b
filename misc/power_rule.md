@@ -1,7 +1,7 @@
 ---
 tags: [power rule, general power rule, derivative, proof]
 page: 142
-sectiin: 3.2 Rules of Differentiation
+section: 3.2 Rules of Differentiation
 ---
 
 ### Power Rule

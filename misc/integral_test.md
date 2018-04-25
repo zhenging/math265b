@@ -1,7 +1,7 @@
 ---
 tags: [integral test, infinite series, proof]
 page: 651
-sectiin: 9.4 The Divergence Test
+section: 9.4 The Divergence Test
 ---
 
 ### The Integral Test

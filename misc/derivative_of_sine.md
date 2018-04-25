@@ -1,7 +1,7 @@
 ---
 tags: [sin, trigonometric function, derivative, proof]
 page: 161
-sectiin: 3.4 Derivatives of Trigonometric Functions
+section: 3.4 Derivatives of Trigonometric Functions
 ---
 
 ### Derivative of Sine and Cosine Functions

@@ -1,7 +1,7 @@
 ---
 tags: [p-Series, infinite series, proof]
 page: 651
-sectiin: 9.4 The Divergence Test
+section: 9.4 The Divergence Test
 ---
 
 ### The p-Series

@@ -1,7 +1,7 @@
 ---
 tags: [e^x, derivative, proof]
 page: 199
-sectiin: 3.8 Derivatives of Logarithmic and Exponential Functions
+section: 3.8 Derivatives of Logarithmic and Exponential Functions
 ---
 
 ### The Derivative of $e^x$
