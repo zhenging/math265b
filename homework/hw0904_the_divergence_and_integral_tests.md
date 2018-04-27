@@ -258,7 +258,7 @@ $$
 3\. The relevant integrals is
 $$
 \begin{aligned}
-\int_2^{\infty} \frac{1}{x \ln^2 x} &= \lim_{t \to \infty} \int_2^t \frac{1}{x \ln^2 x} &\text{Definition of improper integral}\\
+\int_2^{\infty} \frac{1}{x \ln^2 x} dx&= \lim_{t \to \infty} \int_2^t \frac{1}{x \ln^2 x} dx\\
 &= \lim_{t \to \infty} (-\frac{1}{\ln x})\mid_2^t \\
 &= \lim_{t \to \infty} (\frac{1}{\ln 2}-\frac{1}{\ln t}) = \frac{1}{\ln 2}
 \end{aligned}
