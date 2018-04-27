@@ -79,7 +79,7 @@ $$
 3\. The relevant integrals is
 $$
 \begin{aligned}
-\int_2^{\infty} \frac{1}{x \ln x} &= \lim_{t \to \infty} \int_2^t \frac{1}{x \ln x} &\text{Definition of improper integral}\\
+\int_2^{\infty} \frac{1}{x \ln x} dx &= \lim_{t \to \infty} \int_2^t \frac{1}{x \ln x} dx\\
 &= \lim_{t \to \infty} [\ln (\ln x)]\mid_2^t \\
 &= \infty
 \end{aligned}
