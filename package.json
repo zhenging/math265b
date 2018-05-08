@@ -1,7 +1,7 @@
 {
-  "name": "calculus",
+  "name": "math265b",
   "version": "1.0.0",
-  "description": "Notes of ECON 201A",
+  "description": "Notes of Math 265B",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
