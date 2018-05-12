@@ -1,4 +1,9 @@
 ### Section 7.4 Trigonometric Substituions
+
++ Integrals Involving $a^2 - x^2$
++ Integrals Involving $a^2 + x^2$ or $x^2 - a^2$
+
+#### Homework
 p529: 2, 3, 4, 5, 7, 11, 13, 16, 19, 20, 27, 29, 36, 39, 41, 53, 69b, 69c, 81a
 
 2\. What change of variables is suggested by an integral containing $\sqrt {x^2 + 36}$?

@@ -1,4 +1,17 @@
 ### Section 7.2 Integration By Parts
+
+$$
+\begin{aligned}
+\int u dv = uv - \int v du
+\end{aligned}
+$$
+
++ Integration by parts
++ Repeated use of integration by parts
++ Integration by parts for definite integrals
++ Integral of $\ln x$
+
+#### Homework
 p512: 1, 7, 9, 11, 13, 15, 17, 19, 23, 25, 27, 31, 33, 35,37, **40**, 47, 51, 56, 60a
 
 1\. On which derivative rule is integration by parts based?

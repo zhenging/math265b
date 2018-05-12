@@ -1,4 +1,15 @@
 ### Section 7.3 Trigonometric Integrals
+
++ Integrating Products of Powers of $\sin x$ and $\cos x$
+$$
+\int \sin^m x \cos^n x dx
+$$
++ Integrating Products of Powers of $\tan x$ and $\sec x$
+$$
+\int \tan^m x \sec^n x dx
+$$
+
+#### Homework
 p521: 1, 2, 9–21 odd, 25, 26, 31–37odd, **35**, 41, 50, 62
 
 1\. State the half-angle identities used to integrate $\sin^2 x$ and $\cos^2 x$.

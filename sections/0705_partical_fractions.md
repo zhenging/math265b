@@ -1,4 +1,25 @@
 ### Section 7.5 Partical Fractions
+
++ Simple Linear Factors
+$$
+\begin{aligned}
+\frac{A}{x-r}
+\end{aligned}
+$$
++ Repeated Linear Factors
+$$
+\begin{aligned}
+\frac{A_1}{(x-r)} + \frac{A_2}{(x-r)^2} + \frac{A_3}{(x-r)^3} + \cdots + \frac{A_m}{(x-r)^m}
+\end{aligned}
+$$
++ Irreducible Quadratic Factors
+$$
+\begin{aligned}
+\frac{Ax + B}{ax^2 + bx + c}
+\end{aligned}
+$$
+
+#### Homework
 p540: 01, 5, 15, 17, 19, 29, 33, 39, 43, 46, 49, 51b, 59, 65, 71 Mixed practice in review p572: 41, 45, 51, 59
 
 1\. What kind of functions can be integrated using partical functions decomposition?
