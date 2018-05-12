@@ -1,5 +1,6 @@
 ### Section 9.0 Sequences and Infinite Series
 p680: 33, 43, 44, 46, 55
+Todo
 
 33\. $\sum_{k=1}^{\infty} k^5e^{-k}$
 

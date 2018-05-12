@@ -1,4 +1,16 @@
 ### Section 8.3 Separable Differential Equations
+
++ Separable Form $g(y)y'(t) = h(t)$
+In general, we solve a separable differential equation by integrating both sides of the equation with respect to t:
+$$
+\begin{aligned}
+\int g(y)y'(t) dt &= \int h(t)dt\\
+\int g(t) dy &= \int h(t)dt
+\end{aligned}
+$$
++ Logistic Equation Revisited (Equilibrium, steady-state)
+
+#### Homework
 p595: 1, 2, 3, 5, 7, 9, 13, **14**, 15, 17, 19, **20**, 21, 25, 27 , 33, 36, 40, 43abc, 48abc
 
 1\. What is a separable first-order differential equation?
