@@ -1,4 +1,73 @@
 ### Section 9.4 The Divergence and Integral Tests
+
+#### The Divergence Test
+
+>Theorem 9.8 Divergence Test
+If $\sum a_k$ converges, then $\dlim_{k \to \infty} a_k=0$. Equivalently, if $\dlim_{k \to \infty} a_k \ne 0$, then the series diverges.
+
+_Important note: Theorem 9.8 can not be used to determine convergence._
+
+##### Proof
+Let $\{ S_n \}$ be the sequence of partial sums for the series $\sum a_k$ . Assuming the series converges, it has a finite value, call it $S$, where
+$$
+\begin{aligned}
+S = \lim_{k \to \infty} S_k = \lim_{k \to \infty} S_{k-1}.
+\end{aligned}
+$$
+Note that $S_{k-1} - S_k = a_k$. Therefore,
+$$
+\begin{aligned}
+\lim_{k \to \infty} a_k = \lim_{k \to \infty} (S_{k-1} - S_k) = S - S = 0
+\end{aligned}
+$$
+that is, $\dlim_{k \to \infty} a_k=0$. The second part of the test follows immediately because it is the _contrapositive_ of the first part.
+![Graph](../assets/theorem0908.png)
+
+##### Examples
+a. $\sum_{k=0}^{\infty} \frac{k}{k+1}$ &emsp; b. $\sum_{k=1}^{\infty} \frac{1+3^k}{2^k}$ &emsp; c. $\sum_{k=1}^{\infty} \frac{1}{k}$ &emsp; d. $\sum_{k=1}^{\infty} \frac{1}{k^2}$
+>Solution
+a. Divergent.
+b. Divergent.
+c. **Inconclusive**. $\dlim_{k \to \infty} \frac{1}{k} = 0$. (The divergence test can not be used to prove that a series converges.)
+d. **Inconclusive**. Similar to part c.
+
+#### The p-Series
+
+>Theorem 9.11 Convergentce of the p-Series
+The p-Series $\sum_{k=1}^{\infty}\dfrac{1}{k^p}$, for $p > 1$, and diverges, for $p \les 1$.
+
+##### Proof
+Todo
+
+##### Examples
+a. $\sum_{k=1}^{\infty} \frac{1}{\sqrt[4]{k^3}}$ &emsp; b. $\sum_{k=4}^{\infty} \frac{1}{(k-1)^2}$
+>Solution
+a. Divergent.
+b. **Convergent**.
+
+#### The Integral Test
+
+>Theorem 9.10 Integral Test
+Suppose $f$ is a continuous, positive, decreasing function, for $x \ges 1$, and ket $a_k = f(k)$, for $k=1, 2, 3 \cdots$. Then
+$$
+\begin{aligned}
+\sum_{k=1}^{\infty} a_k \quad \text{and} \quad \dint_1^{\infty} f(x)dx
+\end{aligned}
+$$
+either both converge or both diverge. In the case of convergence, the value of the integral is _not_, in general, equal to the value of the series.
+
+##### Proof
+Todo
+
+##### Examples
+a. $\sum_{k=1}^{\infty} \frac{k}{k^2+1}$ &emsp; b. $\sum_{k=3}^{\infty} \frac{1}{\sqrt{2k-5}}$ &emsp; c. $\sum_{k=0}^{\infty} \frac{1}{k^2+4}$
+>Solution
+a. Divergent.
+b. Divergent.
+c. **Convergent.**
+
+
+#### Homework
 p659: 2, 3, 5, 6, 9, 10, 11, 12, 13, 19,20, **21**, 23, 25, **27**, 29, 31, 32, **33**, **43**, 45, 49, 50, 51abf, 55, 56, 57, **60ab**
 
 2\. Is it true that if the terms of a series of positive terms decrease to zero, then the series converges? Explain using an example.

@@ -1,4 +1,14 @@
 ### Section 9.5 The Ratio, Root and Comparison Tests
+
+#### The Ratio Test
+
+>Theorem The Ratio Test
+Let $\sum a_k$ be an infinite series with positive terms and let $r = \dlim_{k \to \infty} \frac{a_{k+1}}{a_k}$
+1\. If $0 \les r < 1$, the series converges.
+2\. If $r > 1$ (including $r=\infty$), the series diverges.
+3\. If $r=1$, the test in inconclusive.
+
+#### Homework
 p668: 4, 5, 8, 9, 10, 11, 13, 15, 16, 17, 19, 20, 24, 27, 28, 29, 31, 33, **34**, 35, **38**, 39, 42, 43, **45**, 47, 48, 51, 52, **60**, 69. (Use Ratio Test on #45, 47)
 
 4\. What is the first test you should use in analyzing the convergence of a series?
