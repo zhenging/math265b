@@ -1,4 +1,6 @@
 ### Section 11.3 Calculus In Polar Coordinates
+
+#### Homework
 p758: 2, 3, 4, 5, 7, **9**, 11, 15, **19**, 21, 23, 24, 27, 29, 31, 35, 37, 38, 41, **42**, 47, **54**?. Plan to do this assignment in more than one sitting as the problems are very long. Make each problem from #5 on worth double value since they are more involved.
 
 2\. How do you find the slope of the line tangent to the polar graph of $r = f(\th)$ at a point?
