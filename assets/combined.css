@@ -56,6 +56,14 @@ table {
   color: #ec407a;
 }
 
+.markdown-body img {
+  display: block;
+  margin: 0 auto;
+  box-sizing: content-box;
+  max-width: 100%;
+  background-color: #fff;
+}
+
 /* .katex-display {
   text-align: left;
   margin-left: 1em;
@@ -86,7 +94,8 @@ table {
   .markdown-body p {
     margin-bottom: 5px;
   }
-}.header {}
+}
+.header {}
 
 @media print {
   .header {
@@ -139,18 +148,6 @@ table {
   page-break-inside: avoid;
 }
 
-.named-container-example {
-  padding: 0.5em 0em;
-  color: #6a737d;
-  page-break-inside: avoid;
-}
-
-.named-container-theorem, .named-container-defintion {
-  border: 1px solid #38accd;
-  padding: 0.5em 0.5em;
-  margin-bottom: 1em;
-}
-
 @media screen and (min-width: 960px) {
   .container {
     padding: 30px;
@@ -169,30 +166,10 @@ table {
     margin-bottom: 5px;
     padding: 0.2em 0.5em;
   }
-}.course-section-head {
+}
+.course-section-head {
   margin: 5px 5px;
   text-transform: capitalize;
-}
-
-.homework-list, .misc-list, .topics-list {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.homework-list .list-item, .misc-list .list-item, .topics-list .list-item {
-  background-color: #f8f8f8;
-  padding: 5px 10px;
-  margin: 5px 15px 5px 0px;
-}
-
-.notes-list .list-item, {
-  padding: 5px 10px;
-  margin-top: 0;
-  margin-right: 20px;
-  margin-bottom: 10px;
 }
 
 .chapter-list{
@@ -205,7 +182,7 @@ table {
   margin: 1rem 0;
 }
 
-.chapter-list-item > a{
+.chapter-list-item > h3{
   font-size: 1.25rem;
   font-weight: 600;
 }
