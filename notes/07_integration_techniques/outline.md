@@ -53,7 +53,7 @@ where $\Delta x = \dfrac{b-a}{n}$, and $x_k=a+k\Delta x$, for $k=0, 1,\cdots, n$
 #### Simpson's Rule
 
 >Definition Simpson's Rule
-Suppose $f$ is defined and integrable on $[a, b]$. The **Simpson’s Rule** approximation to $\dint f(x)dx$ using n equally spaced subintervals on $[a, b]$ is
+Suppose $f$ is defined and integrable on $[a, b]$. The **Simpson's Rule** approximation to $\dint f(x)dx$ using n equally spaced subintervals on $[a, b]$ is
 $$
 S(n) = \lb f(x_0) + 4f(x_1) + 2f(x_2) + \cdots + 4f(x_{n-1} + f(x_n)\rb \frac{\Delta x}{3}
 $$

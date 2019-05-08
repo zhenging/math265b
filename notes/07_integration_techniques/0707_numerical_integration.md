@@ -1,5 +1,5 @@
 ### Section 7.7 Numerical Integration
-p556: 1, 2, 3, 11, 14, 15, 18, 19, 23 (also give Simpson’s), 31, 39a, 53b, 61
+p556: 1, 2, 3, 11, 14, 15, 18, 19, 23 (also give Simpson's), 31, 39a, 53b, 61
 
 1\. If the interval $[4, 18]$ is partitioned into $n = 28$ subintervals of equal length, what is $\Delta x$?
 >Solution
@@ -77,11 +77,11 @@ $$
 | 16| 1.50060256 | $6.03 \times 10^{-4}$ | 1.49879502 | $1.20 \times 10^{-3}$ |1.50000004 | $4.84\times 10^{-8}$|
 | 32| 1.50015060 | $1.51 \times 10^{-4}$ | 1.49969879 | $3.01 \times 10^{-4}$ |1.50000000 | $3.00 \times 10^{-9}$|
 
-31\. **Trapezoid Rule and Simpson’s Rule** Consider the following integrals and the given values of $n$.
+31\. **Trapezoid Rule and Simpson's Rule** Consider the following integrals and the given values of $n$.
 $\dint_0^1 e^{2x}dx;n=25$.
 a. Find the Trapezoid Rule approximations to the integral using $n$ and $2n$ subintervals.
-b. Find the Simpson’s Rule approximation to the integral using $2n$ subintervals. It is easiest to obtain Simpson’s Rule approximations from the Trapezoid Rule approximations, as in Example 6.
-c. Compute the absolute errors in the Trapezoid Rule and Simpson’s Rule with $2n$ subintervals.
+b. Find the Simpson's Rule approximation to the integral using $2n$ subintervals. It is easiest to obtain Simpson's Rule approximations from the Trapezoid Rule approximations, as in Example 6.
+c. Compute the absolute errors in the Trapezoid Rule and Simpson's Rule with $2n$ subintervals.
 >Solution
 | n   | $T(n)$ | Error $T(n)$ | $S(n)$ | Error $S(n)$ |
 |:---:|:------:|:------------:|:-------:|:-----------:|
@@ -105,7 +105,7 @@ S(n) &= \lb f(x_0) + 4f(x_1) + 2f(x_2) + 4f(x_3) + 2f(x_4) + 4f(x_5) + f(x_6)\rb
 \end{aligned}
 $$
 
-61\. **Another Simpson’s Rule formula** Another Simpson’s Rule formula is $S(2n) = \dfrac{2M(n) + T(n)}{3}$, for $n \ges 1$. Use this rule to estimate $\dint_1^e \frac{1}{x}$ using $n=10$ subintervals.
+61\. **Another Simpson's Rule formula** Another Simpson's Rule formula is $S(2n) = \dfrac{2M(n) + T(n)}{3}$, for $n \ges 1$. Use this rule to estimate $\dint_1^e \frac{1}{x}$ using $n=10$ subintervals.
 >Solution
 $$
 \begin{aligned}

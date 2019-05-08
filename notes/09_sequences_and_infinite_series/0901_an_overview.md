@@ -160,7 +160,7 @@ b. $M_n = 20\cdot(0.5)^n$
 c. $M_{n+1} = 0.5M_n$
 d. The limit is 0.
 
-81\. **Drug elimination** Jack took a 200-mg dose of a strong painkiller at midnight. Every hour, 5% of the drug is washed out of his bloodstream. Let $d_n$ be the amount of drug in Jack’s blood n hours after the drug was taken, where $d_0 = 200 mg$.
+81\. **Drug elimination** Jack took a 200-mg dose of a strong painkiller at midnight. Every hour, 5% of the drug is washed out of his bloodstream. Let $d_n$ be the amount of drug in Jack's blood n hours after the drug was taken, where $d_0 = 200 mg$.
 >Solution
 a. $d_1 = 190, d_2 = 180.5, d_3 = 171.475, d_4 = 162.90125, d_5 = 154.75619$.
 b. $d_n = 200\cdot(0.95)^n$
